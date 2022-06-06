@@ -633,7 +633,8 @@ section .servicio {
 /*------------------------Contacto-----------------------*/
 .contactos {
     width: 80%;
-    margin: 5% auto 0% auto;
+    height: 80vh;
+    margin: 2% auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.5fr 2fr 2fr;
@@ -644,7 +645,7 @@ section .servicio {
         "formulario mapa"
     ;
 
-    gap: 5% 10%;
+    gap: 5%;
 }
 
 .contactos .horarios {
@@ -652,9 +653,10 @@ section .servicio {
 
 }
 
-.contactos .horarios h2 {
+.contactos .horarios h2,
+.contactos .formulario h2 {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 2%;
 }
@@ -667,7 +669,7 @@ section .servicio {
 
 .contactos .mapa iframe {
     width: 100%;
-    height: 45vh;
+    height: 50vh;
     grid-area: mapa;
     background-image: contain;
     border: none;
@@ -675,7 +677,6 @@ section .servicio {
 
 .contactos .formulario {
     width: 100%;
-    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -724,6 +725,11 @@ section .servicio {
 @media (max-width: 1262px) {
     .header img {
         padding-right: 10%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+        line-height: 65px;
     }
 
     .footer {
@@ -813,7 +819,56 @@ section .servicio {
             "baker__4  baker__6"
         ;
     }
+
+    /*-----contacto----*/
+
+    .contactos {
+        width: 90%;
+
+        margin: 4% 3% 2% 3%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 2fr;
+
+        grid-template-areas:
+            "horarios"
+            "mapa"
+            "formulario"
+        ;
+
+        gap: 0%;
+    }
+
+    .contactos .formulario {
+        margin: 1% 2%;
+        height: 40vh;
+    }
+
+
+    .contactos .horarios {
+        margin-top: 2%;
+    }
+
+    .contactos .mapa iframe {
+        height: 40vh;
+        margin: 2% 2%;
+
+    }
+
+    .contactos .horarios h2,
+    .contactos .formulario h2 {
+        font-size: 18px;
+        margin-bottom: 4%;
+        text-align: center;
+    }
+
+    .contactos .horarios p {
+        font-size: 14px;
+        text-align: center;
+        margin: 2%;
+    }
 }
+
 
 
 
@@ -913,58 +968,7 @@ section .servicio {
         font-weight: 600;
         line-height: 75px;
     }
-
-    /*-----contacto----*/
-
-    .contactos {
-        width: 90%;
-        margin: 4% 3% 2% 3%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 2fr 2fr;
-
-        grid-template-areas:
-            "horarios"
-            "mapa"
-            "formulario"
-        ;
-
-        gap: 1%;
-    }
-
-    .contactos .formulario {
-        margin: 1% 2%;
-        height: 55vh;
-    }
-
-    .contactos .formulario h3 {
-        margin: 2%;
-    }
-
-    .contactos .horarios {
-        margin-top: 2%;
-    }
-
-    .contactos .mapa iframe {
-        height: 50vh;
-        margin: 2% 2%;
-
-    }
-
-    .contactos .horarios h2 {
-        font-size: 18px;
-        margin-bottom: 4%;
-        text-align: center;
-    }
-
-    .contactos .horarios p {
-        font-size: 14px;
-        text-align: center;
-        margin: 2%;
-    }
 }
-
-
 
 @media (max-width: 650px) {
 
@@ -1119,15 +1123,10 @@ section .servicio {
 
 
     /*--contacto--*/
-    .horarios h2 {
+    .contactos .horarios h2,
+    .contactos .formulario h2 {
         font-size: 14.5px;
         line-height: 24px;
-        margin: 2% 0%;
-    }
-
-    .contactos .formulario h3 {
-        font-size: 14px;
-        line-height: 20px;
         margin: 2% 0%;
     }
 
