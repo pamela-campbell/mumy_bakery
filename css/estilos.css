@@ -116,20 +116,46 @@ h3 {
     height: calc(100vh - 233px);
 }
 
-.hero h1 {
+/*animacion y h1 index*/
+.hero .titulo__animado {
     width: 40%;
     font-family: roboto;
-    color: #b78484;
-    font-size: 55px;
+    font-size: 70px;
     font-weight: 700;
-    line-height: 88px;
+    line-height: 98px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: justify;
     padding: 2%;
     margin-left: 7%;
+    background-image: linear-gradient(to right, #D6A4A4, #e1edb5, #b78484, #f4c789);
     text-decoration: underline 20px rgba(255, 255, 255, 0.412);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    background-size: 300%;
+    background-position: -200%;
+
+
+    animation-name: titulo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
+
+
+@keyframes titulo {
+    from {
+        background-position: 0%;
+
+    }
+
+    to {
+        background-position: 100%;
+    }
+}
+
 
 .introduccion {
     width: 100%;
@@ -727,9 +753,9 @@ section .servicio {
         padding-right: 10%;
     }
 
-    .hero h1 {
-        font-size: 45px;
-        line-height: 65px;
+    .hero .titulo__animado {
+        font-size: 55px;
+        line-height: 75px;
     }
 
     .footer {
@@ -761,6 +787,10 @@ section .servicio {
 }
 
 @media (max-width: 1110px) {
+    .hero .titulo__animado {
+        width: 50%;
+    }
+
     .servicio {
         flex-direction: column;
     }
@@ -887,13 +917,10 @@ section .servicio {
         text-align: center;
     }
 
-    .hero h1 {
+    .hero .titulo__animado {
         width: 100%;
         margin-left: 0%;
         padding: 0% 5%;
-        font-size: 45px;
-        font-weight: 600;
-        line-height: 68px;
     }
 
     p {
@@ -1014,13 +1041,10 @@ section .servicio {
         height: 60vh;
     }
 
-    .hero h1 {
-        width: 90%;
-        margin: auto;
-        padding: 0%;
-        font-size: 35px;
+    .hero .titulo__animado {
+        font-size: 45px;
         font-weight: 600;
-        line-height: 58px;
+        line-height: 68px;
     }
 
     .introduccion h2,
@@ -1138,8 +1162,13 @@ section .servicio {
 }
 
 
-
 @media (max-width: 420px) {
+    .hero .titulo__animado {
+        font-size: 35px;
+                line-height: 68px;
+                text-decoration: none;
+    }
+
     .footer div h3 {
         font-size: 12.5px;
     }
