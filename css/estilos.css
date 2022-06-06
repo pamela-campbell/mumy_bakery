@@ -1,0 +1,1153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;800&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #262626;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: inter;
+}
+
+p {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24px;
+    text-align: justify;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 3% 0% 1% 0%;
+    text-align: center;
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.main {
+    grid-area: main;
+}
+
+/*---header---*/
+.header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    grid-area: header;
+}
+
+.header img {
+    width: 100%;
+    padding-right: 5%;
+}
+
+.header nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.header nav ul li {
+    margin: 10px;
+    text-align: end;
+}
+
+.header nav ul li a {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+.header nav ul li .hover__contacto:hover {
+    border-top: #D2EEBB 6px solid;
+}
+
+.header nav ul li .hover__nosotros:hover {
+    border-top: #F6F1C1 6px solid;
+}
+
+.header nav ul li .hover__catering:hover {
+    border-top: #F6C6C1 6px solid;
+}
+
+.header nav ul li .hover__a__la__carta:hover {
+    border-top: #CBDBEE 6px solid;
+}
+
+.header nav ul li .hover__box__de__regalo:hover {
+    border-top: #E9E1F0 6px solid;
+}
+
+/*------------------------estilos index-------------------------*/
+
+/*----MAIN----*/
+.hero {
+    background: linear-gradient(rgba(152, 120, 120, 0.52), rgba(255, 255, 255, 0.481)), url(../fotos_mumi/main_product.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: calc(100vh - 233px);
+}
+
+.hero h1 {
+    width: 40%;
+    font-family: roboto;
+    color: #b78484;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: justify;
+    padding: 2%;
+    margin-left: 7%;
+    text-decoration: underline 20px rgba(255, 255, 255, 0.412);
+}
+
+.introduccion {
+    width: 100%;
+    background-color: #F3EBEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 8% 11%;
+}
+
+.introduccion h2 {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-right: 3%;
+    width: 34%;
+}
+
+.introduccion p {
+    width: 60%;
+}
+
+/*---productos---*/
+
+.productos .introduccion {
+    background-color: #FFF;
+}
+
+.grid__container__productos {
+    width: 78%;
+    height: 100vh;
+    margin: 0% auto 5% auto;
+
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+
+    grid-template-areas:
+        "tarta cheese cheese pie"
+        "tarta frutas budin porciones"
+        "temporada temporada budin especiales"
+        "temporada temporada cuadraditos especiales";
+
+    gap: 20px;
+}
+
+.tarta {
+    grid-area: tarta;
+    background-image: url(../fotos_mumi/prodctos_1.jpg);
+}
+
+.cheese {
+    grid-area: cheese;
+    background-image: url(../fotos_mumi/prodctos_2.jpg);
+}
+
+.especiales {
+    grid-area: especiales;
+    background-image: url(../fotos_mumi/prodctos_3.jpg);
+}
+
+.budin {
+    grid-area: budin;
+    background-image: url(../fotos_mumi/prodctos_4.jpg);
+}
+
+.temporada {
+    grid-area: temporada;
+    background-image: url(../fotos_mumi/prodctos_5.jpg);
+}
+
+.pie {
+    grid-area: pie;
+    background-image: url(../fotos_mumi/prodctos_6.jpg);
+}
+
+.frutas {
+    grid-area: frutas;
+    background-image: url(../fotos_mumi/funciona_2.jpg);
+}
+
+.porciones {
+    grid-area: porciones;
+    background-image: url(../fotos_mumi/funciona_3.jpg);
+}
+
+.cuadraditos {
+    grid-area: cuadraditos;
+    background-image: url(../fotos_mumi/testimonio_4.jpg);
+}
+
+.imagenes {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagenes h3 {
+    width: 50%;
+    text-align: left;
+    background-color: #decbcba8;
+    padding: 2%;
+}
+
+.grid__container__productos__mobile {
+    display: none;
+}
+
+/*---servicio---*/
+
+.servicio {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: nowrap;
+    align-items: center;
+    background-color: #b78484;
+}
+
+.servicio>div {
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0% 2% 4% 2%;
+}
+
+.servicio .foto__ocasion {
+    background-image: url(../fotos_mumi/funciona_1.jpg);
+}
+
+.servicio .foto__toppins {
+    background-image: url(../fotos_mumi/funciona_2.jpg);
+}
+
+.servicio .foto__porciones {
+    background-image: url(../fotos_mumi/funciona_3.jpg);
+}
+
+.servicio div .foto__porciones,
+.servicio div .foto__toppins,
+.servicio div .foto__ocasion {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    margin: 2% 0%;
+}
+
+
+.fondo__servicio__index .introduccion {
+    padding: 8% 2%;
+}
+
+.fondo__servicio__index .introduccion h2 {
+    margin-right: 0%;
+    width: 40%;
+}
+
+.fondo__servicio__index .servicio,
+.fondo__servicio__index .introduccion {
+    background: #F3EBEB;
+}
+
+/*---inspirate---*/
+
+.inspirate .introduccion {
+    background-color: #FFF;
+}
+
+.grid__container__inspirate {
+    width: 78%;
+    height: 60vh;
+    margin: 0% auto 5% auto;
+
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+
+    grid-template-areas:
+        "torta__donut muffin muffin desayuno"
+        "torta__donut torta__infantil catering__cumpleaño desayuno"
+    ;
+
+    gap: 20px;
+}
+
+.torta__donut {
+    grid-area: torta__donut;
+    background-image: url(../fotos_mumi/testimonio_2.jpg);
+}
+
+.muffin {
+    grid-area: muffin;
+    background-image: url(../fotos_mumi/testimonio_3.jpg);
+}
+
+.desayuno {
+    grid-area: desayuno;
+    background-image: url(../fotos_mumi/testimonio_1.jpg);
+}
+
+.torta__infantil {
+    grid-area: torta__infantil;
+    background-image: url(../fotos_mumi/testimonio_6.jpg);
+}
+
+.catering__cumpleaño {
+    grid-area: catering__cumpleaño;
+    background-image: url(../fotos_mumi/testimonio_5.jpg);
+}
+
+/*-----------------------FOOTER-----------------------*/
+.footer {
+    background-color: #FFFAFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5% 7% 1% 7%;
+    grid-area: footer;
+}
+
+.footer p {
+    font-size: 12px;
+}
+
+.footer h4 {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer div img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/*----------------------Estilos-Generales-Secciones-----------------------*/
+
+.introduccion h1 {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-right: 3%;
+    width: 36%;
+}
+
+/*------------------------box-de-regalo-----------------------*/
+section .introduccion,
+section .servicio {
+    background-color: #FFF;
+}
+
+.click {
+    text-shadow: 4px 4px 2px #decbcb;
+    font-family: roboto;
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 105px;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(rgba(152, 120, 120, 0.52), rgba(255, 255, 255, 0.481)), url(../fotos_mumi/banner.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+.click:hover {
+    color: #E9E1F0;
+    text-shadow: 4px 4px 2px #decbcb;
+}
+
+
+/*---------------------GRID---Seccion Catering--Seccion Carta----------------------*/
+
+.grid__catring__infnatiles,
+.grid__catring__casamientos,
+.grid__catring__adultos,
+.grid__carta__pie,
+.grid__carta__temporada,
+.grid__carta__budines,
+.grid__carta__cheese,
+.grid__carta__brownies {
+    width: 70%;
+    height: 60vh;
+    margin: 5% auto;
+
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 2fr;
+
+
+    grid-template-areas:
+        "foto__vertical texto"
+        "foto__vertical  foto__horizontal"
+    ;
+
+    gap: 5%;
+}
+
+.texto {
+    grid-area: texto;
+}
+
+.grid__catring__infnatiles .foto__horizontal {
+    grid-area: foto__horizontal;
+    background-image: url(../fotos_mumi/testimonio_5.jpg);
+}
+
+.grid__catring__infnatiles .foto__vertical {
+    grid-area: foto__vertical;
+    background-image: url(../fotos_mumi/testimonio_6.jpg);
+}
+
+.grid__catring__casamientos .foto__horizontal {
+    grid-area: foto__horizontal;
+    background-image: url(../fotos_mumi/casaminto_2.jpg);
+}
+
+.grid__catring__casamientos .foto__vertical {
+    grid-area: foto__vertical;
+    background-image: url(../fotos_mumi/casamiento_1.jpg);
+}
+
+.grid__catring__adultos .foto__horizontal {
+    grid-area: foto__horizontal;
+    background-image: url(../fotos_mumi/adulto_2.jpg);
+}
+
+.grid__catring__adultos .foto__vertical {
+    grid-area: foto__vertical;
+    background-image: url(../fotos_mumi/adulto_1.jpg);
+}
+
+/*-a-la-carta*/
+.grid__carta__pie .foto__vertical {
+    grid-area: foto__vertical;
+    background-image: url(../fotos_mumi/prodctos_6.jpg);
+}
+
+.grid__carta__pie .foto__horizontal {
+    grid-area: foto__horizontal;
+    background-image: url(../fotos_mumi/prodctos_1.jpg);
+}
+
+
+.grid__carta__temporada .foto__vertical {
+    grid-area: foto__vertical;
+    background-image: url(../fotos_mumi/prodctos_5.jpg);
+}
+
+.grid__carta__temporada .foto__horizontal {
+    grid-area: foto__horizontal;
+    background-image: url(../fotos_mumi/funciona_2.jpg);
+}
+
+
+.grid__carta__budines .foto__vertical {
+    grid-area: foto__vertical;
+    background-image: url(../fotos_mumi/prodctos_4.jpg);
+}
+
+.grid__carta__budines .foto__horizontal {
+    grid-area: foto__horizontal;
+    background-image: url(../fotos_mumi/budin_2.jpg);
+}
+
+
+.grid__carta__cheese .foto__vertical {
+    grid-area: foto__vertical;
+    background-image: url(../fotos_mumi/prodctos_2.jpg);
+}
+
+.grid__carta__cheese .foto__horizontal {
+    grid-area: foto__horizontal;
+    background-image: url(../fotos_mumi/funciona_3.jpg);
+}
+
+.grid__carta__brownies .foto__vertical {
+    grid-area: foto__vertical;
+    background-image: url(../fotos_mumi/brownies.jpg);
+}
+
+.grid__carta__brownies .foto__horizontal {
+    grid-area: foto__horizontal;
+    background-image: url(../fotos_mumi/testimonio_4.jpg);
+}
+
+.texto h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+}
+
+.texto h3 {
+    text-align: left;
+}
+
+.foto__horizontal .foto,
+.foto__vertical .foto {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-----------------------Nosotros-----------------------*/
+
+.grid__nosotros {
+    width: 75%;
+    height: 90vh;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    grid-auto-flow: row;
+    grid-template-areas:
+        "baker__2 baker__3 prensa"
+        "baker__2 baker__3 baker__6"
+        "baker__2 baker__3 baker__6"
+        "baker__4 baker__5 baker__6"
+        "baker__4 baker__5 baker__6"
+    ;
+
+    gap: 2%;
+}
+
+.baker__6 {
+    grid-area: baker__6;
+    background-image: url(../fotos_mumi/baker_6.png);
+}
+
+.prensa {
+    grid-area: prensa;
+}
+
+.baker__2 {
+    grid-area: baker__2;
+    background-image: url(../fotos_mumi/baker_2.jpg);
+}
+
+.baker__3 {
+    grid-area: baker__3;
+    background-image: url(../fotos_mumi/baker_3.jpg);
+}
+
+.baker__4 {
+    grid-area: baker__4;
+    background-image: url(../fotos_mumi/baker_4.jpg);
+}
+
+.baker__5 {
+    grid-area: baker__5;
+    background-image: url(../fotos_mumi/baker_5.jpg);
+}
+
+.prensa h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+/*------------------------Contacto-----------------------*/
+.contactos {
+    width: 80%;
+    margin: 5% auto 0% auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 2fr 2fr;
+    grid-auto-flow: column;
+    grid-template-areas:
+        "formulario  horarios"
+        "formulario mapa"
+        "formulario mapa"
+    ;
+
+    gap: 5% 10%;
+}
+
+.contactos .horarios {
+    grid-area: horarios;
+
+}
+
+.contactos .horarios h2 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+
+.contactos .horarios p {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 3% 0%;
+}
+
+.contactos .mapa iframe {
+    width: 100%;
+    height: 45vh;
+    grid-area: mapa;
+    background-image: contain;
+    border: none;
+}
+
+.contactos .formulario {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    grid-area: formulario;
+}
+
+.contactos .formulario form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2% 0%;
+}
+
+.contactos .formulario form label {
+    margin: 2% 0%;
+    text-transform: uppercase;
+}
+
+.contactos .formulario form input {
+    width: 100%;
+    padding: 1%;
+    border: none;
+    background-color: #E9E1F0;
+    font-family: Roboto;
+    color: #8e655e;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.contactos .formulario form textarea {
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 2%;
+    border: none;
+    background-color: #E9E1F0;
+}
+
+/*------------MQ-------------*/
+
+@media (max-width: 1262px) {
+    .header img {
+        padding-right: 10%;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer div {
+        margin: 3% 0%;
+    }
+
+    .grid__container__productos .imagenes h3 {
+        width: 57%;
+        font-size: 12px;
+    }
+
+    .introduccion h2,
+    .introduccion h1 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    /*-----Nosotros----*/
+
+    .grid__nosotros {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1110px) {
+    .servicio {
+        flex-direction: column;
+    }
+
+    .servicio>div {
+        width: 60%;
+        height: 50vh;
+    }
+
+    .fondo__servicio__index .introduccion {
+        padding: 8% 11%;
+    }
+
+    .fondo__servicio__index .introduccion h2 {
+        margin-right: 3%;
+        width: 34%;
+    }
+
+    /*------GRID---Seccion Catering--Seccion Carta-----*/
+
+    .grid__catring__infnatiles,
+    .grid__catring__casamientos,
+    .grid__catring__adultos,
+    .grid__carta__pie,
+    .grid__carta__temporada,
+    .grid__carta__budines,
+    .grid__carta__cheese,
+    .grid__carta__brownies {
+        width: 90%;
+        height: 60vh;
+    }
+
+    .grid__catring__infnatiles h3,
+    .grid__catring__casamientos h3,
+    .grid__catring__adultos h3,
+    .grid__carta__pie h3,
+    .grid__carta__temporada h3,
+    .grid__carta__budines h3,
+    .grid__carta__cheese h3,
+    .grid__carta__brownies h3 {
+        font-size: 14px;
+    }
+
+    /*-----Nosotros----*/
+    .grid__nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+        grid-auto-flow: row;
+        grid-template-areas:
+            "baker__2  prensa"
+            "baker__2  baker__6"
+            "baker__2  baker__6"
+            "baker__4  baker__6"
+            "baker__4  baker__6"
+        ;
+    }
+}
+
+
+
+@media (max-width: 850px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header img {
+        padding-right: 0%;
+    }
+
+    .header nav ul li {
+        text-align: center;
+    }
+
+    .hero h1 {
+        width: 100%;
+        margin-left: 0%;
+        padding: 0% 5%;
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 68px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .introduccion,
+    .fondo__servicio__index .introduccion {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .introduccion h2,
+    .fondo__servicio__index .introduccion h2,
+    .introduccion h1 {
+        width: 100%;
+        margin: 2% 0% 4% 0%;
+        text-align: center;
+        font-size: 26px;
+        line-height: 40px;
+    }
+
+    .introduccion p {
+        width: 100%;
+        margin: 0%;
+    }
+
+    .grid__container__productos {
+        width: 100%;
+        height: 90vh;
+        margin: 2% 1%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+        grid-template-areas:
+            "tarta cheese cheese"
+            "tarta pie budin"
+            "temporada temporada budin"
+            "temporada temporada especiales";
+
+        gap: 10px;
+    }
+
+    .grid__container__inspirate {
+        width: 100%;
+        height: 90vh;
+        margin: 2%;
+
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+
+        grid-template-areas:
+            "desayuno  catering__cumpleaño catering__cumpleaño"
+            "desayuno  torta__infantil muffin"
+        ;
+
+        gap: 10px;
+    }
+
+    /*---box--de--regalo---*/
+    .click {
+        text-shadow: 4px 4px 2px #decbcb;
+        font-family: roboto;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 75px;
+    }
+
+    /*-----contacto----*/
+
+    .contactos {
+        width: 90%;
+        margin: 4% 3% 2% 3%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 2fr;
+
+        grid-template-areas:
+            "horarios"
+            "mapa"
+            "formulario"
+        ;
+
+        gap: 1%;
+    }
+
+    .contactos .formulario {
+        margin: 1% 2%;
+        height: 55vh;
+    }
+
+    .contactos .formulario h3 {
+        margin: 2%;
+    }
+
+    .contactos .horarios {
+        margin-top: 2%;
+    }
+
+    .contactos .mapa iframe {
+        height: 50vh;
+        margin: 2% 2%;
+
+    }
+
+    .contactos .horarios h2 {
+        font-size: 18px;
+        margin-bottom: 4%;
+        text-align: center;
+    }
+
+    .contactos .horarios p {
+        font-size: 14px;
+        text-align: center;
+        margin: 2%;
+    }
+}
+
+
+
+@media (max-width: 650px) {
+
+    /*-----Nosotros----*/
+    .grid__nosotros {
+        width: 100%;
+        height: 100vh;
+        margin: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr 3fr;
+
+        grid-auto-flow: row;
+        grid-template-areas:
+            "baker__2"
+            "prensa"
+            "baker__6"
+        ;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+
+    .header img {
+        padding-right: 8%;
+        padding-left: 8%;
+    }
+
+    p {
+        font-size: 12.5px;
+    }
+
+    .footer h4 {
+        width: 100%;
+        font-size: 12;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        width: 90%;
+        margin: auto;
+        padding: 0%;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 58px;
+    }
+
+    .introduccion h2,
+    .fondo__servicio__index .introduccion h2,
+    .introduccion h1 {
+        width: 100%;
+        margin: 8% 0%;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .grid__container__productos__mobile {
+        width: 100%;
+        height: 60vh;
+        margin: 2% 1%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        grid-template-areas:
+            "tarta cheese "
+            "tarta  especiales"
+        ;
+
+        gap: 5px;
+    }
+
+    .grid__container__productos {
+        width: 100%;
+        height: 60vh;
+        margin: 2% 1%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        grid-template-areas:
+            "budin temporada"
+            "cuadraditos temporada"
+        ;
+        gap: 5px;
+    }
+
+    .grid__container__productos .imagenes h3 {
+        display: none;
+    }
+
+    .servicio>div {
+        width: 80%;
+        height: 40vh;
+    }
+
+    .grid__container__inspirate {
+        width: 100%;
+        height: 60vh;
+        margin: 2% 1%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2 1fr);
+
+
+        grid-template-areas:
+            "catering__cumpleaño catering__cumpleaño"
+            "desayuno muffin"
+        ;
+
+        gap: 5px;
+    }
+
+    /*------GRID---Seccion Catering--Seccion Carta-----*/
+    .grid__catring__infnatiles,
+    .grid__catring__casamientos,
+    .grid__catring__adultos,
+    .grid__carta__pie,
+    .grid__carta__temporada,
+    .grid__carta__budines,
+    .grid__carta__cheese,
+    .grid__carta__brownies {
+        margin: 10% auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+
+
+        grid-template-areas:
+            "texto texto"
+            "foto__vertical foto__horizontal"
+        ;
+    }
+
+    .texto h2 {
+        font-size: 18.5px;
+        line-height: 30px;
+
+    }
+
+    .texto h3 {
+        font-size: 14px;
+        ;
+    }
+
+
+    /*--contacto--*/
+    .horarios h2 {
+        font-size: 14.5px;
+        line-height: 24px;
+        margin: 2% 0%;
+    }
+
+    .contactos .formulario h3 {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 2% 0%;
+    }
+
+    .contactos .formulario form label,
+    .contactos .formulario form input {
+        font-size: 12.5px;
+        line-height: 20px;
+    }
+}
+
+
+
+@media (max-width: 420px) {
+    .footer div h3 {
+        font-size: 12.5px;
+    }
+
+    /*-----Nosotros----*/
+    .grid__nosotros .prensa h2 {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}
