@@ -656,61 +656,8 @@ section .servicio {
 
 /*-----------------------Nosotros-----------------------*/
 
-.grid__nosotros {
-    width: 75%;
-    height: 90vh;
-    margin: 5% auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-
-    grid-auto-flow: row;
-    grid-template-areas:
-        "baker__2 baker__3 prensa"
-        "baker__2 baker__3 baker__6"
-        "baker__2 baker__3 baker__6"
-        "baker__4 baker__5 baker__6"
-        "baker__4 baker__5 baker__6"
-    ;
-
-    gap: 2%;
-}
-
-.baker__6 {
-    grid-area: baker__6;
-    background-image: url(../fotos_mumi/baker_6.png);
-}
-
-.prensa {
-    grid-area: prensa;
-}
-
-.baker__2 {
-    grid-area: baker__2;
-    background-image: url(../fotos_mumi/baker_2.jpg);
-}
-
-.baker__3 {
-    grid-area: baker__3;
-    background-image: url(../fotos_mumi/baker_3.jpg);
-}
-
-.baker__4 {
-    grid-area: baker__4;
-    background-image: url(../fotos_mumi/baker_4.jpg);
-}
-
-.baker__5 {
-    grid-area: baker__5;
-    background-image: url(../fotos_mumi/baker_5.jpg);
-}
-
-.prensa h2 {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-    margin-bottom: 2%;
+.carousel__overlay {
+    background: rgba(238, 217, 217, 0.52);
 }
 
 /*------------------------Contacto----------------------*/
@@ -731,8 +678,7 @@ iframe {
 
 .formulario input,
 .formulario form textarea,
-.formulario button
- {
+.formulario button {
     border: none;
     border-radius: 0%;
     background-color: #E9E1F0;
@@ -740,96 +686,4 @@ iframe {
     font-size: 12.5px;
     text-transform: uppercase;
     letter-spacing: 2px;
-   }
-
-
-/*------------------------Contacto----------------------
-.contactos {
-    width: 80%;
-    height: 80vh;
-    margin: 2% auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5fr 2fr 2fr;
-    grid-auto-flow: column;
-    grid-template-areas:
-        "formulario  horarios"
-        "formulario mapa"
-        "formulario mapa"
-    ;
-
-    gap: 5%;
 }
-
-.contactos .horarios {
-    grid-area: horarios;
-
-}
-
-.contactos .horarios h2,
-.contactos .formulario h2 {
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 2%;
-}
-
-.contactos .horarios p {
-    font-size: 16px;
-    text-transform: uppercase;
-    margin: 3% 0%;
-}
-
-.contactos .mapa iframe {
-    width: 100%;
-    height: 50vh;
-    grid-area: mapa;
-    background-image: contain;
-    border: none;
-}
-
-.contactos .formulario {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    grid-area: formulario;
-}
-
-.contactos .formulario form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 2% 0%;
-}
-
-.contactos .formulario form label {
-    margin: 2% 0%;
-    text-transform: uppercase;
-}
-
-.contactos .formulario form input {
-    width: 100%;
-    padding: 1%;
-    border: none;
-    background-color: #E9E1F0;
-    font-family: Roboto;
-    color: #8e655e;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    text-align: left;
-    text-transform: uppercase;
-}
-
-.contactos .formulario form textarea {
-    width: 100%;
-    padding: 1%;
-    margin-bottom: 2%;
-    border: none;
-    background-color: #E9E1F0;
-}
----*/
