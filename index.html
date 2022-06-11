@@ -11,8 +11,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--BS-->
-<link rel="stylesheet" href="css/bootstrap.css">
+    <!--BS-->
+    <link rel="stylesheet" href="css/bootstrap.css">
 
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -20,18 +20,48 @@
 <body>
 
     <div class="grid__container">
+        <!-- menu -->
         <header class="header">
-            <a href="../index.html"> <img src="fotos_mumi/logo.png" alt="Mumi Bakery"> </a>
-            <nav>
-                <ul>
-                    <li><a href="paginas/contacto.html" Class="hover__contacto"> contacto </a></li>
-                    <li><a href="paginas/nosotros.html" Class="hover__nosotros"> nosotros </a></li>
-                    <li><a href="paginas/catering.html" Class="hover__catering"> catering </a></li>
-                    <li><a href="paginas/a_la_carta.html" Class="hover__a__la__carta"> a la carta </a></li>
-                    <li><a href="paginas/box_de_regalo.html" Class="hover__box__de__regalo"> box de regalo </a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav d-flex flex-column me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item m-1 h6">
+                                <a class="nav-link hover__contacto" href="paginas/contacto.html">contacto</a>
+                            </li>
+                            <li class="nav-item m-1 h6">
+                                <a class="nav-link hover__nosotros" href="paginas/nosotros.html">nosotros</a>
+                            </li>
+                            <li class="nav-item m-1 h6">
+                                <a class="nav-link hover__catering" href="paginas/catering.html">catering</a>
+                            </li>
+                            <li class="nav-item m-1 h6">
+                                <a class="nav-link hover__a__la__carta" href="paginas/a_la_carta.html">a la carta</a>
+                            </li>
+                            <li class="nav-item m-1 h6">
+                                <a class="nav-link hover__box__de__regalo" href="paginas/box_de_regalo.html">box de
+                                    regalo</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a class="navbar-brand" href="index.html">
+                        <img src="fotos_mumi/logo.png" alt="Mumi Bakery" class="img-fluid">
+                    </a>
+
+                </div>
             </nav>
         </header>
+        <!-- fin menu -->
 
 
         <main class="main">
@@ -142,7 +172,7 @@
                 </div>
             </section>
 
-            
+
             <section class="inspirate">
                 <div class="introduccion">
                     <h2> Inspirate con los pedidos de nuestros clientes </h2>
@@ -174,8 +204,8 @@
         </footer>
     </div>
 
-<!--BS-JS-->
-<script src="js/bootstrap.js"></script>
+    <!--BS-JS-->
+    <script src="js/bootstrap.js"></script>
 
 </body>
 
