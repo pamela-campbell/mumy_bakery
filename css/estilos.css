@@ -486,6 +486,10 @@ header---*/
 }
 
 /*------------------------box-de-regalo-----------------------*/
+
+.card {
+    border: none;
+}
 section .introduccion,
 section .servicio {
     background-color: #FFF;
