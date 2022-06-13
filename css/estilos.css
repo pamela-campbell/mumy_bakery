@@ -69,28 +69,54 @@ a {
     line-height: 20px;
     text-decoration: none;
     text-transform: uppercase;
-
 }
 
 .header nav ul li .hover__contacto:hover {
     border-top: #D2EEBB 6px solid;
 }
 
+.header nav ul li .hover__contacto:active {
+    background: linear-gradient(rgba(181, 228, 172, 0.481), rgba(249, 247, 247, 0.481));
+}
+
 .header nav ul li .hover__nosotros:hover {
     border-top: #F6F1C1 6px solid;
+}
+
+.header nav ul li .hover__nosotros:active {
+    background: linear-gradient(rgba(225, 228, 172, 0.481), rgba(249, 247, 247, 0.481));
 }
 
 .header nav ul li .hover__catering:hover {
     border-top: #F6C6C1 6px solid;
 }
 
+.header nav ul li .hover__catering:active {
+    background: linear-gradient(rgba(228, 195, 172, 0.481), rgba(249, 247, 247, 0.481));
+}
+
 .header nav ul li .hover__a__la__carta:hover {
     border-top: #CBDBEE 6px solid;
+}
+
+.header nav ul li .hover__a__la__carta:active {
+    background: linear-gradient(rgba(172, 212, 228, 0.481), rgba(249, 247, 247, 0.481));
 }
 
 .header nav ul li .hover__box__de__regalo:hover {
     border-top: #E9E1F0 6px solid;
 }
+
+.header nav ul li .hover__box__de__regalo:active {
+    background: linear-gradient(rgba(189, 172, 228, 0.481), rgba(249, 247, 247, 0.481));
+}
+
+.header nav ul li a {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
 
 .navbar-toggler {
     border: none;
@@ -261,7 +287,7 @@ a {
 }
 
 .imagenes:hover {
-    transform: scale(0,5.0,5);
+    transform: scale(1.1);
 }
 
 .imagenes h3 {
@@ -797,6 +823,7 @@ iframe {
 
     .hero {
         height: 60vh;
+        background-size: contain;
     }
 
 
