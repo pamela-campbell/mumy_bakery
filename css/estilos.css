@@ -205,7 +205,7 @@ a {
         "temporada temporada budin especiales"
         "temporada temporada cuadraditos especiales";
 
-    gap: 20px;
+    gap: 3% 2%;
 }
 
 .tarta {
@@ -257,6 +257,11 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 1s;
+}
+
+.imagenes:hover {
+    transform: scale(0,5.0,5);
 }
 
 .imagenes h3 {
