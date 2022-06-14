@@ -121,7 +121,7 @@ a {
 .navbar-toggler {
     border: none;
     border-radius: 0;
-    background-color: #F3EBEB;
+    background: linear-gradient(rgba(238, 187, 187, 0.481), rgba(249, 247, 247, 0.481));
 }
 
 
@@ -231,7 +231,7 @@ a {
         "temporada temporada budin especiales"
         "temporada temporada cuadraditos especiales";
 
-    gap: 3% 2%;
+    gap: 3%;
 }
 
 .tarta {
@@ -279,18 +279,25 @@ a {
     background-image: url(../fotos_mumi/testimonio_4.jpg);
 }
 
-.imagenes {
+.imagenes,
+.imagenes__index {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 1s;
+    transition: 3s;
+}
+
+
+.imagenes__index:hover {
+    transform: scale(0.9);
 }
 
 .imagenes:hover {
     transform: scale(1.1);
 }
 
-.imagenes h3 {
+.imagenes h3,
+.imagenes__index h3 {
     width: 50%;
     text-align: left;
     background-color: #decbcba8;
@@ -456,10 +463,59 @@ section .introduccion {
     text-shadow: 4px 4px 2px #decbcb;
 }
 
-/*---------------------Seccion Carta----------------------*/
+/*---------------------Seccion a la Carta----------------------*/
+.cards__combo {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.481), rgba(190, 156, 144, 0.52), rgba(255, 255, 255, 0.481));
+    padding-top: 2%;
+
+}
+
+.cards__combo .titulo__combo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 300;
+    padding: 3% 0%;
+}
+
+.cards__combo>p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3% 0%;
+}
+
+.cards__combo a p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 3%;
+    transition: 1s;
+}
+
+.cards__combo a p:hover {
+    color: #9e6155;
+    padding-bottom: 3%;
+}
+
+
+.card__carta h2 {
+    font-size: 1.5rem;
+    color: #a87261;
+}
+
+.card__carta ul li {
+    font-family: inter;
+    font-size: 16px;
+    padding: 2% 0%;
+}
+
 .card__carta__titulo h4 {
     font-family: roboto;
     letter-spacing: 2px;
+    color: #c07d6f;
 }
 
 .card__color {
@@ -475,6 +531,14 @@ section .introduccion {
 
 .card__carta button:hover {
     background-color: #cea992;
+}
+
+.animacion__card {
+    transition: 1s;
+}
+
+.animacion__card:hover {
+    transform: scale(1.1);
 }
 
 /*---------------------GRID---Seccion Catering--Seccion Carta----------------------*/
@@ -668,7 +732,7 @@ iframe {
         margin: 3% 0%;
     }
 
-    .grid__container__productos .imagenes h3 {
+    .grid__container__productos .imagenes__index h3 {
         width: 57%;
         font-size: 12px;
     }
@@ -721,18 +785,10 @@ iframe {
     }
 }
 
-/*-------------------------TABLET------------------------------*/
 
-@media (max-width: 850px) {
-
-    .hero .titulo__animado {
-        width: 100%;
-        margin-left: 0%;
-        padding: 0% 5%;
-    }
-
+@media (max-width:992px) {
     p {
-        font-size: 13px;
+        font-size: 13.5px;
     }
 
     .introduccion,
@@ -751,6 +807,32 @@ iframe {
         text-align: center;
         font-size: 26px;
         line-height: 40px;
+    }
+
+    .introduccion p {
+        width: 100%;
+        margin: 0%;
+        padding: 0% 5%;
+    }
+
+    /*---Seccion a la Carta---*/
+    .cards__combo a p {
+        padding-bottom: 10%;
+    }
+}
+
+/*-------------------------TABLET------------------------------*/
+
+@media (max-width: 850px) {
+
+    .hero .titulo__animado {
+        width: 100%;
+        margin-left: 0%;
+        padding: 0% 5%;
+    }
+
+    p {
+        font-size: 13px;
     }
 
     .introduccion p {
@@ -795,7 +877,6 @@ iframe {
         gap: 10px;
     }
 
-
     /*---box--de--regalo---*/
     .click {
         text-shadow: 4px 4px 2px #decbcb;
@@ -804,14 +885,44 @@ iframe {
         font-weight: 600;
         line-height: 75px;
     }
+
+    /*-----Seccion Carta-----*/
+    .cards__combo .titulo__combo {
+        font-size: 27px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    /*-----Seccion Carta-----*/
+    .cards__combo>p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    /*-----menu logo-----*/
+    .logo__menu {
+        width: 450px;
+    }
+}
+
+/*-----menu logo-----*/
+@media (max-width: 555px) {
+    .logo__menu {
+        width: 400px;
+    }
 }
 
 /*-------------------------PHONES------------------------------*/
 @media (max-width: 500px) {
 
-
     p {
         font-size: 12.5px;
+    }
+
+    .logo__menu {
+        width: 300px;
     }
 
     .footer h4 {
@@ -823,7 +934,7 @@ iframe {
 
     .hero {
         height: 60vh;
-        background-size: contain;
+        background-size: cover;
     }
 
 
@@ -874,7 +985,7 @@ iframe {
         gap: 5px;
     }
 
-    .grid__container__productos .imagenes h3 {
+    .grid__container__productos .imagenes__index h3 {
         display: none;
     }
 
@@ -925,10 +1036,21 @@ iframe {
     .texto h3 {
         font-size: 14px;
     }
+
+    /*---seccion carta----*/
+    .cards__combo>p {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
 }
 
 
 @media (max-width: 420px) {
+
+    .logo__menu {
+        width: 275px;
+    }
+
     .hero .titulo__animado {
         font-size: 35px;
         line-height: 68px;

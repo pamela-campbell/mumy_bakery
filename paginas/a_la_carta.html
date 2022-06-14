@@ -21,7 +21,7 @@
         <!-- menu -->
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                <div class="container-fluid">
+                <div class="container-fluid d-flex justify-content-between">
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -50,11 +50,11 @@
                             </li>
                         </ul>
                     </div>
-
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../fotos_mumi/logo.png" alt="Mumi Bakery" class="img-fluid">
-                    </a>
-
+                    <div class="logo__menu">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../fotos_mumi/logo.png" alt="Mumi Bakery" class="img-fluid logo__menu">
+                        </a>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -140,22 +140,24 @@
                 </div>
             </section>
 
-            <section>
-                <!-----precios-- comienzo--->
-                <div class="container-lg">
-                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center my-3">
+            <section class="cards__combo">
+                <h2 class="mt-5 titulo__combo">Elegí tu Combo </h2>
 
-                        <div class="col">
+                <!-----precios-- comienzo--->
+                <div class="container-md mt-5">
+                    <div class="row row-cols-1 row-cols-lg-3 my-5 text-center my-3">
+
+                        <div class="col animacion__card">
                             <div class="card mb-4 rounded-3 shadow-sm card__color">
-                                <div class="card-header py-3 card__carta__titulo">
-                                    <h4 class="my-0 fw-normal text-uppercase h4">Combo simple</h4>
+                                <div class="card-header py-5  card__carta__titulo">
+                                    <h4 class="my-0 fw-bold text-uppercase h4">Combo simple</h4>
                                 </div>
                                 <div class="card-body card__carta">
                                     <h2 class="card-title pricing-card-title">$1200</h2>
                                     <ul class="list-unstyled mt-3 mb-4">
                                         <li>Budin</li>
-                                        <li>6 cuadraditos</li>
-                                        <li>3 porciones de brownies</li>
+                                        <li>Cuadraditos 6u.</li>
+                                        <li>Porciones de brownies 3u.</li>
                                     </ul>
                                     <button type="button" class="w-100 btn btn-lg btn-outline-primary">¡lo
                                         quiero!</button>
@@ -163,17 +165,17 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col animacion__card">
                             <div class="card mb-4 rounded-3 shadow-sm card__color">
-                                <div class="card-header py-3 card__carta__titulo">
-                                    <h4 class="my-0 fw-normal text-uppercase h4">Combo juntadas</h4>
+                                <div class="card-header py-5 card__carta__titulo">
+                                    <h4 class="my-0 fw-bold text-uppercase h4">Combo juntadas</h4>
                                 </div>
                                 <div class="card-body card__carta">
                                     <h2 class="card-title pricing-card-title">$1800</h2>
                                     <ul class="list-unstyled mt-3 mb-4">
                                         <li>Cheese cake</li>
-                                        <li>4 mini pies</li>
-                                        <li>4 cuadraditos</li>
+                                        <li>Mini pies 4u.</li>
+                                        <li>Cuadraditos 4u.</li>
                                     </ul>
                                     <button type="button" class="w-100 btn btn-lg btn-outline-primary">¡lo
                                         quiero!</button>
@@ -182,17 +184,18 @@
                         </div>
 
 
-                        <div class="col">
+                        <div class="col animacion__card">
                             <div class="card mb-4 rounded-3 shadow-sm card__color">
-                                <div class="card-header py-3 card__carta__titulo">
-                                    <h4 class="my-0 fw-normal text-uppercase h4">A la carta</h4>
+
+                                <div class="card-header py-5 card__carta__titulo">
+                                    <h4 class="my-0 fw-bold text-uppercase h4">A la carta</h4>
                                 </div>
                                 <div class="card-body card__carta">
                                     <h2 class="card-title pricing-card-title">$2300</h2>
                                     <ul class="list-unstyled mt-3 mb-4">
                                         <li>Torta de temporada</li>
                                         <li>Cheese cake o Pie</li>
-                                        <li>6 porciones a elección</li>
+                                        <li>Porciones a elección 6u.</li>
                                     </ul>
                                     <button type="button" class="w-100 btn btn-lg btn-outline-primary">¡lo
                                         quiero!</button>
@@ -202,6 +205,10 @@
                     </div>
                 </div>
                 <!-----precios-- fin--->
+                <p>Si tenes más de 6 invitados, mirá nuestra sección de catering</p>
+                <a href="catering.html">
+                    <p>Sí, llevame</p>
+                </a>
             </section>
 
         </main>
