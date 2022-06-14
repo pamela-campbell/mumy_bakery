@@ -231,7 +231,7 @@ a {
         "temporada temporada budin especiales"
         "temporada temporada cuadraditos especiales";
 
-    gap: 3%;
+    gap: 20px;
 }
 
 .tarta {
@@ -709,6 +709,14 @@ iframe {
     font-size: 12.5px;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.formulario button {
+    transition: 1s;
+}
+
+.formulario button:hover {
+    transform: scale(1.1);
 }
 
 /*------------MQ-------------*/
