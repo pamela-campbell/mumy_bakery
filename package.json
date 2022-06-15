@@ -1,0 +1,19 @@
+{
+  "name": "mumi_bakery",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Pamela</h1>\r <h3 align=\"center\">A passionate student frontend developer from Argentina</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pamela-campbell/mumy_bakery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pamela-campbell/mumy_bakery/issues"
+  },
+  "homepage": "https://github.com/pamela-campbell/mumy_bakery#readme"
+}
