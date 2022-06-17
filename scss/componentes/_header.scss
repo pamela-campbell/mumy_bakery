@@ -1,0 +1,73 @@
+.header {
+    grid-area: header;
+
+    nav {
+        background-color: #ffffff;
+
+        div {
+            .navbar-toggler {
+                border: none;
+                border-radius: 0;
+                background: linear-gradient(rgba(238, 187, 187, 0.481), rgba(249, 247, 247, 0.481));
+            }
+
+            div {
+                ul {
+                    li {
+                        text-align: end;
+
+                        & .hover__contacto:hover {
+                            border-top: #D2EEBB 6px solid;
+                        }
+
+                        & .hover__contacto:active {
+                            background: linear-gradient(rgba(181, 228, 172, 0.481), rgba(249, 247, 247, 0.481));
+                        }
+
+                        & .hover__nosotros:hover {
+                            border-top: #F6F1C1 6px solid;
+                        }
+
+                        & .hover__nosotros:active {
+                            background: linear-gradient(rgba(225, 228, 172, 0.481), rgba(249, 247, 247, 0.481));
+                        }
+
+                        & .hover__catering:hover {
+                            border-top: #F6C6C1 6px solid;
+                        }
+
+                        & .hover__catering:active {
+                            background: linear-gradient(rgba(228, 195, 172, 0.481), rgba(249, 247, 247, 0.481));
+                        }
+
+                        & .hover__a__la__carta:hover {
+                            border-top: #CBDBEE 6px solid;
+                        }
+
+                        & .hover__a__la__carta:active {
+                            background: linear-gradient(rgba(172, 212, 228, 0.481), rgba(249, 247, 247, 0.481));
+                        }
+
+                        & .hover__box__de__regalo:hover {
+                            border-top: #E9E1F0 6px solid;
+                        }
+
+                        & .hover__box__de__regalo:active {
+                            background: linear-gradient(rgba(189, 172, 228, 0.481), rgba(249, 247, 247, 0.481));
+                        }
+
+                        a {
+                            font-weight: 400;
+                            line-height: 20px;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            transition-property: all;
+                            transition-duration: 0.5s;
+                            transition-timing-function: linear;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

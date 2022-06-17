@@ -1,0 +1,35 @@
+.footer {
+    background-color: #FFFAFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5% 7% 1% 7%;
+    grid-area: footer;
+
+
+
+    h4 {
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    p {
+        font-size: 12px;
+    }
+}

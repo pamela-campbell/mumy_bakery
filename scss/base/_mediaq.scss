@@ -1,0 +1,211 @@
+/*-------------------------DESKTOP------------------------------*/
+@media (max-width: 1262px) {
+
+    .footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            margin: 3% 0%;
+        }
+    }
+
+    .main {
+        .introduccion {
+            h1 {
+                font-size: 24px;
+                line-height: 34px;
+            }
+
+            h2 {
+                font-size: 24px;
+                line-height: 34px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1110px) {
+    .main {
+        .introduccion {
+            padding: 8% 11%;
+
+            h2 {
+                margin-right: 3%;
+                width: 34%;
+            }
+        }
+
+        .grid__catring__infnatiles,
+        .grid__catring__casamientos,
+        .grid__catring__adultos {
+            width: 90%;
+            height: 60vh;
+
+            h3 {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .grid__container {
+        p {
+            font-size: 13.5px;
+        }
+    }
+
+    .main {
+
+        .introduccion,
+        .fondo__servicio__index .introduccion {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5%;
+
+            h2,
+            h1 {
+                width: 100%;
+                margin: 2% 0% 4% 0%;
+                text-align: center;
+                font-size: 26px;
+                line-height: 40px;
+            }
+
+            p {
+                width: 100%;
+                margin: 0%;
+                padding: 0% 5%;
+            }
+        }
+    }
+}
+
+/*-------------------------TABLET------------------------------*/
+@media (max-width: 850px) {
+    .grid__container {
+        p {
+            font-size: 13px;
+            width: 100%;
+            margin: 0%;
+        }
+    }
+
+    .footer {
+
+        h4,
+        p {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+
+    .header {
+        .logo__menu {
+            width: 450px;
+        }
+    }
+
+}
+
+@media (max-width: 555px) {
+
+    .header {
+        .logo__menu {
+            width: 400px;
+        }
+    }
+}
+
+
+/*-------------------------PHONES------------------------------*/
+@media (max-width: 500px) {
+    .grid__container {
+        p {
+            font-size: 12.5px;
+        }
+    }
+
+    .header {
+        .logo__menu {
+            width: 300px;
+        }
+    }
+
+    .footer {
+        h4 {
+            width: 100%;
+            font-size: 12;
+            text-align: center;
+            margin-bottom: 3%;
+        }
+    }
+
+    .main {
+
+        .introduccion,
+        .fondo__servicio__index {
+
+            h2,
+            h1 {
+                width: 100%;
+                margin: 8% 0%;
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+
+        .grid__catring__infnatiles,
+        .grid__catring__casamientos,
+        .grid__catring__adultos,
+        .grid__carta__pie,
+        .grid__carta__temporada,
+        .grid__carta__budines,
+        .grid__carta__cheese,
+        .grid__carta__brownies {
+            margin: 10% auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 2fr;
+
+
+            grid-template-areas:
+                "texto texto"
+                "foto__vertical foto__horizontal"
+            ;
+
+            .texto {
+                h2 {
+                    font-size: 18.5px;
+                    line-height: 30px;
+                }
+
+                h3 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .header {
+        .logo__menu {
+            width: 275px;
+        }
+    }
+
+    .footer {
+        div {
+            h3 {
+                font-size: 12.5px;
+            }
+        }
+    }
+}

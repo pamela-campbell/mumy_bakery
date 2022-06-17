@@ -1,0 +1,37 @@
+.main {
+    .introduccion {
+        width: 100%;
+        background-color: $color-principal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 8% 11%;
+
+        h1 {
+            font-family: Inter;
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 44px;
+            text-transform: uppercase;
+            text-align: left;
+            margin-right: 3%;
+            width: 36%;
+        }
+
+        h2 {
+            font-family: Inter;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 40px;
+            text-transform: uppercase;
+            text-align: left;
+            margin-right: 3%;
+            width: 34%;
+        }
+
+        p {
+            width: 60%;
+        }
+    }
+}
