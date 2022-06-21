@@ -1,0 +1,38 @@
+.horarios {
+    iframe {
+        width: 100%;
+        height: 50vh;
+        grid-area: mapa;
+        background-image: contain;
+        border: none;
+    }
+}
+
+.formulario {
+
+    label {
+        font-size: 14px;
+        text-transform: uppercase;
+
+    }
+
+    input,
+    form textarea,
+    button {
+        border: none;
+        border-radius: 0%;
+        background-color: #E9E1F0;
+        font-family: Roboto;
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    button {
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
