@@ -9600,6 +9600,20 @@ textarea.form-control-lg {
   transition-timing-function: linear;
 }
 
+.main .fondo__servicio__index .introduccion, .fondo__servicio__index .main .cards__servicio .introduccion {
+  padding: 8% 2% 2% 2%;
+  margin: 0%;
+}
+.main .fondo__servicio__index .introduccion h2, .fondo__servicio__index .main .cards__servicio .introduccion h2, .main .fondo__servicio__index .introduccion .h2, .fondo__servicio__index .main .cards__servicio .introduccion .h2 {
+  margin-right: 0%;
+  width: 40%;
+}
+.main .productos .introduccion {
+  background-color: #ffffff;
+}
+.main .inspirate .introduccion {
+  background-color: #ffffff;
+}
 .main .introduccion {
   width: 100%;
   background-color: #F3EBEB;
@@ -9631,6 +9645,189 @@ textarea.form-control-lg {
 }
 .main .introduccion p {
   width: 60%;
+}
+
+.footer {
+  background-color: #FFFAFA;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5% 7% 1% 7%;
+  grid-area: footer;
+}
+.footer h4, .footer .h4 {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer div img {
+  width: 30px;
+  height: 30px;
+}
+.footer p {
+  font-size: 12px;
+}
+
+/*----HERO----*/
+.main .hero {
+  background: linear-gradient(rgba(152, 120, 120, 0.52), rgba(255, 255, 255, 0.481)), url(../fotos_mumi/main_product.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: calc(100vh - 233px);
+}
+.main .hero .titulo__animado {
+  width: 40%;
+  font-family: roboto;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 98px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: justify;
+  padding: 2%;
+  margin-left: 7%;
+  background-image: linear-gradient(to right, #D6A4A4, #e1edb5, #b78484, #f4c789);
+  text-decoration: underline 20px rgba(255, 255, 255, 0.412);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  background-position: -200%;
+  animation-name: titulo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes titulo {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+/*---productos---*/
+.main .grid__container__productos__mobile {
+  display: none;
+}
+
+.grid__container__productos {
+  width: 78%;
+  height: 100vh;
+  margin: 0% auto 5% auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "tarta cheese cheese pie" "tarta frutas budin porciones" "temporada temporada budin especiales" "temporada temporada cuadraditos especiales";
+  gap: 20px;
+}
+.grid__container__productos .tarta {
+  grid-area: tarta;
+  background-image: url(../fotos_mumi/prodctos_1.jpg);
+}
+.grid__container__productos .cheese {
+  grid-area: cheese;
+  background-image: url(../fotos_mumi/prodctos_2.jpg);
+}
+.grid__container__productos .especiales {
+  grid-area: especiales;
+  background-image: url(../fotos_mumi/prodctos_3.jpg);
+}
+.grid__container__productos .budin {
+  grid-area: budin;
+  background-image: url(../fotos_mumi/prodctos_4.jpg);
+}
+.grid__container__productos .temporada {
+  grid-area: temporada;
+  background-image: url(../fotos_mumi/prodctos_5.jpg);
+}
+.grid__container__productos .pie {
+  grid-area: pie;
+  background-image: url(../fotos_mumi/prodctos_6.jpg);
+}
+.grid__container__productos .frutas {
+  grid-area: frutas;
+  background-image: url(../fotos_mumi/funciona_2.jpg);
+}
+.grid__container__productos .porciones {
+  grid-area: porciones;
+  background-image: url(../fotos_mumi/funciona_3.jpg);
+}
+.grid__container__productos .cuadraditos {
+  grid-area: cuadraditos;
+  background-image: url(../fotos_mumi/testimonio_4.jpg);
+}
+.grid__container__productos .imagenes__index {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 3s;
+}
+.grid__container__productos .imagenes__index:hover {
+  transform: scale(0.9);
+}
+.grid__container__productos .imagenes__index h3, .grid__container__productos .imagenes__index .h3 {
+  width: 50%;
+  text-align: left;
+  background-color: rgba(222, 203, 203, 0.6588235294);
+  padding: 2%;
+}
+
+/*---servicio---*/
+.fondo__servicio__index, .fondo__servicio__index .cards__servicio {
+  background-color: #F3EBEB;
+}
+.fondo__servicio__index .card {
+  border: none;
+}
+
+/*---inspirate---*/
+.grid__container__inspirate {
+  width: 78%;
+  height: 60vh;
+  margin: 0% auto 5% auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "torta__donut muffin muffin desayuno" "torta__donut torta__infantil catering__cumpleaño desayuno";
+  gap: 20px;
+}
+.grid__container__inspirate .torta__donut {
+  grid-area: torta__donut;
+  background-image: url(../fotos_mumi/testimonio_2.jpg);
+}
+.grid__container__inspirate .muffin {
+  grid-area: muffin;
+  background-image: url(../fotos_mumi/testimonio_3.jpg);
+}
+.grid__container__inspirate .desayuno {
+  grid-area: desayuno;
+  background-image: url(../fotos_mumi/testimonio_1.jpg);
+}
+.grid__container__inspirate .torta__infantil {
+  grid-area: torta__infantil;
+  background-image: url(../fotos_mumi/testimonio_6.jpg);
+}
+.grid__container__inspirate .catering__cumpleaño {
+  grid-area: catering__cumpleaño;
+  background-image: url(../fotos_mumi/testimonio_5.jpg);
 }
 
 /*---------------------GRID---Seccion Catering----------------------*/
@@ -9737,36 +9934,6 @@ textarea.form-control-lg {
 }
 .main .grid__catring__adultos .texto h3, .main .grid__catring__adultos .texto .h3 {
   text-align: left;
-}
-
-.footer {
-  background-color: #FFFAFA;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 5% 7% 1% 7%;
-  grid-area: footer;
-}
-.footer h4, .footer .h4 {
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 18px;
-  text-align: left;
-  text-transform: uppercase;
-}
-.footer div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.footer div img {
-  width: 30px;
-  height: 30px;
-}
-.footer p {
-  font-size: 12px;
 }
 
 /*-------------------------DESKTOP------------------------------*/
@@ -9879,9 +10046,13 @@ textarea.form-control-lg {
 .main .introduccion h1,
 .main .introduccion .h1,
 .main .fondo__servicio__index h2,
+.fondo__servicio__index .main .cards__servicio h2,
 .main .fondo__servicio__index .h2,
+.fondo__servicio__index .main .cards__servicio .h2,
 .main .fondo__servicio__index h1,
-.main .fondo__servicio__index .h1 {
+.fondo__servicio__index .main .cards__servicio h1,
+.main .fondo__servicio__index .h1,
+.fondo__servicio__index .main .cards__servicio .h1 {
     width: 100%;
     margin: 8% 0%;
     font-size: 24px;

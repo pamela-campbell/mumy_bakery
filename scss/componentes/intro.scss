@@ -1,7 +1,36 @@
 .main {
+
+    .fondo__servicio__index {
+
+        .introduccion {
+            padding: 8% 2% 2% 2%;
+            margin: 0%;
+
+            h2 {
+                margin-right: 0%;
+                width: 40%;
+            }
+        }
+    }
+
+
+    .productos {
+
+        .introduccion {
+            background-color: $fondo-secundario;
+        }
+    }
+
+    .inspirate {
+        .introduccion {
+            background-color: $fondo-secundario;
+        }
+    }
+
+
     .introduccion {
         width: 100%;
-        background-color: $color-principal;
+        background-color: $fondo-principal;
         display: flex;
         justify-content: center;
         align-items: center;
