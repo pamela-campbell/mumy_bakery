@@ -9965,6 +9965,146 @@ main .card {
   text-align: left;
 }
 
+/*--------GRID---------*/
+.a__la__carta .grid__carta__pie,
+.a__la__carta .grid__carta__temporada,
+.a__la__carta .grid__carta__budines,
+.a__la__carta .grid__carta__cheese,
+.a__la__carta .grid__carta__brownies {
+  width: 70%;
+  height: 60vh;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "foto__vertical texto" "foto__vertical  foto__horizontal";
+  gap: 5%;
+}
+.a__la__carta .texto {
+  grid-area: texto;
+}
+.a__la__carta .texto h2, .a__la__carta .texto .h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+}
+.a__la__carta .texto h3, .a__la__carta .texto .h3 {
+  text-align: left;
+}
+.a__la__carta .grid__carta__pie .foto__vertical {
+  grid-area: foto__vertical;
+  background-image: url(../fotos_mumi/prodctos_6.jpg);
+}
+.a__la__carta .grid__carta__pie .foto__horizontal {
+  grid-area: foto__horizontal;
+  background-image: url(../fotos_mumi/prodctos_1.jpg);
+}
+.a__la__carta .grid__carta__temporada .foto__vertical {
+  grid-area: foto__vertical;
+  background-image: url(../fotos_mumi/prodctos_5.jpg);
+}
+.a__la__carta .grid__carta__temporada .foto__horizontal {
+  grid-area: foto__horizontal;
+  background-image: url(../fotos_mumi/funciona_2.jpg);
+}
+.a__la__carta .grid__carta__budines .foto__vertical {
+  grid-area: foto__vertical;
+  background-image: url(../fotos_mumi/prodctos_4.jpg);
+}
+.a__la__carta .grid__carta__budines .foto__horizontal {
+  grid-area: foto__horizontal;
+  background-image: url(../fotos_mumi/budin_2.jpg);
+}
+.a__la__carta .grid__carta__cheese .foto__vertical {
+  grid-area: foto__vertical;
+  background-image: url(../fotos_mumi/prodctos_2.jpg);
+}
+.a__la__carta .grid__carta__cheese .foto__horizontal {
+  grid-area: foto__horizontal;
+  background-image: url(../fotos_mumi/funciona_3.jpg);
+}
+.a__la__carta .grid__carta__brownies .foto__vertical {
+  grid-area: foto__vertical;
+  background-image: url(../fotos_mumi/brownies.jpg);
+}
+.a__la__carta .grid__carta__brownies .foto__horizontal {
+  grid-area: foto__horizontal;
+  background-image: url(../fotos_mumi/testimonio_4.jpg);
+}
+.a__la__carta .foto__horizontal .foto,
+.a__la__carta .foto__vertical .foto {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*-------Precios---------*/
+.cards__combo {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.481), rgba(190, 156, 144, 0.52), rgba(255, 255, 255, 0.481));
+  padding-top: 2%;
+}
+.cards__combo .titulo__combo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 300;
+  padding: 3% 0%;
+}
+.cards__combo p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 3% 0%;
+}
+.cards__combo a p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 3%;
+  transition: 1s;
+}
+.cards__combo a p:hover {
+  color: #9e6155;
+  padding-bottom: 3%;
+}
+.cards__combo .animacion__card {
+  transition: 1s;
+}
+.cards__combo .animacion__card:hover {
+  transform: scale(1.1);
+}
+.cards__combo .animacion__card .card__color {
+  background-color: #f9f0f0;
+}
+.cards__combo .animacion__card .card__color .card__carta__titulo h4, .cards__combo .animacion__card .card__color .card__carta__titulo .h4 {
+  font-family: roboto;
+  letter-spacing: 2px;
+  color: #c07d6f;
+}
+.cards__combo .animacion__card .card__color .card__carta h2, .cards__combo .animacion__card .card__color .card__carta .h2 {
+  font-size: 1.5rem;
+  color: #a87261;
+}
+.cards__combo .animacion__card .card__color .card__carta ul li {
+  font-family: inter;
+  font-size: 16px;
+  padding: 2% 0%;
+}
+.cards__combo .animacion__card .card__color .card__carta button {
+  background-color: #dde8f0;
+  border: none;
+  color: #262626;
+  font-size: 1rem;
+}
+.cards__combo .animacion__card .card__color .card__carta button:hover {
+  background-color: #cea992;
+}
+
 .carousel-inner .carousel__overlay {
   background: rgba(238, 217, 217, 0.52);
 }
@@ -10009,6 +10149,10 @@ main .card {
   .footer div {
     margin: 3% 0%;
   }
+  .main .hero .titulo__animado {
+    font-size: 55px;
+    line-height: 75px;
+  }
   .main .introduccion h1, .main .introduccion .h1 {
     font-size: 24px;
     line-height: 34px;
@@ -10017,26 +10161,48 @@ main .card {
     font-size: 24px;
     line-height: 34px;
   }
+  .main .productos .grid__container__productos .imagenes__index h3, .main .productos .grid__container__productos .imagenes__index .h3 {
+    width: 57%;
+    font-size: 12px;
+  }
 }
 @media (max-width: 1110px) {
-  .main .introduccion {
+  .main .hero .titulo__animado {
+    width: 50%;
+  }
+  .main .hero .fondo__servicio__index .introduccion, .fondo__servicio__index .main .hero .cards__servicio .introduccion {
     padding: 8% 11%;
   }
-  .main .introduccion h2, .main .introduccion .h2 {
+  .main .hero .fondo__servicio__index .introduccion h2, .fondo__servicio__index .main .hero .cards__servicio .introduccion h2, .main .hero .fondo__servicio__index .introduccion .h2, .fondo__servicio__index .main .hero .cards__servicio .introduccion .h2 {
     margin-right: 3%;
     width: 34%;
   }
-  .main .grid__catring__infnatiles,
-.main .grid__catring__casamientos,
-.main .grid__catring__adultos {
+  .main .hero .grid__catring__infnatiles,
+.main .hero .grid__catring__casamientos,
+.main .hero .grid__catring__adultos,
+.main .hero .grid__carta__pie,
+.main .hero .grid__carta__temporada,
+.main .hero .grid__carta__budines,
+.main .hero .grid__carta__cheese,
+.main .hero .grid__carta__brownies {
     width: 90%;
     height: 60vh;
   }
-  .main .grid__catring__infnatiles h3, .main .grid__catring__infnatiles .h3,
-.main .grid__catring__casamientos h3,
-.main .grid__catring__casamientos .h3,
-.main .grid__catring__adultos h3,
-.main .grid__catring__adultos .h3 {
+  .main .hero .grid__catring__infnatiles h3, .main .hero .grid__catring__infnatiles .h3,
+.main .hero .grid__catring__casamientos h3,
+.main .hero .grid__catring__casamientos .h3,
+.main .hero .grid__catring__adultos h3,
+.main .hero .grid__catring__adultos .h3,
+.main .hero .grid__carta__pie h3,
+.main .hero .grid__carta__pie .h3,
+.main .hero .grid__carta__temporada h3,
+.main .hero .grid__carta__temporada .h3,
+.main .hero .grid__carta__budines h3,
+.main .hero .grid__carta__budines .h3,
+.main .hero .grid__carta__cheese h3,
+.main .hero .grid__carta__cheese .h3,
+.main .hero .grid__carta__brownies h3,
+.main .hero .grid__carta__brownies .h3 {
     font-size: 14px;
   }
 }
@@ -10068,6 +10234,9 @@ main .card {
     margin: 0%;
     padding: 0% 5%;
   }
+  .main .cards__combo a p {
+    padding-bottom: 10%;
+  }
 }
 /*-------------------------TABLET------------------------------*/
 @media (max-width: 850px) {
@@ -10075,6 +10244,41 @@ main .card {
     font-size: 13px;
     width: 100%;
     margin: 0%;
+  }
+  .main .hero .titulo__animado {
+    width: 100%;
+    margin-left: 0%;
+    padding: 0% 5%;
+  }
+  .main .productos .grid__container__productos {
+    width: 100%;
+    height: 90vh;
+    margin: 2% 1%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "tarta cheese cheese" "tarta pie budin" "temporada temporada budin" "temporada temporada especiales";
+    gap: 10px;
+  }
+  .main .inspirate .grid__container__inspirate {
+    width: 100%;
+    height: 90vh;
+    margin: 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "desayuno catering__cumpleaño catering__cumpleaño" "desayuno torta__infantil muffin";
+    gap: 10px;
+  }
+  .main .click {
+    text-shadow: 4px 4px 2px #decbcb;
+    font-family: roboto;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 75px;
+  }
+  .main .cards__combo .titulo__combo {
+    font-size: 27px;
   }
   .footer h4, .footer .h4,
 .footer p {
@@ -10084,6 +10288,20 @@ main .card {
 @media (max-width: 700px) {
   .header .logo__menu {
     width: 450px;
+  }
+  .main .cards__combo p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .main .grid__catring__infnatiles,
+.main .grid__catring__casamientos,
+.main .grid__catring__adultos,
+.main .grid__carta__pie,
+.main .grid__carta__temporada,
+.main .grid__carta__budines,
+.main .grid__carta__cheese,
+.main .grid__carta__brownies {
+    width: 97%;
   }
 }
 @media (max-width: 555px) {
@@ -10104,6 +10322,72 @@ main .card {
     font-size: 12;
     text-align: center;
     margin-bottom: 3%;
+  }
+  .main .hero {
+    height: 60vh;
+    background-size: cover;
+  }
+  .main .hero .titulo__animado {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 68px;
+  }
+  .main .grid__container__productos__mobile {
+    width: 100%;
+    height: 60vh;
+    margin: 2% 1%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "tarta cheese " "tarta especiales";
+    gap: 5px;
+  }
+  .main .grid__container__productos__mobile .tarta {
+    grid-area: tarta;
+    background-image: url(../fotos_mumi/prodctos_1.jpg);
+  }
+  .main .grid__container__productos__mobile .cheese {
+    grid-area: cheese;
+    background-image: url(../fotos_mumi/prodctos_2.jpg);
+  }
+  .main .grid__container__productos__mobile .especiales {
+    grid-area: especiales;
+    background-image: url(../fotos_mumi/prodctos_3.jpg);
+  }
+  .main .productos .grid__container__productos {
+    width: 100%;
+    height: 60vh;
+    margin: 2% 1%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "budin temporada" "cuadraditos temporada";
+    gap: 5px;
+  }
+  .main .productos .grid__container__productos .imagenes__index h3, .main .productos .grid__container__productos .imagenes__index .h3 {
+    display: none;
+  }
+  .main .productos .grid__container__productos .budin {
+    grid-area: budin;
+    background-image: url(../fotos_mumi/prodctos_4.jpg);
+  }
+  .main .productos .grid__container__productos .temporada {
+    grid-area: temporada;
+    background-image: url(../fotos_mumi/prodctos_5.jpg);
+  }
+  .main .productos .grid__container__productos .cuadraditos {
+    grid-area: cuadraditos;
+    background-image: url(../fotos_mumi/testimonio_4.jpg);
+  }
+  .main .inspirate .grid__container__inspirate {
+    width: 100%;
+    height: 60vh;
+    margin: 2% 1%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2 1fr);
+    grid-template-areas: "catering__cumpleaño catering__cumpleaño" "desayuno muffin";
+    gap: 5px;
   }
   .main .introduccion h2, .main .introduccion .h2,
 .main .introduccion h1,
@@ -10170,10 +10454,19 @@ main .card {
 .main .grid__carta__brownies .texto .h3 {
     font-size: 14px;
   }
+  .cards__combo p {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }
 @media (max-width: 420px) {
   .header .logo__menu {
     width: 275px;
+  }
+  .main .hero .titulo__animado {
+    font-size: 35px;
+    line-height: 68px;
+    text-decoration: none;
   }
   .footer div h3, .footer div .h3 {
     font-size: 12.5px;

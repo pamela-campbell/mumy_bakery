@@ -12,6 +12,14 @@
     }
 
     .main {
+        .hero {
+            .titulo__animado {
+                font-size: 55px;
+                line-height: 75px;
+            }
+
+        }
+
         .introduccion {
             h1 {
                 font-size: 24px;
@@ -23,29 +31,55 @@
                 line-height: 34px;
             }
         }
+
+        .productos {
+            .grid__container__productos {
+                .imagenes__index {
+                    h3 {
+                        width: 57%;
+                        font-size: 12px;
+                    }
+
+                }
+            }
+
+        }
     }
 }
 
 
 @media (max-width: 1110px) {
     .main {
-        .introduccion {
-            padding: 8% 11%;
-
-            h2 {
-                margin-right: 3%;
-                width: 34%;
+        .hero {
+            .titulo__animado {
+                width: 50%;
             }
-        }
 
-        .grid__catring__infnatiles,
-        .grid__catring__casamientos,
-        .grid__catring__adultos {
-            width: 90%;
-            height: 60vh;
+            .fondo__servicio__index {
+                .introduccion {
+                    padding: 8% 11%;
 
-            h3 {
-                font-size: 14px;
+                    h2 {
+                        margin-right: 3%;
+                        width: 34%;
+                    }
+                }
+            }
+
+            .grid__catring__infnatiles,
+            .grid__catring__casamientos,
+            .grid__catring__adultos,
+            .grid__carta__pie,
+            .grid__carta__temporada,
+            .grid__carta__budines,
+            .grid__carta__cheese,
+            .grid__carta__brownies {
+                width: 90%;
+                height: 60vh;
+
+                h3 {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -82,6 +116,15 @@
                 padding: 0% 5%;
             }
         }
+
+        .cards__combo {
+
+            a {
+                p {
+                    padding-bottom: 10%;
+                }
+            }
+        }
     }
 }
 
@@ -92,6 +135,73 @@
             font-size: 13px;
             width: 100%;
             margin: 0%;
+        }
+    }
+
+    .main {
+        .hero {
+            .titulo__animado {
+                width: 100%;
+                margin-left: 0%;
+                padding: 0% 5%;
+            }
+        }
+
+        .productos {
+            .grid__container__productos {
+                width: 100%;
+                height: 90vh;
+                margin: 2% 1%;
+
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+
+                grid-template-areas:
+                    "tarta cheese cheese"
+                    "tarta pie budin"
+                    "temporada temporada budin"
+                    "temporada temporada especiales";
+
+                gap: 10px;
+            }
+
+        }
+
+        .inspirate {
+            .grid__container__inspirate {
+                width: 100%;
+                height: 90vh;
+                margin: 2%;
+
+
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+
+
+                grid-template-areas:
+                    "desayuno catering__cumpleaño catering__cumpleaño"
+                    "desayuno torta__infantil muffin"
+                ;
+
+                gap: 10px;
+            }
+
+        }
+
+        .click {
+            text-shadow: 4px 4px 2px #decbcb;
+            font-family: roboto;
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 75px;
+        }
+
+        .cards__combo {
+            .titulo__combo {
+                font-size: 27px;
+            }
         }
     }
 
@@ -112,6 +222,26 @@
         }
     }
 
+    .main {
+        .cards__combo {
+            p {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+
+        .grid__catring__infnatiles,
+        .grid__catring__casamientos,
+        .grid__catring__adultos,
+        .grid__carta__pie,
+        .grid__carta__temporada,
+        .grid__carta__budines,
+        .grid__carta__cheese,
+        .grid__carta__brownies {
+            width: 97%;
+
+        }
+    }
 }
 
 @media (max-width: 555px) {
@@ -148,6 +278,107 @@
     }
 
     .main {
+        .hero {
+            height: 60vh;
+            background-size: cover;
+
+            .titulo__animado {
+                font-size: 45px;
+                font-weight: 600;
+                line-height: 68px;
+            }
+
+        }
+
+        .grid__container__productos__mobile {
+            width: 100%;
+            height: 60vh;
+            margin: 2% 1%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            grid-template-areas:
+                "tarta cheese "
+                "tarta especiales"
+            ;
+
+            gap: 5px;
+
+            .tarta {
+                grid-area: tarta;
+                background-image: url(../fotos_mumi/prodctos_1.jpg);
+            }
+
+            .cheese {
+                grid-area: cheese;
+                background-image: url(../fotos_mumi/prodctos_2.jpg);
+            }
+
+            .especiales {
+                grid-area: especiales;
+                background-image: url(../fotos_mumi/prodctos_3.jpg);
+            }
+
+        }
+
+        .productos {
+            .grid__container__productos {
+                width: 100%;
+                height: 60vh;
+                margin: 2% 1%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+
+                grid-template-areas:
+                    "budin temporada"
+                    "cuadraditos temporada"
+                ;
+                gap: 5px;
+
+                .imagenes__index {
+                    h3 {
+                        display: none;
+                    }
+                }
+
+                .budin {
+                    grid-area: budin;
+                    background-image: url(../fotos_mumi/prodctos_4.jpg);
+                }
+
+                .temporada {
+                    grid-area: temporada;
+                    background-image: url(../fotos_mumi/prodctos_5.jpg);
+                }
+
+                .cuadraditos {
+                    grid-area: cuadraditos;
+                    background-image: url(../fotos_mumi/testimonio_4.jpg);
+                }
+            }
+        }
+
+        .inspirate {
+            .grid__container__inspirate {
+                width: 100%;
+                height: 60vh;
+                margin: 2% 1%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2 1fr);
+
+
+                grid-template-areas:
+                    "catering__cumpleaño catering__cumpleaño"
+                    "desayuno muffin"
+                ;
+
+                gap: 5px;
+            }
+
+        }
 
         .introduccion,
         .fondo__servicio__index {
@@ -192,12 +423,29 @@
             }
         }
     }
+
+    .cards__combo {
+        p {
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+    }
 }
 
 @media (max-width: 420px) {
     .header {
         .logo__menu {
             width: 275px;
+        }
+    }
+
+    .main {
+        .hero {
+            .titulo__animado {
+                font-size: 35px;
+                line-height: 68px;
+                text-decoration: none;
+            }
         }
     }
 

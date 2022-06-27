@@ -1,0 +1,201 @@
+/*--------GRID---------*/
+
+.a__la__carta {
+
+    .grid__carta__pie,
+    .grid__carta__temporada,
+    .grid__carta__budines,
+    .grid__carta__cheese,
+    .grid__carta__brownies {
+        width: 70%;
+        height: 60vh;
+        margin: 5% auto;
+
+
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr 2fr;
+
+
+        grid-template-areas:
+            "foto__vertical texto"
+            "foto__vertical  foto__horizontal"
+        ;
+
+        gap: 5%;
+    }
+
+    .texto {
+        grid-area: texto;
+
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: left;
+            margin-bottom: 2%;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            text-align: left;
+        }
+    }
+
+    .grid__carta__pie {
+        .foto__vertical {
+            grid-area: foto__vertical;
+            background-image: url(../fotos_mumi/prodctos_6.jpg);
+        }
+
+        .foto__horizontal {
+            grid-area: foto__horizontal;
+            background-image: url(../fotos_mumi/prodctos_1.jpg);
+        }
+    }
+
+
+    .grid__carta__temporada {
+        .foto__vertical {
+            grid-area: foto__vertical;
+            background-image: url(../fotos_mumi/prodctos_5.jpg);
+        }
+
+        .foto__horizontal {
+            grid-area: foto__horizontal;
+            background-image: url(../fotos_mumi/funciona_2.jpg);
+        }
+    }
+
+
+    .grid__carta__budines {
+        .foto__vertical {
+            grid-area: foto__vertical;
+            background-image: url(../fotos_mumi/prodctos_4.jpg);
+        }
+
+        .foto__horizontal {
+            grid-area: foto__horizontal;
+            background-image: url(../fotos_mumi/budin_2.jpg);
+        }
+    }
+
+
+    .grid__carta__cheese {
+        .foto__vertical {
+            grid-area: foto__vertical;
+            background-image: url(../fotos_mumi/prodctos_2.jpg);
+        }
+
+        .foto__horizontal {
+            grid-area: foto__horizontal;
+            background-image: url(../fotos_mumi/funciona_3.jpg);
+        }
+    }
+
+    .grid__carta__brownies {
+        .foto__vertical {
+            grid-area: foto__vertical;
+            background-image: url(../fotos_mumi/brownies.jpg);
+        }
+
+        .foto__horizontal {
+            grid-area: foto__horizontal;
+            background-image: url(../fotos_mumi/testimonio_4.jpg);
+        }
+    }
+
+    .foto__horizontal,
+    .foto__vertical {
+        .foto {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+/*-------Precios---------*/
+.cards__combo {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.481), rgba(190, 156, 144, 0.52), rgba(255, 255, 255, 0.481));
+    padding-top: 2%;
+
+    .titulo__combo {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 35px;
+        font-weight: 300;
+        padding: 3% 0%;
+    }
+
+    p {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 3% 0%;
+    }
+
+    a {
+        p {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+            padding-bottom: 3%;
+            transition: 1s;
+
+            &:hover {
+                color: #9e6155;
+                padding-bottom: 3%;
+            }
+        }
+
+    }
+
+    .animacion__card {
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        .card__color {
+            background-color: #f9f0f0;
+
+            .card__carta__titulo {
+                h4 {
+                    font-family: roboto;
+                    letter-spacing: 2px;
+                    color: #c07d6f;
+                }
+            }
+
+            .card__carta {
+                h2 {
+                    font-size: 1.5rem;
+                    color: #a87261;
+                }
+
+                ul {
+                    li {
+                        font-family: inter;
+                        font-size: 16px;
+                        padding: 2% 0%;
+                    }
+                }
+
+                button {
+                    background-color: #dde8f0;
+                    border: none;
+                    color: #262626;
+                    font-size: 1rem;
+
+                    &:hover {
+                        background-color: #cea992;
+                    }
+                }
+            }
+        }
+    }
+}
