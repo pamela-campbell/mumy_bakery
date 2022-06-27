@@ -9563,32 +9563,32 @@ textarea.form-control-lg {
 .header nav div div ul li .hover__contacto:hover {
   border-top: #D2EEBB 6px solid;
 }
-.header nav div div ul li .hover__contacto:active {
-  background: linear-gradient(rgba(181, 228, 172, 0.481), rgba(249, 247, 247, 0.481));
-}
 .header nav div div ul li .hover__nosotros:hover {
   border-top: #F6F1C1 6px solid;
-}
-.header nav div div ul li .hover__nosotros:active {
-  background: linear-gradient(rgba(225, 228, 172, 0.481), rgba(249, 247, 247, 0.481));
 }
 .header nav div div ul li .hover__catering:hover {
   border-top: #F6C6C1 6px solid;
 }
-.header nav div div ul li .hover__catering:active {
-  background: linear-gradient(rgba(228, 195, 172, 0.481), rgba(249, 247, 247, 0.481));
-}
 .header nav div div ul li .hover__a__la__carta:hover {
   border-top: #CBDBEE 6px solid;
-}
-.header nav div div ul li .hover__a__la__carta:active {
-  background: linear-gradient(rgba(172, 212, 228, 0.481), rgba(249, 247, 247, 0.481));
 }
 .header nav div div ul li .hover__box__de__regalo:hover {
   border-top: #E9E1F0 6px solid;
 }
+.header nav div div ul li .hover__contacto:active {
+  background-image: linear-gradient(rgba(181, 228, 172, 0.481), rgba(249, 247, 247, 0.481));
+}
+.header nav div div ul li .hover__nosotros:active {
+  background-image: linear-gradient(rgba(225, 228, 172, 0.481), rgba(249, 247, 247, 0.481));
+}
+.header nav div div ul li .hover__catering:active {
+  background-image: linear-gradient(rgba(228, 195, 172, 0.481), rgba(249, 247, 247, 0.481));
+}
+.header nav div div ul li .hover__a__la__carta:active {
+  background-image: linear-gradient(rgba(172, 212, 228, 0.481), rgba(249, 247, 247, 0.481));
+}
 .header nav div div ul li .hover__box__de__regalo:active {
-  background: linear-gradient(rgba(189, 172, 228, 0.481), rgba(249, 247, 247, 0.481));
+  background-image: linear-gradient(rgba(189, 172, 228, 0.481), rgba(249, 247, 247, 0.481));
 }
 .header nav div div ul li a {
   font-weight: 400;
@@ -9623,7 +9623,7 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   padding: 8% 11%;
 }
-.main .introduccion h1, .main .introduccion .h1 {
+.main .introduccion .titulo__secciones, .main .introduccion h2, .main .introduccion .h2 {
   font-family: Inter;
   font-size: 36px;
   font-weight: 400;
@@ -9634,14 +9634,8 @@ textarea.form-control-lg {
   width: 36%;
 }
 .main .introduccion h2, .main .introduccion .h2 {
-  font-family: Inter;
   font-size: 28px;
-  font-weight: 400;
   line-height: 40px;
-  text-transform: uppercase;
-  text-align: left;
-  margin-right: 3%;
-  width: 34%;
 }
 .main .introduccion p {
   width: 60%;
@@ -10153,11 +10147,8 @@ main .card {
     font-size: 55px;
     line-height: 75px;
   }
-  .main .introduccion h1, .main .introduccion .h1 {
-    font-size: 24px;
-    line-height: 34px;
-  }
-  .main .introduccion h2, .main .introduccion .h2 {
+  .main .introduccion .titulo__secciones, .main .introduccion .h2,
+.main .introduccion h2 {
     font-size: 24px;
     line-height: 34px;
   }
@@ -10218,10 +10209,9 @@ main .card {
     padding: 5%;
   }
   .main .introduccion h2, .main .introduccion .h2,
-.main .introduccion h1,
-.main .introduccion .h1,
+.main .introduccion .titulo__secciones,
 .main .fondo__servicio__index .introduccion h2,
-.main .fondo__servicio__index .introduccion h1 {
+.main .fondo__servicio__index .introduccion .titulo__secciones {
     width: 100%;
     margin: 2% 0% 4% 0%;
     text-align: center;
@@ -10390,16 +10380,13 @@ main .card {
     gap: 5px;
   }
   .main .introduccion h2, .main .introduccion .h2,
-.main .introduccion h1,
-.main .introduccion .h1,
+.main .introduccion .titulo__secciones,
 .main .fondo__servicio__index h2,
 .fondo__servicio__index .main .cards__servicio h2,
 .main .fondo__servicio__index .h2,
 .fondo__servicio__index .main .cards__servicio .h2,
-.main .fondo__servicio__index h1,
-.fondo__servicio__index .main .cards__servicio h1,
-.main .fondo__servicio__index .h1,
-.fondo__servicio__index .main .cards__servicio .h1 {
+.main .fondo__servicio__index .titulo__secciones,
+.fondo__servicio__index .main .cards__servicio .titulo__secciones {
     width: 100%;
     margin: 8% 0%;
     font-size: 24px;

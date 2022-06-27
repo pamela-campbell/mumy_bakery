@@ -37,7 +37,7 @@
         flex-wrap: wrap;
         padding: 8% 11%;
 
-        h1 {
+        .titulo__secciones {
             font-family: Inter;
             font-size: 36px;
             font-weight: 400;
@@ -49,14 +49,9 @@
         }
 
         h2 {
-            font-family: Inter;
+            @extend .titulo__secciones;
             font-size: 28px;
-            font-weight: 400;
             line-height: 40px;
-            text-transform: uppercase;
-            text-align: left;
-            margin-right: 3%;
-            width: 34%;
         }
 
         p {

@@ -16,45 +16,34 @@
                     li {
                         text-align: end;
 
-                        & .hover__contacto:hover {
-                            border-top: #D2EEBB 6px solid;
+                        $colores: (contacto: #D2EEBB 6px solid,
+                                nosotros:#F6F1C1 6px solid,
+                                catering:#F6C6C1 6px solid,
+                                a__la__carta:#CBDBEE 6px solid,
+                                box__de__regalo:#E9E1F0 6px solid,
+                            );
+
+                        @each $seccion,
+                        $borde in $colores {
+                            .hover__#{$seccion}:hover {
+                                border-top: $borde;
+                            }
                         }
 
-                        & .hover__contacto:active {
-                            background: linear-gradient(rgba(181, 228, 172, 0.481), rgba(249, 247, 247, 0.481));
+                        $degrade: (contacto:linear-gradient(rgba(181, 228, 172, 0.481), rgba(249, 247, 247, 0.481)),
+                            nosotros:linear-gradient(rgba(225, 228, 172, 0.481), rgba(249, 247, 247, 0.481)),
+                            catering: linear-gradient(rgba(228, 195, 172, 0.481), rgba(249, 247, 247, 0.481)),
+                            a__la__carta:linear-gradient(rgba(172, 212, 228, 0.481), rgba(249, 247, 247, 0.481)),
+                            box__de__regalo:linear-gradient(rgba(189, 172, 228, 0.481), rgba(249, 247, 247, 0.481)),
+                        );
+
+                        @each $secciones,
+                        $fondo in $degrade {
+                            .hover__#{$secciones}:active {
+                                background-image: $fondo;
+                            }
                         }
 
-                        & .hover__nosotros:hover {
-                            border-top: #F6F1C1 6px solid;
-                        }
-
-                        & .hover__nosotros:active {
-                            background: linear-gradient(rgba(225, 228, 172, 0.481), rgba(249, 247, 247, 0.481));
-                        }
-
-                        & .hover__catering:hover {
-                            border-top: #F6C6C1 6px solid;
-                        }
-
-                        & .hover__catering:active {
-                            background: linear-gradient(rgba(228, 195, 172, 0.481), rgba(249, 247, 247, 0.481));
-                        }
-
-                        & .hover__a__la__carta:hover {
-                            border-top: #CBDBEE 6px solid;
-                        }
-
-                        & .hover__a__la__carta:active {
-                            background: linear-gradient(rgba(172, 212, 228, 0.481), rgba(249, 247, 247, 0.481));
-                        }
-
-                        & .hover__box__de__regalo:hover {
-                            border-top: #E9E1F0 6px solid;
-                        }
-
-                        & .hover__box__de__regalo:active {
-                            background: linear-gradient(rgba(189, 172, 228, 0.481), rgba(249, 247, 247, 0.481));
-                        }
 
                         a {
                             font-weight: 400;
@@ -71,3 +60,4 @@
         }
     }
 }
+

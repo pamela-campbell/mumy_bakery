@@ -21,11 +21,8 @@
         }
 
         .introduccion {
-            h1 {
-                font-size: 24px;
-                line-height: 34px;
-            }
 
+            .titulo__secciones,
             h2 {
                 font-size: 24px;
                 line-height: 34px;
@@ -102,7 +99,7 @@
             padding: 5%;
 
             h2,
-            h1 {
+            .titulo__secciones {
                 width: 100%;
                 margin: 2% 0% 4% 0%;
                 text-align: center;
@@ -384,7 +381,7 @@
         .fondo__servicio__index {
 
             h2,
-            h1 {
+           .titulo__secciones {
                 width: 100%;
                 margin: 8% 0%;
                 font-size: 24px;
