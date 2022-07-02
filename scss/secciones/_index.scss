@@ -15,28 +15,26 @@
     }
 
     .titulo__animado {
-        width: 50%;
-        font-family: inter;
-        font-size: 75px;
+        width: 100%;
+        font-family: oswald;
+        font-size: 70px;
         font-weight: 700;
-        line-height: 110px;
-        letter-spacing: 2px;
+        line-height: 130px;
+        letter-spacing: 3px;
         text-transform: uppercase;
         text-align: center;
-        text-shadow: 2px 4px 2px #e3bebf97;
-        padding: 2%;
-        margin: 0% 15%;
+        text-shadow: 2px 4px 2px #cdc0b054;
+        margin: 5%;
         background-image: linear-gradient(to right, #eb6472ed, #6d7caded, #c36a6d, #574f6ced, #c2b7dded);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-
         background-size: 300%;
         background-position: -200%;
 
 
         animation-name: titulo;
-        animation-duration: 3s;
+        animation-duration: 4s;
         animation-iteration-count: infinite;
         animation-direction: alternate-reverse;
 
@@ -113,7 +111,7 @@
 
     .frutas {
         grid-area: frutas;
-        background-image: url(../fotos_mumi/funciona_2);
+        background-image: url(../fotos_mumi/funciona_2.jpg);
     }
 
     .porciones {
