@@ -1,53 +1,53 @@
 /*----HERO----*/
 .main {
     .hero {
-        background: linear-gradient(rgba(152, 120, 120, 0.52), rgba(255, 255, 255, 0.481)), url(../fotos_mumi/main_product.jpg);
-        background-position: center;
+        background: linear-gradient(rgba(152, 120, 120, 0.714), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product.jpg);
+        background-position: 15%;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         width: 100%;
         height: calc(100vh - 233px);
+    }
 
-        .titulo__animado {
-            width: 40%;
-            font-family: roboto;
-            font-size: 70px;
-            font-weight: 700;
-            line-height: 98px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            text-align: justify;
-            padding: 2%;
-            margin-left: 7%;
-            background-image: linear-gradient(to right, #D6A4A4, #e1edb5, #b78484, #f4c789);
-            text-decoration: underline 20px rgba(255, 255, 255, 0.412);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+    .titulo__animado {
+        width: 50%;
+        font-family: inter;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 110px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: center;
+        text-shadow: 2px 4px 2px #e3bebf97;
+        padding: 2%;
+        margin: 0% 15%;
+        background-image: linear-gradient(to right, #eb6472ed, #6d7caded, #c36a6d, #574f6ced, #c2b7dded);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
 
-            background-size: 300%;
-            background-position: -200%;
+        background-size: 300%;
+        background-position: -200%;
 
 
-            animation-name: titulo;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate-reverse;
+        animation-name: titulo;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
 
-            @keyframes titulo {
-                from {
-                    background-position: 0%;
+        @keyframes titulo {
+            from {
+                background-position: 0%;
 
-                }
+            }
 
-                to {
-                    background-position: 100%;
-                }
+            to {
+                background-position: 100%;
             }
         }
     }
