@@ -9676,7 +9676,7 @@ textarea.form-control-lg {
 
 /*----HERO----*/
 .main .hero {
-  background: linear-gradient(rgba(152, 120, 120, 0.714), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product.jpg);
+  background: linear-gradient(rgba(152, 120, 120, 0.735), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product.jpg);
   background-position: 15%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -9689,15 +9689,16 @@ textarea.form-control-lg {
   height: calc(100vh - 233px);
 }
 .main .titulo__animado {
-  color: #ffffff;
-  text-shadow: 4px 4px 2px #000000;
-  font-family: inter;
-  font-size: 5rem;
+  color: #e0886d;
+  text-shadow: -5px -2px 1px rgba(227, 196, 244, 0.8745098039);
+  font-family: oswald;
+  font-size: 4rem;
   font-weight: 600;
-  line-height: 7rem;
-  width: 90%;
+  line-height: 9rem;
+  width: 80%;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.8rem;
 }
 
 /*---productos---*/
