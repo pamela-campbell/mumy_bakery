@@ -9689,34 +9689,15 @@ textarea.form-control-lg {
   height: calc(100vh - 233px);
 }
 .main .titulo__animado {
-  width: 100%;
-  font-family: oswald;
-  font-size: 70px;
-  font-weight: 700;
-  line-height: 130px;
-  letter-spacing: 3px;
+  color: #ffffff;
+  text-shadow: 4px 4px 2px #000000;
+  font-family: inter;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 105px;
+  width: 90%;
+  text-align: end;
   text-transform: uppercase;
-  text-align: center;
-  text-shadow: 2px 4px 2px rgba(205, 192, 176, 0.3294117647);
-  margin: 5%;
-  background-image: linear-gradient(to right, rgba(235, 100, 114, 0.9294117647), rgba(109, 124, 173, 0.9294117647), #c36a6d, rgba(87, 79, 108, 0.9294117647), rgba(194, 183, 221, 0.9294117647));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  background-size: 300%;
-  background-position: -200%;
-  animation-name: titulo;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-}
-@keyframes titulo {
-  from {
-    background-position: 0%;
-  }
-  to {
-    background-position: 100%;
-  }
 }
 
 /*---productos---*/
@@ -9837,7 +9818,7 @@ main .click {
   background: linear-gradient(rgba(152, 120, 120, 0.52), rgba(255, 255, 255, 0.481)), url(../fotos_mumi/banner.jpg);
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
@@ -10450,6 +10431,11 @@ main .card {
 @media (max-width: 420px) {
   .header .logo__menu {
     width: 275px;
+  }
+  .main .hero {
+    background: linear-gradient(rgba(152, 120, 120, 0.714), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product.jpg);
+    background-position: 50% 50%;
+    height: 90vh;
   }
   .main .hero .titulo__animado {
     font-size: 35px;

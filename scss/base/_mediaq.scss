@@ -438,11 +438,17 @@
 
     .main {
         .hero {
+            background: linear-gradient(rgba(152, 120, 120, 0.714), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product.jpg);
+            background-position: 50% 50%;
+
+            height: 90vh;
+
             .titulo__animado {
                 font-size: 35px;
                 line-height: 68px;
             }
         }
+
     }
 
     .footer {
