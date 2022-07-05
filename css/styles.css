@@ -9692,11 +9692,11 @@ textarea.form-control-lg {
   color: #ffffff;
   text-shadow: 4px 4px 2px #000000;
   font-family: inter;
-  font-size: 55px;
+  font-size: 5rem;
   font-weight: 600;
-  line-height: 105px;
+  line-height: 7rem;
   width: 90%;
-  text-align: end;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -10311,7 +10311,7 @@ main .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "tarta cheese " "tarta especiales";
+    grid-template-areas: "tarta tarta" "cheese especiales";
     gap: 5px;
   }
   .main .grid__container__productos__mobile .tarta {
@@ -10333,7 +10333,7 @@ main .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "budin temporada" "cuadraditos temporada";
+    grid-template-areas: "budin budin" "cuadraditos temporada";
     gap: 5px;
   }
   .main .productos .grid__container__productos .imagenes__index h3, .main .productos .grid__container__productos .imagenes__index .h3 {

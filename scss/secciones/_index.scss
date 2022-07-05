@@ -1,5 +1,6 @@
 /*----HERO----*/
 .main {
+   
     .hero {
         background: linear-gradient(rgba(152, 120, 120, 0.714), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product.jpg);
         background-position: 15%;
@@ -18,11 +19,11 @@
         color: #ffffff;
         text-shadow: 4px 4px 2px #000000;
         font-family: inter;
-        font-size: 55px;
+        font-size: 5rem;
         font-weight: 600;
-        line-height: 105px;
+        line-height: 7rem;
         width: 90%;
-        text-align: end;
+        text-align: center;
         text-transform: uppercase;
 
     }
