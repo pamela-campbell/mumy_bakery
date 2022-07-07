@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;800&family=Roboto:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -24,18 +23,14 @@
         "footer";
 
     p {
-        font-family: roboto;
-        font-size: 16px;
-        font-weight: 200;
-        line-height: 30px;
-        text-align: justify;
+        @include tipografias(roboto, 1rem, 300, 2rem, justify, none, none, 0.1rem);
     }
 
     h3 {
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
-        letter-spacing: 1px;
+
         text-transform: uppercase;
         margin: 3% 0% 1% 0%;
         text-align: center;
@@ -59,5 +54,70 @@
 
     a {
         text-decoration: none;
+        color: #262626;
     }
 }
+
+
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #262626;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: inter;
+    scroll-behavior: smooth;
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+
+    p {
+        font-family: roboto;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 2rem;
+        text-align: justify;
+
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+
+        text-transform: uppercase;
+        margin: 3% 0% 1% 0%;
+        text-align: center;
+    }
+
+    .main {
+        grid-area: main;
+
+        .imagenes,
+        .imagenes__index {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 3s;
+
+            .imagenes:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #262626;
+    }
+}*/

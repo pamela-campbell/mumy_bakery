@@ -85,7 +85,7 @@
 @media (max-width:992px) {
     .grid__container {
         p {
-            font-size: 13.5px;
+            font-size: 0.9rem;
         }
     }
 
@@ -129,7 +129,7 @@
 @media (max-width: 850px) {
     .grid__container {
         p {
-            font-size: 13px;
+            
             width: 100%;
             margin: 0%;
         }
@@ -220,12 +220,7 @@
     }
 
     .main {
-        .cards__combo {
-            p {
-                font-size: 14px;
-                line-height: 24px;
-            }
-        }
+
 
         .grid__catring__infnatiles,
         .grid__catring__casamientos,
@@ -253,11 +248,7 @@
 
 /*-------------------------PHONES------------------------------*/
 @media (max-width: 500px) {
-    .grid__container {
-        p {
-            font-size: 12.5px;
-        }
-    }
+
 
     .header {
         .logo__menu {
@@ -440,11 +431,13 @@
         .hero {
             background: linear-gradient(rgba(152, 120, 120, 0.714), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product.jpg);
             background-position: 50% 50%;
-            height: 90vh;
+            
 
             .titulo__animado {
-                font-size: 35px;
-                line-height: 68px;
+                width: 98%;
+                font-size: 2rem;
+                line-height: 3rem;
+                letter-spacing: 0.3rem;
             }
         }
 

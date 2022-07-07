@@ -1,8 +1,8 @@
 .header {
     grid-area: header;
-
+    
     nav {
-        background-color: #ffffff;
+        background: linear-gradient(rgba(230, 199, 195, 0.621), rgba(249, 247, 247, 0.481));
 
         div {
             .navbar-toggler {
@@ -46,8 +46,11 @@
 
 
                         a {
+                            font-family: inter;
+                            font-size: 0.9rem;
                             font-weight: 400;
-                            line-height: 20px;
+                            letter-spacing: 2px;
+                            line-height: 1rem;
                             text-decoration: none;
                             text-transform: uppercase;
                             transition-property: all;
@@ -60,4 +63,3 @@
         }
     }
 }
-

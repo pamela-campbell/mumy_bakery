@@ -1,6 +1,6 @@
 /*----HERO----*/
 .main {
-   
+
     .hero {
         background: linear-gradient(rgba(152, 120, 120, 0.735), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product.jpg);
         background-position: 15%;
@@ -11,21 +11,21 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: $anchura;
         height: calc(100vh - 233px);
     }
 
     .titulo__animado {
-        color: #e0886d;
-        text-shadow: -5px -2px 1px #e3c4f4df;
-              font-family: oswald;
-        font-size: 4rem;
+        color: #c76b63;
+        text-shadow: -5px -1px 0px #debdefdf;
+        font-family: oswald;
+        font-size: 3.5rem;
         font-weight: 600;
-        line-height: 9rem;
-        width: 80%;
+        line-height: 7rem;
+        width: $anchura;
         text-align: center;
         text-transform: uppercase;
-        letter-spacing: 0.8rem;
+        letter-spacing: 0.6rem;
 
     }
 
@@ -41,7 +41,7 @@
 
 
 .grid__container__productos {
-    width: 78%;
+    width: $anchura - 22;
     height: 100vh;
     margin: 0% auto 5% auto;
 
@@ -116,7 +116,7 @@
         }
 
         h3 {
-            width: 50%;
+            width: $anchura - 50;
             text-align: left;
             background-color: #decbcba8;
             padding: 2%;
