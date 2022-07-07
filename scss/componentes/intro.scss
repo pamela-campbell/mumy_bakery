@@ -1,63 +1,27 @@
 .main {
-
-    .fondo__servicio__index {
-
-        .introduccion {
-            padding: 8% 2% 2% 2%;
-            margin: 0%;
-
-            h2 {
-                margin-right: 0%;
-                width: 40%;
-            }
-        }
-    }
-
-
-    .productos {
-
-        .introduccion {
-            background-color: $fondo-secundario;
-        }
-    }
-
-    .inspirate {
-        .introduccion {
-            background-color: $fondo-secundario;
-        }
-    }
-
-
     .introduccion {
-        width: 100%;
+        @include flex($anchura, flex, row, center, center, wrap, 0, 8% 11%);
         background-color: $fondo-principal;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 8% 11%;
 
-        .titulo__secciones {
-            font-family: Inter;
-            font-size: 36px;
-            font-weight: 400;
-            line-height: 44px;
-            text-transform: uppercase;
-            text-align: left;
-            margin-right: 3%;
-            width: 36%;
-        }
-
+        h1,
         h2 {
-            @extend .titulo__secciones;
-            font-size: 28px;
-            line-height: 40px;
+            margin-right: 3%;
+            width: 34%;
         }
-
 
         p {
             width: 60%;
-        }
 
+            a {
+                text-decoration: none;
+                transition: 0.5s;
+
+                &:hover {
+                    border-bottom: #decbcba8 4px solid;
+                    color: #9e6155;
+
+                }
+            }
+        }
     }
 }

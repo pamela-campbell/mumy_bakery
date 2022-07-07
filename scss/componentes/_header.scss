@@ -1,6 +1,6 @@
 .header {
     grid-area: header;
-    
+
     nav {
         background: linear-gradient(rgba(230, 199, 195, 0.621), rgba(249, 247, 247, 0.481));
 
@@ -16,11 +16,11 @@
                     li {
                         text-align: end;
 
-                        $colores: (contacto: #D2EEBB 6px solid,
-                                nosotros:#F6F1C1 6px solid,
-                                catering:#F6C6C1 6px solid,
-                                a__la__carta:#CBDBEE 6px solid,
-                                box__de__regalo:#E9E1F0 6px solid,
+                        $colores: (contacto: #cfb664 6px solid,
+                                nosotros:#c89c73 6px solid,
+                                catering:#d7a49e 6px solid,
+                                a__la__carta:#ad98bf 6px solid,
+                                box__de__regalo:#a5bdda 6px solid,
                             );
 
                         @each $seccion,
@@ -30,11 +30,11 @@
                             }
                         }
 
-                        $degrade: (contacto:linear-gradient(rgba(181, 228, 172, 0.481), rgba(249, 247, 247, 0.481)),
+                        $degrade: (contacto:linear-gradient(rgba(226, 228, 172, 0.481), rgba(249, 247, 247, 0.481)),
                             nosotros:linear-gradient(rgba(225, 228, 172, 0.481), rgba(249, 247, 247, 0.481)),
                             catering: linear-gradient(rgba(228, 195, 172, 0.481), rgba(249, 247, 247, 0.481)),
-                            a__la__carta:linear-gradient(rgba(172, 212, 228, 0.481), rgba(249, 247, 247, 0.481)),
-                            box__de__regalo:linear-gradient(rgba(189, 172, 228, 0.481), rgba(249, 247, 247, 0.481)),
+                            a__la__carta:linear-gradient(rgba(189, 172, 228, 0.481), rgba(249, 247, 247, 0.481)),
+                            box__de__regalo:linear-gradient(rgba(172, 212, 228, 0.481), rgba(249, 247, 247, 0.481)),
                         );
 
                         @each $secciones,
@@ -46,13 +46,7 @@
 
 
                         a {
-                            font-family: inter;
-                            font-size: 0.9rem;
-                            font-weight: 400;
-                            letter-spacing: 2px;
-                            line-height: 1rem;
-                            text-decoration: none;
-                            text-transform: uppercase;
+                            @include tipografias(inter, 0.9rem, 400, 1rem, end, uppercase, none, 0.1rem);
                             transition-property: all;
                             transition-duration: 0.5s;
                             transition-timing-function: linear;

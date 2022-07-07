@@ -2,185 +2,148 @@
 .main {
 
     .hero {
+        @include flex($anchura, flex, column, center, center, wrap, 0, 0);
+        @include imagenes(15%, no-repeat, cover, 0s);
         background: linear-gradient(rgba(152, 120, 120, 0.735), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product.jpg);
-        background-position: 15%;
-        background-repeat: no-repeat;
-        background-size: cover;
         background-attachment: fixed;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: $anchura;
         height: calc(100vh - 233px);
     }
 
-    .titulo__animado {
+    .titulo__hero {
+        @include tipografias(Oswald, 3.5rem, 600, 7rem, center, uppercase, none, 0.6rem);
         color: #c76b63;
         text-shadow: -5px -1px 0px #debdefdf;
-        font-family: oswald;
-        font-size: 3.5rem;
-        font-weight: 600;
-        line-height: 7rem;
         width: $anchura;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 0.6rem;
 
+        .grid__container__productos__mobile {
+            display: none;
+        }
     }
-
 }
 
 /*---productos---*/
-
 .main {
-    .grid__container__productos__mobile {
-        display: none;
-    }
-}
-
-
-.grid__container__productos {
-    width: $anchura - 22;
-    height: 100vh;
-    margin: 0% auto 5% auto;
-
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-
-
-    grid-template-areas:
-        "tarta cheese cheese pie"
-        "tarta frutas budin porciones"
-        "temporada temporada budin especiales"
-        "temporada temporada cuadraditos especiales";
-
-    gap: 20px;
-
-    .tarta {
-        grid-area: tarta;
-        background-image: url(../fotos_mumi/prodctos_1.jpg);
-    }
-
-    .cheese {
-        grid-area: cheese;
-        background-image: url(../fotos_mumi/prodctos_2.jpg);
-    }
-
-    .especiales {
-        grid-area: especiales;
-        background-image: url(../fotos_mumi/prodctos_3.jpg);
-    }
-
-    .budin {
-        grid-area: budin;
-        background-image: url(../fotos_mumi/prodctos_4.jpg);
-    }
-
-    .temporada {
-        grid-area: temporada;
-        background-image: url(../fotos_mumi/prodctos_5.jpg);
-    }
-
-    .pie {
-        grid-area: pie;
-        background-image: url(../fotos_mumi/prodctos_6.jpg);
-    }
-
-    .frutas {
-        grid-area: frutas;
-        background-image: url(../fotos_mumi/funciona_2.jpg);
-    }
-
-    .porciones {
-        grid-area: porciones;
-        background-image: url(../fotos_mumi/funciona_3.jpg);
-    }
-
-    .cuadraditos {
-        grid-area: cuadraditos;
-        background-image: url(../fotos_mumi/testimonio_4.jpg);
-    }
-
-    .imagenes__index {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        transition: 3s;
-
-        &:hover {
-            transform: scale(0.9);
-
+    .productos {
+        .introduccion {
+            background-color: $fondo-secundario;
         }
 
-        h3 {
-            width: $anchura - 50;
-            text-align: left;
-            background-color: #decbcba8;
-            padding: 2%;
+        .grid__container__productos {
+            @include grid($anchura-secciones, 100vh, 0% auto 5% auto, grid, repeat(4, 1fr), repeat(4, 1fr), "tarta cheese cheese pie"
+                "tarta frutas budin porciones"
+                "temporada temporada budin especiales"
+                "temporada temporada cuadraditos especiales", 20px);
+
+            .tarta {
+                @include areas(tarta, url(../fotos_mumi/prodctos_1.jpg));
+            }
+
+            .cheese {
+                @include areas(cheese, url(../fotos_mumi/prodctos_2.jpg));
+            }
+
+            .especiales {
+                @include areas(especiales, url(../fotos_mumi/prodctos_3.jpg));
+            }
+
+            .budin {
+                @include areas(budin, url(../fotos_mumi/prodctos_4.jpg));
+            }
+
+            .temporada {
+                @include areas(temporada, url(../fotos_mumi/prodctos_5.jpg));
+            }
+
+            .pie {
+                @include areas(pie, url(../fotos_mumi/prodctos_6.jpg));
+            }
+
+            .frutas {
+                @include areas(frutas, url(../fotos_mumi/funciona_2.jpg));
+            }
+
+            .porciones {
+                @include areas(porciones, url(../fotos_mumi/funciona_3.jpg));
+            }
+
+            .cuadraditos {
+                @include areas(cuadraditos, url(../fotos_mumi/testimonio_4.jpg));
+            }
+
+            .imagenes__index {
+                @include imagenes(center, no-repeat, cover, 3s);
+
+                &:hover {
+                    transform: scale(0.9);
+
+                }
+
+                h3 {
+                    width: $anchura - 50;
+                    text-align: left;
+                    background-color: #decbcba8;
+                    padding: 2%;
+                }
+            }
         }
     }
 }
+
 
 /*---servicio---*/
+.main {
+    .fondo__servicio__index {
+        background-color: $fondo-principal;
+        padding-bottom: 3%;
 
-.fondo__servicio__index {
-    background-color: $fondo-principal;
+        .introduccion {
+            padding-bottom: 3%;
+        }
 
-    .cards__servicio {
-        @extend .fondo__servicio__index
-    }
+        .cards__servicio {
+            @extend .fondo__servicio__index;
 
-    .card {
-        border: none;
+            h3 {
+                text-align: left;
+            }
+        }
+
+        .card {
+            border: none;
+        }
     }
 }
 
-
 /*---inspirate---*/
+.main {
+    .inspirate {
+        .introduccion {
+            background-color: $fondo-secundario;
+        }
 
-.grid__container__inspirate {
-    width: 78%;
-    height: 60vh;
-    margin: 0% auto 5% auto;
+        .grid__container__inspirate {
+            @include grid($anchura-secciones, 60vh, 0% auto 5% auto, grid, repeat(4, 1fr), repeat(2, 1fr), "torta__donut muffin muffin desayuno"
+                "torta__donut torta__infantil catering__cumpleaño desayuno", 20px);
 
+            .torta__donut {
+                @include areas(torta__donut, url(../fotos_mumi/testimonio_2.jpg));
+            }
 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+            .muffin {
+                @include areas(muffin, url(../fotos_mumi/testimonio_3.jpg));
+            }
 
+            .desayuno {
+                @include areas(desayuno, url(../fotos_mumi/testimonio_1.jpg));
+            }
 
-    grid-template-areas:
-        "torta__donut muffin muffin desayuno"
-        "torta__donut torta__infantil catering__cumpleaño desayuno"
-    ;
+            .torta__infantil {
+                @include areas(torta__infantil, url(../fotos_mumi/testimonio_6.jpg));
+            }
 
-    gap: 20px;
-
-    .torta__donut {
-        grid-area: torta__donut;
-        background-image: url(../fotos_mumi/testimonio_2.jpg);
-    }
-
-    .muffin {
-        grid-area: muffin;
-        background-image: url(../fotos_mumi/testimonio_3.jpg);
-    }
-
-    .desayuno {
-        grid-area: desayuno;
-        background-image: url(../fotos_mumi/testimonio_1.jpg);
-    }
-
-    .torta__infantil {
-        grid-area: torta__infantil;
-        background-image: url(../fotos_mumi/testimonio_6.jpg);
-    }
-
-    .catering__cumpleaño {
-        grid-area: catering__cumpleaño;
-        background-image: url(../fotos_mumi/testimonio_5.jpg);
+            .catering__cumpleaño {
+                @include areas(catering__cumpleaño, url(../fotos_mumi/testimonio_5.jpg));
+            }
+        }
     }
 }

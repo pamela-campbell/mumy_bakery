@@ -1,0 +1,44 @@
+@mixin tipografias ($font, $size, $weight, $high, $align, $transfom, $decoration, $space) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $high;
+    text-align: $align;
+    text-transform: $transfom;
+    text-decoration: $decoration;
+    letter-spacing: $space;
+}
+
+@mixin grid ($anchura, $height, $margin, $display, $columns, $rows, $areas, $gap) {
+    width: $anchura;
+    height: $height;
+    margin: $margin;
+    display: $display;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-template-areas: $areas;
+    gap: $gap;
+}
+
+@mixin areas ($area, $background) {
+    grid-area: $area;
+    background-image: $background;
+}
+
+@mixin imagenes($positions, $repeats, $sizes, $transitions) {
+    background-position: $positions;
+    background-repeat: $repeats;
+    background-size: $sizes;
+    transition: $transitions;
+}
+
+@mixin flex ($anchura, $display, $direction, $justify, $align, $wrap, $margin, $padding) {
+    width: $anchura;
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    margin: $margin;
+    padding: $padding;
+}
