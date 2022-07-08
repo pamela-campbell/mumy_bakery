@@ -6,6 +6,10 @@
                 @include mq_texto (3rem, 6.5rem);
             }
         }
+
+        .horarios {
+            margin-top: 5%;
+        }
     }
 }
 
@@ -69,11 +73,11 @@
                 width: $anchura;
                 text-align: center;
                 margin-right: 0%;
-                padding: 2% 0%;
+                padding: 4% 0%;
             }
 
             p {
-                width: $anchura-secciones;
+                width: $anchura-secciones + 12;
                 padding-bottom: 2%;
             }
         }
@@ -104,7 +108,7 @@
 
     .main {
 
-       
+
         .hero {
             height: 90vh;
             background-position: 30%;
@@ -370,17 +374,7 @@
 
         }
 
-        .introduccion,
-        .fondo__servicio__index {
 
-            h2,
-            h1 {
-                width: 100%;
-                margin: 8% 0%;
-                font-size: 24px;
-                line-height: 32px;
-            }
-        }
 
         .grid__catring__infnatiles,
         .grid__catring__casamientos,
@@ -465,7 +459,7 @@
         }
 
         h4 {
-            @include mq_texto (0.6rem, 1.5rem);
+            @include mq_texto (0.7rem, 1.5rem);
         }
     }
 }

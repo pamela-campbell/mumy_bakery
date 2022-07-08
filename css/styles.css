@@ -1956,7 +1956,7 @@ progress {
   color: #6c757d;
 }
 
-.form-control {
+.form-control, .main .formulario .boton__form {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -1972,35 +1972,35 @@ progress {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control {
+  .form-control, .main .formulario .boton__form {
     transition: none;
   }
 }
-.form-control[type=file] {
+.form-control[type=file], .main .formulario [type=file].boton__form {
   overflow: hidden;
 }
-.form-control[type=file]:not(:disabled):not([readonly]) {
+.form-control[type=file]:not(:disabled):not([readonly]), .main .formulario [type=file].boton__form:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
-.form-control:focus {
+.form-control:focus, .main .formulario .boton__form:focus {
   color: #212529;
   background-color: #fff;
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
-.form-control::-webkit-date-and-time-value {
+.form-control::-webkit-date-and-time-value, .main .formulario .boton__form::-webkit-date-and-time-value {
   height: 1.5em;
 }
-.form-control::placeholder {
+.form-control::placeholder, .main .formulario .boton__form::placeholder {
   color: #6c757d;
   opacity: 1;
 }
-.form-control:disabled, .form-control[readonly] {
+.form-control:disabled, .main .formulario .boton__form:disabled, .form-control[readonly], .main .formulario [readonly].boton__form {
   background-color: #e9ecef;
   opacity: 1;
 }
-.form-control::file-selector-button {
+.form-control::file-selector-button, .main .formulario .boton__form::file-selector-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
@@ -2015,14 +2015,14 @@ progress {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control::file-selector-button {
+  .form-control::file-selector-button, .main .formulario .boton__form::file-selector-button {
     transition: none;
   }
 }
-.form-control:hover:not(:disabled):not([readonly])::file-selector-button {
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button, .main .formulario .boton__form:hover:not(:disabled):not([readonly])::file-selector-button {
   background-color: #dde0e3;
 }
-.form-control::-webkit-file-upload-button {
+.form-control::-webkit-file-upload-button, .main .formulario .boton__form::-webkit-file-upload-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
@@ -2037,11 +2037,11 @@ progress {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control::-webkit-file-upload-button {
+  .form-control::-webkit-file-upload-button, .main .formulario .boton__form::-webkit-file-upload-button {
     transition: none;
   }
 }
-.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button, .main .formulario .boton__form:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
   background-color: #dde0e3;
 }
 
@@ -2095,7 +2095,7 @@ progress {
   margin-inline-end: 1rem;
 }
 
-textarea.form-control {
+textarea.form-control, .main .formulario textarea.boton__form {
   min-height: calc(1.5em + 0.75rem + 2px);
 }
 textarea.form-control-sm {
@@ -2366,7 +2366,7 @@ textarea.form-control-lg {
 .form-floating {
   position: relative;
 }
-.form-floating > .form-control,
+.form-floating > .form-control, .main .formulario .form-floating > .boton__form,
 .form-floating > .form-select {
   height: calc(3.5rem + 2px);
   line-height: 1.25;
@@ -2387,17 +2387,17 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.form-floating > .form-control {
+.form-floating > .form-control, .main .formulario .form-floating > .boton__form {
   padding: 1rem 0.75rem;
 }
-.form-floating > .form-control::placeholder {
+.form-floating > .form-control::placeholder, .main .formulario .form-floating > .boton__form::placeholder {
   color: transparent;
 }
-.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown) {
+.form-floating > .form-control:focus, .main .formulario .form-floating > .boton__form:focus, .form-floating > .form-control:not(:placeholder-shown), .main .formulario .form-floating > .boton__form:not(:placeholder-shown) {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:-webkit-autofill {
+.form-floating > .form-control:-webkit-autofill, .main .formulario .form-floating > .boton__form:-webkit-autofill {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
@@ -2405,13 +2405,14 @@ textarea.form-control-lg {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:focus ~ label, .main .formulario .form-floating > .boton__form:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.main .formulario .form-floating > .boton__form:not(:placeholder-shown) ~ label,
 .form-floating > .form-select ~ label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
-.form-floating > .form-control:-webkit-autofill ~ label {
+.form-floating > .form-control:-webkit-autofill ~ label, .main .formulario .form-floating > .boton__form:-webkit-autofill ~ label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
@@ -2423,14 +2424,14 @@ textarea.form-control-lg {
   align-items: stretch;
   width: 100%;
 }
-.input-group > .form-control,
+.input-group > .form-control, .main .formulario .input-group > .boton__form,
 .input-group > .form-select {
   position: relative;
   flex: 1 1 auto;
   width: 1%;
   min-width: 0;
 }
-.input-group > .form-control:focus,
+.input-group > .form-control:focus, .main .formulario .input-group > .boton__form:focus,
 .input-group > .form-select:focus {
   z-index: 3;
 }
@@ -2457,7 +2458,7 @@ textarea.form-control-lg {
   border-radius: 0.25rem;
 }
 
-.input-group-lg > .form-control,
+.input-group-lg > .form-control, .main .formulario .input-group-lg > .boton__form,
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
@@ -2466,7 +2467,7 @@ textarea.form-control-lg {
   border-radius: 0.3rem;
 }
 
-.input-group-sm > .form-control,
+.input-group-sm > .form-control, .main .formulario .input-group-sm > .boton__form,
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn {
@@ -2525,7 +2526,7 @@ textarea.form-control-lg {
   display: block;
 }
 
-.was-validated .form-control:valid, .form-control.is-valid {
+.was-validated .form-control:valid, .was-validated .main .formulario .boton__form:valid, .main .formulario .was-validated .boton__form:valid, .form-control.is-valid, .main .formulario .is-valid.boton__form {
   border-color: #198754;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
@@ -2533,12 +2534,12 @@ textarea.form-control-lg {
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-control:valid:focus, .form-control.is-valid:focus {
+.was-validated .form-control:valid:focus, .was-validated .main .formulario .boton__form:valid:focus, .main .formulario .was-validated .boton__form:valid:focus, .form-control.is-valid:focus, .main .formulario .is-valid.boton__form:focus {
   border-color: #198754;
   box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
 }
 
-.was-validated textarea.form-control:valid, textarea.form-control.is-valid {
+.was-validated textarea.form-control:valid, .was-validated .main .formulario textarea.boton__form:valid, .main .formulario .was-validated textarea.boton__form:valid, textarea.form-control.is-valid, .main .formulario textarea.is-valid.boton__form {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
@@ -2574,12 +2575,12 @@ textarea.form-control-lg {
   margin-left: 0.5em;
 }
 
-.was-validated .input-group .form-control:valid, .input-group .form-control.is-valid,
+.was-validated .input-group .form-control:valid, .was-validated .input-group .main .formulario .boton__form:valid, .main .formulario .was-validated .input-group .boton__form:valid, .input-group .form-control.is-valid, .input-group .main .formulario .is-valid.boton__form, .main .formulario .input-group .is-valid.boton__form,
 .was-validated .input-group .form-select:valid,
 .input-group .form-select.is-valid {
   z-index: 1;
 }
-.was-validated .input-group .form-control:valid:focus, .input-group .form-control.is-valid:focus,
+.was-validated .input-group .form-control:valid:focus, .was-validated .input-group .main .formulario .boton__form:valid:focus, .main .formulario .was-validated .input-group .boton__form:valid:focus, .input-group .form-control.is-valid:focus, .input-group .main .formulario .is-valid.boton__form:focus, .main .formulario .input-group .is-valid.boton__form:focus,
 .was-validated .input-group .form-select:valid:focus,
 .input-group .form-select.is-valid:focus {
   z-index: 3;
@@ -2614,7 +2615,7 @@ textarea.form-control-lg {
   display: block;
 }
 
-.was-validated .form-control:invalid, .form-control.is-invalid {
+.was-validated .form-control:invalid, .was-validated .main .formulario .boton__form:invalid, .main .formulario .was-validated .boton__form:invalid, .form-control.is-invalid, .main .formulario .is-invalid.boton__form {
   border-color: #dc3545;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
@@ -2622,12 +2623,12 @@ textarea.form-control-lg {
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
+.was-validated .form-control:invalid:focus, .was-validated .main .formulario .boton__form:invalid:focus, .main .formulario .was-validated .boton__form:invalid:focus, .form-control.is-invalid:focus, .main .formulario .is-invalid.boton__form:focus {
   border-color: #dc3545;
   box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
 }
 
-.was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
+.was-validated textarea.form-control:invalid, .was-validated .main .formulario textarea.boton__form:invalid, .main .formulario .was-validated textarea.boton__form:invalid, textarea.form-control.is-invalid, .main .formulario textarea.is-invalid.boton__form {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
@@ -2663,12 +2664,12 @@ textarea.form-control-lg {
   margin-left: 0.5em;
 }
 
-.was-validated .input-group .form-control:invalid, .input-group .form-control.is-invalid,
+.was-validated .input-group .form-control:invalid, .was-validated .input-group .main .formulario .boton__form:invalid, .main .formulario .was-validated .input-group .boton__form:invalid, .input-group .form-control.is-invalid, .input-group .main .formulario .is-invalid.boton__form, .main .formulario .input-group .is-invalid.boton__form,
 .was-validated .input-group .form-select:invalid,
 .input-group .form-select.is-invalid {
   z-index: 2;
 }
-.was-validated .input-group .form-control:invalid:focus, .input-group .form-control.is-invalid:focus,
+.was-validated .input-group .form-control:invalid:focus, .was-validated .input-group .main .formulario .boton__form:invalid:focus, .main .formulario .was-validated .input-group .boton__form:invalid:focus, .input-group .form-control.is-invalid:focus, .input-group .main .formulario .is-invalid.boton__form:focus, .main .formulario .input-group .is-invalid.boton__form:focus,
 .was-validated .input-group .form-select:invalid:focus,
 .input-group .form-select.is-invalid:focus {
   z-index: 3;
@@ -9543,7 +9544,7 @@ textarea.form-control-lg {
 }
 .grid__container h4, .grid__container .h4 {
   font-family: roboto;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.1rem;
   text-align: left;
@@ -9883,89 +9884,32 @@ main .card {
   border: none;
 }
 
-/*---------------------GRID---Seccion Catering----------------------*/
-.main .grid__catring__infnatiles,
-.main .grid__catring__casamientos,
-.main .grid__catring__adultos {
-  width: 80%;
-  height: 90vh;
-  margin: 5% auto;
+.main .grid__catring__infnatiles, .main .grid__catring__adultos, .main .grid__catring__casamientos {
+  width: 78%;
+  height: 80vh;
+  margin: 3% auto 5% auto;
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: 1fr 2fr;
   grid-template-areas: "foto__vertical texto" "foto__vertical  foto__horizontal";
-  gap: 5%;
+  gap: 20px;
 }
-
-.main .grid__catring__infnatiles .foto__horizontal {
+.main .grid__catring__infnatiles .foto__horizontal, .main .grid__catring__adultos .foto__horizontal, .main .grid__catring__casamientos .foto__horizontal {
   grid-area: foto__horizontal;
   background-image: url(../fotos_mumi/testimonio_5.jpg);
 }
-.main .grid__catring__infnatiles .foto__vertical {
+.main .grid__catring__infnatiles .foto__vertical, .main .grid__catring__adultos .foto__vertical, .main .grid__catring__casamientos .foto__vertical {
   grid-area: foto__vertical;
   background-image: url(../fotos_mumi/testimonio_6.jpg);
 }
-.main .grid__catring__infnatiles .texto {
-  grid-area: texto;
-}
-.main .grid__catring__infnatiles .texto h2, .main .grid__catring__infnatiles .texto .h2 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
-  text-align: left;
-  margin-bottom: 2%;
-  text-transform: uppercase;
-}
-.main .grid__catring__infnatiles .texto h3, .main .grid__catring__infnatiles .texto .h3 {
-  text-align: left;
-}
-
-.main .grid__catring__infnatiles .foto__horizontal {
-  grid-area: foto__horizontal;
-  background-image: url(../fotos_mumi/testimonio_5.jpg);
-}
-.main .grid__catring__infnatiles .foto__vertical {
-  grid-area: foto__vertical;
-  background-image: url(../fotos_mumi/testimonio_6.jpg);
-}
-.main .grid__catring__infnatiles .texto {
-  grid-area: texto;
-}
-.main .grid__catring__infnatiles .texto h2, .main .grid__catring__infnatiles .texto .h2 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
-  text-align: left;
-  margin-bottom: 2%;
-  text-transform: uppercase;
-}
-.main .grid__catring__infnatiles .texto h3, .main .grid__catring__infnatiles .texto .h3 {
-  text-align: left;
-}
-
 .main .grid__catring__casamientos .foto__horizontal {
   grid-area: foto__horizontal;
-  background-image: url(../fotos_mumi/casaminto_2.jpg);
+  background-image: url(../fotos_mumi//casamiento_2.jpg);
 }
 .main .grid__catring__casamientos .foto__vertical {
   grid-area: foto__vertical;
   background-image: url(../fotos_mumi/casamiento_1.jpg);
 }
-.main .grid__catring__casamientos .texto {
-  grid-area: texto;
-}
-.main .grid__catring__casamientos .texto h2, .main .grid__catring__casamientos .texto .h2 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
-  text-align: left;
-  margin-bottom: 2%;
-  text-transform: uppercase;
-}
-.main .grid__catring__casamientos .texto h3, .main .grid__catring__casamientos .texto .h3 {
-  text-align: left;
-}
-
 .main .grid__catring__adultos .foto__horizontal {
   grid-area: foto__horizontal;
   background-image: url(../fotos_mumi/adulto_2.jpg);
@@ -9974,18 +9918,16 @@ main .card {
   grid-area: foto__vertical;
   background-image: url(../fotos_mumi/adulto_1.jpg);
 }
-.main .grid__catring__adultos .texto {
+.main .texto {
   grid-area: texto;
 }
-.main .grid__catring__adultos .texto h2, .main .grid__catring__adultos .texto .h2 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
+.main .texto .grid__h__dos {
+  font-size: 1.5rem;
+  font-weight: 500;
   text-align: left;
   margin-bottom: 2%;
-  text-transform: uppercase;
 }
-.main .grid__catring__adultos .texto h3, .main .grid__catring__adultos .texto .h3 {
+.main .texto .grid__h__tres {
   text-align: left;
 }
 
@@ -10131,46 +10073,50 @@ main .card {
 .carousel-inner .carousel__overlay {
   background: rgba(238, 217, 217, 0.52);
 }
+.carousel-inner .carousel__overlay h2, .carousel-inner .carousel__overlay .h2 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
 
-.main .titulo__form, .main .horarios h2, .horarios .main h2, .main .horarios .h2, .horarios .main .h2 {
+.main .titulo__form, .main .horarios h2, .main .horarios .h2 {
   font-size: 1.2rem;
   line-height: 2rem;
 }
-
-.horarios iframe {
-  width: 100%;
-  height: 50vh;
-  grid-area: mapa;
-  background-image: contain;
-  border: none;
-}
-.formulario label {
-  font-size: 14px;
+.main .formulario label {
+  font-size: 0.9rem;
   text-transform: uppercase;
+  letter-spacing: 0.05rem;
 }
-.formulario input,
-.formulario form textarea,
-.formulario button {
+.main .formulario .form-control, .main .formulario .boton__form {
   border: none;
   border-radius: 0%;
   background-color: #E9E1F0;
   font-family: Roboto;
-  font-size: 12.5px;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.05rem;
 }
-.formulario button {
+.main .formulario .boton__form {
   transition: 1s;
+  width: 30%;
 }
-.formulario button:hover {
+.main .formulario .boton__form:hover {
   transform: scale(1.1);
 }
-
+.main .horarios iframe {
+  width: 100%;
+  height: 50vh;
+  background-image: cover;
+  border: none;
+}
 /*-------------------------DESKTOP------------------------------*/
 @media (max-width: 1400px) {
   .main .hero .titulo__hero {
     font-size: 3rem;
     line-height: 6.5rem;
+  }
+  .main .horarios {
+    margin-top: 5%;
   }
 }
 @media (max-width: 1262px) {
@@ -10231,10 +10177,10 @@ main .card {
     width: 100%;
     text-align: center;
     margin-right: 0%;
-    padding: 2% 0%;
+    padding: 4% 0%;
   }
   .main .introduccion p {
-    width: 78%;
+    width: 90%;
     padding-bottom: 2%;
   }
   .main .grid__catring__infnatiles,
@@ -10248,11 +10194,9 @@ main .card {
     width: 90%;
     height: 60vh;
   }
-  .main .grid__catring__infnatiles h3, .main .grid__catring__infnatiles .h3,
+  .main .grid__catring__infnatiles h3, .main .grid__catring__infnatiles .h3, .main .grid__catring__casamientos .h3, .main .grid__catring__adultos .h3,
 .main .grid__catring__casamientos h3,
-.main .grid__catring__casamientos .h3,
 .main .grid__catring__adultos h3,
-.main .grid__catring__adultos .h3,
 .main .grid__carta__pie h3,
 .main .grid__carta__pie .h3,
 .main .grid__carta__temporada h3,
@@ -10416,20 +10360,6 @@ main .card {
     grid-template-areas: "catering__cumpleaño catering__cumpleaño" "desayuno muffin";
     gap: 5px;
   }
-  .main .introduccion h2, .main .introduccion .h2,
-.main .introduccion h1,
-.main .introduccion .h1,
-.main .fondo__servicio__index h2,
-.main .fondo__servicio__index .cards__servicio h2,
-.main .fondo__servicio__index .h2,
-.main .fondo__servicio__index h1,
-.main .fondo__servicio__index .cards__servicio h1,
-.main .fondo__servicio__index .h1 {
-    width: 100%;
-    margin: 8% 0%;
-    font-size: 24px;
-    line-height: 32px;
-  }
   .main .grid__catring__infnatiles,
 .main .grid__catring__casamientos,
 .main .grid__catring__adultos,
@@ -10444,11 +10374,9 @@ main .card {
     grid-template-rows: 1fr 2fr;
     grid-template-areas: "texto texto" "foto__vertical foto__horizontal";
   }
-  .main .grid__catring__infnatiles .texto h2, .main .grid__catring__infnatiles .texto .h2,
+  .main .grid__catring__infnatiles .texto h2, .main .grid__catring__infnatiles .texto .h2, .main .grid__catring__casamientos .texto .h2, .main .grid__catring__adultos .texto .h2,
 .main .grid__catring__casamientos .texto h2,
-.main .grid__catring__casamientos .texto .h2,
 .main .grid__catring__adultos .texto h2,
-.main .grid__catring__adultos .texto .h2,
 .main .grid__carta__pie .texto h2,
 .main .grid__carta__pie .texto .h2,
 .main .grid__carta__temporada .texto h2,
@@ -10462,11 +10390,9 @@ main .card {
     font-size: 18.5px;
     line-height: 30px;
   }
-  .main .grid__catring__infnatiles .texto h3, .main .grid__catring__infnatiles .texto .h3,
+  .main .grid__catring__infnatiles .texto h3, .main .grid__catring__infnatiles .texto .h3, .main .grid__catring__casamientos .texto .h3, .main .grid__catring__adultos .texto .h3,
 .main .grid__catring__casamientos .texto h3,
-.main .grid__catring__casamientos .texto .h3,
 .main .grid__catring__adultos .texto h3,
-.main .grid__catring__adultos .texto .h3,
 .main .grid__carta__pie .texto h3,
 .main .grid__carta__pie .texto .h3,
 .main .grid__carta__temporada .texto h3,
@@ -10509,7 +10435,7 @@ main .card {
     letter-spacing: 0.07rem;
   }
   .footer h4, .footer .h4 {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     line-height: 1.5rem;
   }
 }

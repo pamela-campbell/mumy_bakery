@@ -1,5 +1,9 @@
 .carousel-inner {
     .carousel__overlay {
         background: rgba(238, 217, 217, 0.52);
+
+        h2 {
+            @include mq_texto (1.5rem, 2.5rem);
+        }
     }
 }
