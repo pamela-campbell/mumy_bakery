@@ -42,3 +42,9 @@
     margin: $margin;
     padding: $padding;
 }
+
+@mixin mq_texto ($size, $high) {
+        font-size: $size;
+        line-height: $high;
+}
+

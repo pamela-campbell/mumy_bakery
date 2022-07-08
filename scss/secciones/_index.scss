@@ -3,7 +3,7 @@
 
     .hero {
         @include flex($anchura, flex, column, center, center, wrap, 0, 0);
-        @include imagenes(15%, no-repeat, cover, 0s);
+        @include imagenes(40%, no-repeat, cover, 0s);
         background: linear-gradient(rgba(152, 120, 120, 0.735), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product.jpg);
         background-attachment: fixed;
         height: calc(100vh - 233px);
@@ -79,7 +79,7 @@
                 }
 
                 h3 {
-                    width: $anchura - 50;
+                    width: $anchura - 40;
                     text-align: left;
                     background-color: #decbcba8;
                     padding: 2%;

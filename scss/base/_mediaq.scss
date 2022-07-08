@@ -1,22 +1,26 @@
 /*-------------------------DESKTOP------------------------------*/
-@media (max-width: 1262px) {
-
-    .footer {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-
-        div {
-            margin: 3% 0%;
-        }
-    }
-
+@media (max-width: 1400px) {
     .main {
         .hero {
-            .titulo__animado {
-                font-size: 55px;
-                line-height: 75px;
+            .titulo__hero {
+                @include mq_texto (3rem, 6.5rem);
             }
+        }
+    }
+}
+
+
+@media (max-width: 1262px) {
+    .main {
+        .hero {
+            .titulo__hero {
+                @include mq_texto (2.9rem, 6.4rem);
+                text-shadow: -4px -1px 0px #debdefdf;
+            }
+        }
+
+        h3 {
+            @include mq_texto (1.1rem, 1.6rem);
 
         }
 
@@ -24,22 +28,24 @@
 
             h1,
             h2 {
-                font-size: 24px;
-                line-height: 34px;
+                @include mq_texto (1.5rem, 2.2rem);
             }
+
+        }
+    }
+
+    .footer {
+        @include flex($anchura, flex, column-reverse, center, center, wrap, 0, 1% 0%);
+
+        div {
+            width: $anchura;
+            margin: 1% 0%;
         }
 
-        .productos {
-            .grid__container__productos {
-                .imagenes__index {
-                    h3 {
-                        width: 57%;
-                        font-size: 12px;
-                    }
-
-                }
-            }
-
+        h4 {
+            width: $anchura;
+            text-align: center;
+            padding-top: 1%;
         }
     }
 }
@@ -47,49 +53,52 @@
 
 @media (max-width: 1110px) {
     .main {
-        .hero {
-            .titulo__animado {
-                width: 70%;
-            }
+        .fondo__servicio__index {
+            .introduccion {
+                padding: 8% 11%;
 
-            .fondo__servicio__index {
-                .introduccion {
-                    padding: 8% 11%;
-
-                    h2 {
-                        margin-right: 3%;
-                        width: 34%;
-                    }
+                h2 {
+                    margin-right: 3%;
+                    width: 34%;
                 }
             }
+        }
 
-            .grid__catring__infnatiles,
-            .grid__catring__casamientos,
-            .grid__catring__adultos,
-            .grid__carta__pie,
-            .grid__carta__temporada,
-            .grid__carta__budines,
-            .grid__carta__cheese,
-            .grid__carta__brownies {
-                width: 90%;
-                height: 60vh;
+        .grid__catring__infnatiles,
+        .grid__catring__casamientos,
+        .grid__catring__adultos,
+        .grid__carta__pie,
+        .grid__carta__temporada,
+        .grid__carta__budines,
+        .grid__carta__cheese,
+        .grid__carta__brownies {
+            width: 90%;
+            height: 60vh;
 
-                h3 {
-                    font-size: 14px;
-                }
+            h3 {
+                font-size: 14px;
             }
         }
     }
 }
 
+
 @media (max-width:992px) {
-    .grid__container {
+
+    .main {
         p {
             font-size: 0.9rem;
         }
-    }
 
-    .main {
+        .hero {
+            height: 90vh;
+            background-position: 30%;
+
+            .titulo__hero {
+                @include mq_texto (2.5rem, 6rem);
+            }
+
+        }
 
         .introduccion,
         .fondo__servicio__index .introduccion {
@@ -125,22 +134,21 @@
     }
 }
 
+
 /*-------------------------TABLET------------------------------*/
 @media (max-width: 850px) {
-    .grid__container {
+
+    .main {
         p {
-            
             width: 100%;
             margin: 0%;
         }
-    }
 
-    .main {
+
         .hero {
-            .titulo__animado {
-                width: 100%;
-                margin-left: 0%;
-                padding: 0% 5%;
+            .titulo__hero {
+                text-shadow: -3px -1px 0px #debdefdf;
+                letter-spacing: 0.4rem;
             }
         }
 
@@ -203,10 +211,10 @@
     }
 
     .footer {
-
-        h4,
-        p {
-            text-align: center;
+        div {
+            h3 {
+                @include mq_texto (1rem, 1.9rem);
+            }
         }
     }
 }
@@ -220,6 +228,10 @@
     }
 
     .main {
+
+        h3 {
+            @include mq_texto (0.2rem, 1.7rem);
+        }
 
 
         .grid__catring__infnatiles,
@@ -237,10 +249,29 @@
 }
 
 @media (max-width: 555px) {
-
     .header {
         .logo__menu {
             width: 400px;
+        }
+
+    }
+
+    .main {
+        .hero {
+            .titulo__hero {
+                @include mq_texto (2.3rem, 5.8rem);
+                letter-spacing: 0.3rem;
+                text-shadow: -2px -1px 0px #debdefdf;
+            }
+
+        }
+    }
+
+    .footer {
+        div {
+            h3 {
+                @include mq_texto (0.9rem, 1.8rem);
+            }
         }
     }
 }
@@ -256,27 +287,10 @@
         }
     }
 
-    .footer {
-        h4 {
-            width: 100%;
-            font-size: 12;
-            text-align: center;
-            margin-bottom: 3%;
-        }
-    }
+
 
     .main {
-        .hero {
-            height: 60vh;
-            background-size: cover;
 
-            .titulo__animado {
-                font-size: 45px;
-                font-weight: 600;
-                line-height: 68px;
-            }
-
-        }
 
         .grid__container__productos__mobile {
             width: 100%;
@@ -429,25 +443,41 @@
 
     .main {
         .hero {
-            background: linear-gradient(rgba(152, 120, 120, 0.714), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product.jpg);
-            background-position: 50% 50%;
-            
-
-            .titulo__animado {
+            .titulo__hero {
                 width: 98%;
                 font-size: 2rem;
                 line-height: 3rem;
                 letter-spacing: 0.3rem;
             }
         }
-
     }
 
     .footer {
         div {
             h3 {
-                font-size: 12.5px;
+                @include mq_texto (0.8rem, 1.7rem);
             }
+        }
+    }
+}
+
+@media (max-width: 359px) {
+    .header {
+        .logo__menu {
+            width: 230px;
+        }
+    }
+
+    .footer {
+        div {
+            h3 {
+                @include mq_texto (0.7rem, 1.6rem);
+                letter-spacing: 0.07rem;
+            }
+        }
+
+        h4 {
+            @include mq_texto (0.6rem, 1.5rem);
         }
     }
 }

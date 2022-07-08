@@ -9544,7 +9544,7 @@ textarea.form-control-lg {
 .grid__container h4, .grid__container .h4 {
   font-family: roboto;
   font-size: 0.7rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.1rem;
   text-align: left;
   text-transform: uppercase;
@@ -9673,30 +9673,34 @@ textarea.form-control-lg {
 }
 
 .footer {
-  background-color: #FFFAFA;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: flex-end;
-  padding: 5% 7% 1% 7%;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 3%;
+  background-color: #FFFAFA;
   grid-area: footer;
 }
 .footer div {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 .footer div img {
   width: 30px;
   height: 30px;
 }
 .footer p {
-  width: 20%;
   font-size: 0.7rem;
   margin-bottom: 0;
-}
-.footer h4, .footer .h4 {
-  width: 20%;
 }
 
 /*----HERO----*/
@@ -9709,7 +9713,7 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  background-position: 15%;
+  background-position: 40%;
   background-repeat: no-repeat;
   background-size: cover;
   transition: 0s;
@@ -9794,7 +9798,7 @@ textarea.form-control-lg {
   transform: scale(0.9);
 }
 .main .productos .grid__container__productos .imagenes__index h3, .main .productos .grid__container__productos .imagenes__index .h3 {
-  width: 50%;
+  width: 60%;
   text-align: left;
   background-color: rgba(222, 203, 203, 0.6588235294);
   padding: 2%;
@@ -10159,73 +10163,96 @@ main .card {
 }
 
 /*-------------------------DESKTOP------------------------------*/
+@media (max-width: 1400px) {
+  .main .hero .titulo__hero {
+    font-size: 3rem;
+    line-height: 6.5rem;
+  }
+}
 @media (max-width: 1262px) {
-  .footer {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
+  .main .hero .titulo__hero {
+    font-size: 2.9rem;
+    line-height: 6.4rem;
+    text-shadow: -4px -1px 0px rgba(222, 189, 239, 0.8745098039);
   }
-  .footer div {
-    margin: 3% 0%;
-  }
-  .main .hero .titulo__animado {
-    font-size: 55px;
-    line-height: 75px;
+  .main h3, .main .h3 {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
   }
   .main .introduccion h1, .main .introduccion .h1,
 .main .introduccion h2,
 .main .introduccion .h2 {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
   }
-  .main .productos .grid__container__productos .imagenes__index h3, .main .productos .grid__container__productos .imagenes__index .h3 {
-    width: 57%;
-    font-size: 12px;
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 1% 0%;
+  }
+  .footer div {
+    width: 100%;
+    margin: 1% 0%;
+  }
+  .footer h4, .footer .h4 {
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
   }
 }
 @media (max-width: 1110px) {
-  .main .hero .titulo__animado {
-    width: 70%;
-  }
-  .main .hero .fondo__servicio__index .introduccion, .main .fondo__servicio__index .hero .cards__servicio .introduccion {
+  .main .fondo__servicio__index .introduccion {
     padding: 8% 11%;
   }
-  .main .hero .fondo__servicio__index .introduccion h2, .main .fondo__servicio__index .hero .cards__servicio .introduccion h2, .main .hero .fondo__servicio__index .introduccion .h2, .main .fondo__servicio__index .hero .cards__servicio .introduccion .h2 {
+  .main .fondo__servicio__index .introduccion h2, .main .fondo__servicio__index .introduccion .h2 {
     margin-right: 3%;
     width: 34%;
   }
-  .main .hero .grid__catring__infnatiles,
-.main .hero .grid__catring__casamientos,
-.main .hero .grid__catring__adultos,
-.main .hero .grid__carta__pie,
-.main .hero .grid__carta__temporada,
-.main .hero .grid__carta__budines,
-.main .hero .grid__carta__cheese,
-.main .hero .grid__carta__brownies {
+  .main .grid__catring__infnatiles,
+.main .grid__catring__casamientos,
+.main .grid__catring__adultos,
+.main .grid__carta__pie,
+.main .grid__carta__temporada,
+.main .grid__carta__budines,
+.main .grid__carta__cheese,
+.main .grid__carta__brownies {
     width: 90%;
     height: 60vh;
   }
-  .main .hero .grid__catring__infnatiles h3, .main .hero .grid__catring__infnatiles .h3,
-.main .hero .grid__catring__casamientos h3,
-.main .hero .grid__catring__casamientos .h3,
-.main .hero .grid__catring__adultos h3,
-.main .hero .grid__catring__adultos .h3,
-.main .hero .grid__carta__pie h3,
-.main .hero .grid__carta__pie .h3,
-.main .hero .grid__carta__temporada h3,
-.main .hero .grid__carta__temporada .h3,
-.main .hero .grid__carta__budines h3,
-.main .hero .grid__carta__budines .h3,
-.main .hero .grid__carta__cheese h3,
-.main .hero .grid__carta__cheese .h3,
-.main .hero .grid__carta__brownies h3,
-.main .hero .grid__carta__brownies .h3 {
+  .main .grid__catring__infnatiles h3, .main .grid__catring__infnatiles .h3,
+.main .grid__catring__casamientos h3,
+.main .grid__catring__casamientos .h3,
+.main .grid__catring__adultos h3,
+.main .grid__catring__adultos .h3,
+.main .grid__carta__pie h3,
+.main .grid__carta__pie .h3,
+.main .grid__carta__temporada h3,
+.main .grid__carta__temporada .h3,
+.main .grid__carta__budines h3,
+.main .grid__carta__budines .h3,
+.main .grid__carta__cheese h3,
+.main .grid__carta__cheese .h3,
+.main .grid__carta__brownies h3,
+.main .grid__carta__brownies .h3 {
     font-size: 14px;
   }
 }
 @media (max-width: 992px) {
-  .grid__container p {
+  .main p {
     font-size: 0.9rem;
+  }
+  .main .hero {
+    height: 90vh;
+    background-position: 30%;
+  }
+  .main .hero .titulo__hero {
+    font-size: 2.5rem;
+    line-height: 6rem;
   }
   .main .introduccion,
 .main .fondo__servicio__index .introduccion {
@@ -10257,14 +10284,13 @@ main .card {
 }
 /*-------------------------TABLET------------------------------*/
 @media (max-width: 850px) {
-  .grid__container p {
+  .main p {
     width: 100%;
     margin: 0%;
   }
-  .main .hero .titulo__animado {
-    width: 100%;
-    margin-left: 0%;
-    padding: 0% 5%;
+  .main .hero .titulo__hero {
+    text-shadow: -3px -1px 0px rgba(222, 189, 239, 0.8745098039);
+    letter-spacing: 0.4rem;
   }
   .main .productos .grid__container__productos {
     width: 100%;
@@ -10296,14 +10322,18 @@ main .card {
   .main .cards__combo .titulo__combo {
     font-size: 27px;
   }
-  .footer h4, .footer .h4,
-.footer p {
-    text-align: center;
+  .footer div h3, .footer div .h3 {
+    font-size: 1rem;
+    line-height: 1.9rem;
   }
 }
 @media (max-width: 700px) {
   .header .logo__menu {
     width: 450px;
+  }
+  .main h3, .main .h3 {
+    font-size: 0.2rem;
+    line-height: 1.7rem;
   }
   .main .grid__catring__infnatiles,
 .main .grid__catring__casamientos,
@@ -10320,26 +10350,21 @@ main .card {
   .header .logo__menu {
     width: 400px;
   }
+  .main .hero .titulo__hero {
+    font-size: 2.3rem;
+    line-height: 5.8rem;
+    letter-spacing: 0.3rem;
+    text-shadow: -2px -1px 0px rgba(222, 189, 239, 0.8745098039);
+  }
+  .footer div h3, .footer div .h3 {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
 }
 /*-------------------------PHONES------------------------------*/
 @media (max-width: 500px) {
   .header .logo__menu {
     width: 300px;
-  }
-  .footer h4, .footer .h4 {
-    width: 100%;
-    font-size: 12;
-    text-align: center;
-    margin-bottom: 3%;
-  }
-  .main .hero {
-    height: 60vh;
-    background-size: cover;
-  }
-  .main .hero .titulo__animado {
-    font-size: 45px;
-    font-weight: 600;
-    line-height: 68px;
   }
   .main .grid__container__productos__mobile {
     width: 100%;
@@ -10470,18 +10495,29 @@ main .card {
   .header .logo__menu {
     width: 275px;
   }
-  .main .hero {
-    background: linear-gradient(rgba(152, 120, 120, 0.714), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product.jpg);
-    background-position: 50% 50%;
-  }
-  .main .hero .titulo__animado {
+  .main .hero .titulo__hero {
     width: 98%;
     font-size: 2rem;
     line-height: 3rem;
     letter-spacing: 0.3rem;
   }
   .footer div h3, .footer div .h3 {
-    font-size: 12.5px;
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+  }
+}
+@media (max-width: 359px) {
+  .header .logo__menu {
+    width: 230px;
+  }
+  .footer div h3, .footer div .h3 {
+    font-size: 0.7rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.07rem;
+  }
+  .footer h4, .footer .h4 {
+    font-size: 0.6rem;
+    line-height: 1.5rem;
   }
 }
 

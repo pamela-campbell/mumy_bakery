@@ -1,16 +1,10 @@
 .footer {
+    @include flex($anchura, flex, row, space-evenly, flex-end, wrap, 0, 3%);
     background-color: $fondo-footer;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 5% 7% 1% 7%;
     grid-area: footer;
 
     div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex($anchura - 50, flex, column, center, center, wrap, 0, 0);
 
         img {
             width: 30px;
@@ -19,13 +13,7 @@
     }
 
     p {
-        width: 20%;
         font-size: 0.7rem;
         margin-bottom: 0;
-    }
-
-    h4 {
-        width: 20%;
-
     }
 }
