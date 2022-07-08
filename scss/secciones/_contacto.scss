@@ -1,3 +1,9 @@
+.main {
+    .titulo__form {
+        @include mq_texto (1.2rem, 2rem);
+    }
+}
+
 .horarios {
     iframe {
         width: 100%;
@@ -5,6 +11,10 @@
         grid-area: mapa;
         background-image: contain;
         border: none;
+    }
+
+    h2 {
+        @extend .titulo__form;
     }
 }
 

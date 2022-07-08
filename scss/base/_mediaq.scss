@@ -9,7 +9,6 @@
     }
 }
 
-
 @media (max-width: 1262px) {
     .main {
         .hero {
@@ -19,18 +18,23 @@
             }
         }
 
-        h3 {
-            @include mq_texto (1.1rem, 1.6rem);
-
-        }
-
         .introduccion {
 
             h1,
             h2 {
-                @include mq_texto (1.5rem, 2.2rem);
+                @include mq_texto (1.6rem, 2.2rem);
             }
+        }
 
+        .productos {
+            .grid__container__productos {
+                .imagenes__index {
+                    h3 {
+                        @include mq_texto (0.9rem, 2rem);
+                        width: $anchura-secciones;
+                    }
+                }
+            }
         }
     }
 
@@ -53,16 +57,29 @@
 
 @media (max-width: 1110px) {
     .main {
-        .fondo__servicio__index {
-            .introduccion {
-                padding: 8% 11%;
+        p {
+            @include mq_texto (1rem, 1.9rem);
+        }
 
-                h2 {
-                    margin-right: 3%;
-                    width: 34%;
-                }
+        .introduccion {
+            @include flex($anchura, flex, column, center, center, wrap, 0%, 2% 3%);
+
+            h1,
+            h2 {
+                width: $anchura;
+                text-align: center;
+                margin-right: 0%;
+                padding: 2% 0%;
+            }
+
+            p {
+                width: $anchura-secciones;
+                padding-bottom: 2%;
             }
         }
+
+
+
 
         .grid__catring__infnatiles,
         .grid__catring__casamientos,
@@ -86,10 +103,8 @@
 @media (max-width:992px) {
 
     .main {
-        p {
-            font-size: 0.9rem;
-        }
 
+       
         .hero {
             height: 90vh;
             background-position: 30%;
@@ -100,28 +115,6 @@
 
         }
 
-        .introduccion,
-        .fondo__servicio__index .introduccion {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 5%;
-
-            h2,
-            h1 {
-                width: 100%;
-                margin: 2% 0% 4% 0%;
-                text-align: center;
-                font-size: 26px;
-                line-height: 40px;
-            }
-
-            p {
-                width: 100%;
-                margin: 0%;
-                padding: 0% 5%;
-            }
-        }
 
         .cards__combo {
 
@@ -139,11 +132,6 @@
 @media (max-width: 850px) {
 
     .main {
-        p {
-            width: 100%;
-            margin: 0%;
-        }
-
 
         .hero {
             .titulo__hero {

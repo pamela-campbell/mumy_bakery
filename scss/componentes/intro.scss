@@ -6,11 +6,11 @@
         h1,
         h2 {
             margin-right: 3%;
-            width: 34%;
+            width: $anchura - 66;
         }
 
         p {
-            width: 60%;
+            width: $anchura - 40;
 
             a {
                 text-decoration: none;
