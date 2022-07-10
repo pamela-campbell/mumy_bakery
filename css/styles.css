@@ -9616,8 +9616,7 @@ textarea.form-control-lg {
 }
 .header nav div .navbar-toggler {
   border: none;
-  border-radius: 0;
-  background: linear-gradient(rgba(238, 187, 187, 0.481), rgba(249, 247, 247, 0.481));
+  background-color: transparent;
 }
 .header nav div div ul li {
   text-align: end;
@@ -9907,12 +9906,12 @@ main .card {
 }
 
 .main .grid__catring__infnatiles, .main .grid__catring__adultos, .main .grid__catring__casamientos {
-  width: 78%;
-  height: 95vh;
-  margin: 3% auto 5% auto;
+  width: 88%;
+  height: auto;
+  margin: 6% auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 2fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "foto__vertical texto texto" "foto__vertical  foto__horizontal foto__horizontal__dos";
   gap: 20px;
 }
@@ -9938,7 +9937,7 @@ main .card {
 }
 .main .grid__catring__casamientos .foto__vertical {
   grid-area: foto__vertical;
-  background-image: url(../fotos_mumi/casamiento_1.jpg);
+  background-image: url(../fotos_mumi/casamiento.jpg);
 }
 .main .grid__catring__adultos .foto__horizontal {
   grid-area: foto__horizontal;
@@ -10159,16 +10158,36 @@ main .card {
     line-height: 6.4rem;
     text-shadow: -4px -1px 0px rgba(222, 189, 239, 0.8745098039);
   }
+  .main .introduccion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 2% 0%;
+  }
   .main .introduccion h1, .main .introduccion .h1,
 .main .introduccion h2,
 .main .introduccion .h2 {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+    width: 78%;
+    text-align: center;
+    margin-right: 0%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  .main .introduccion p {
+    width: 88%;
+    padding-bottom: 2%;
   }
   .main .productos .grid__container__productos .imagenes__index h3, .main .productos .grid__container__productos .imagenes__index .h3 {
     font-size: 0.9rem;
     line-height: 2rem;
     width: 78%;
+  }
+  .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
+    height: 80vh;
   }
   .footer {
     width: 100%;
@@ -10195,53 +10214,9 @@ main .card {
     font-size: 1rem;
     line-height: 1.9rem;
   }
-  .main .introduccion {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0%;
-    padding: 2% 3%;
-  }
-  .main .introduccion h1, .main .introduccion .h1,
-.main .introduccion h2,
-.main .introduccion .h2 {
-    width: 100%;
-    text-align: center;
-    margin-right: 0%;
-    padding: 4% 0%;
-  }
-  .main .introduccion p {
-    width: 90%;
-    padding-bottom: 2%;
-  }
-  .main .grid__catring__infnatiles,
-.main .grid__catring__casamientos,
-.main .grid__catring__adultos,
-.main .grid__carta__pie,
-.main .grid__carta__temporada,
-.main .grid__carta__budines,
-.main .grid__carta__cheese,
-.main .grid__carta__brownies {
-    width: 90%;
-    height: 60vh;
-  }
-  .main .grid__catring__infnatiles h3, .main .grid__catring__infnatiles .h3, .main .grid__catring__casamientos .h3, .main .grid__catring__adultos .h3,
-.main .grid__catring__casamientos h3,
-.main .grid__catring__adultos h3,
-.main .grid__carta__pie h3,
-.main .grid__carta__pie .h3,
-.main .grid__carta__temporada h3,
-.main .grid__carta__temporada .h3,
-.main .grid__carta__budines h3,
-.main .grid__carta__budines .h3,
-.main .grid__carta__cheese h3,
-.main .grid__carta__cheese .h3,
-.main .grid__carta__brownies h3,
-.main .grid__carta__brownies .h3 {
-    font-size: 14px;
+  .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
+    height: auto;
+    grid-template-areas: "texto texto texto" " foto__vertical foto__horizontal foto__horizontal__dos ";
   }
 }
 @media (max-width: 992px) {
@@ -10262,6 +10237,9 @@ main .card {
   .main .hero .titulo__hero {
     text-shadow: -3px -1px 0px rgba(222, 189, 239, 0.8745098039);
     letter-spacing: 0.4rem;
+  }
+  .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
+    height: 80vh;
   }
   .main .productos .grid__container__productos {
     width: 100%;
@@ -10306,15 +10284,9 @@ main .card {
     font-size: 0.2rem;
     line-height: 1.7rem;
   }
-  .main .grid__catring__infnatiles,
-.main .grid__catring__casamientos,
-.main .grid__catring__adultos,
-.main .grid__carta__pie,
-.main .grid__carta__temporada,
-.main .grid__carta__budines,
-.main .grid__carta__cheese,
-.main .grid__carta__brownies {
-    width: 97%;
+  .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
+    height: auto;
+    grid-template-areas: "texto texto texto" " foto__vertical foto__vertical foto__horizontal";
   }
 }
 @media (max-width: 555px) {
@@ -10393,51 +10365,6 @@ main .card {
     grid-template-rows: repeat(2 1fr);
     grid-template-areas: "catering__cumpleaño catering__cumpleaño" "desayuno muffin";
     gap: 5px;
-  }
-  .main .grid__catring__infnatiles,
-.main .grid__catring__casamientos,
-.main .grid__catring__adultos,
-.main .grid__carta__pie,
-.main .grid__carta__temporada,
-.main .grid__carta__budines,
-.main .grid__carta__cheese,
-.main .grid__carta__brownies {
-    margin: 10% auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    grid-template-areas: "texto texto" "foto__vertical foto__horizontal";
-  }
-  .main .grid__catring__infnatiles .texto h2, .main .grid__catring__infnatiles .texto .h2, .main .grid__catring__casamientos .texto .h2, .main .grid__catring__adultos .texto .h2,
-.main .grid__catring__casamientos .texto h2,
-.main .grid__catring__adultos .texto h2,
-.main .grid__carta__pie .texto h2,
-.main .grid__carta__pie .texto .h2,
-.main .grid__carta__temporada .texto h2,
-.main .grid__carta__temporada .texto .h2,
-.main .grid__carta__budines .texto h2,
-.main .grid__carta__budines .texto .h2,
-.main .grid__carta__cheese .texto h2,
-.main .grid__carta__cheese .texto .h2,
-.main .grid__carta__brownies .texto h2,
-.main .grid__carta__brownies .texto .h2 {
-    font-size: 18.5px;
-    line-height: 30px;
-  }
-  .main .grid__catring__infnatiles .texto h3, .main .grid__catring__infnatiles .texto .h3, .main .grid__catring__casamientos .texto .h3, .main .grid__catring__adultos .texto .h3,
-.main .grid__catring__casamientos .texto h3,
-.main .grid__catring__adultos .texto h3,
-.main .grid__carta__pie .texto h3,
-.main .grid__carta__pie .texto .h3,
-.main .grid__carta__temporada .texto h3,
-.main .grid__carta__temporada .texto .h3,
-.main .grid__carta__budines .texto h3,
-.main .grid__carta__budines .texto .h3,
-.main .grid__carta__cheese .texto h3,
-.main .grid__carta__cheese .texto .h3,
-.main .grid__carta__brownies .texto h3,
-.main .grid__carta__brownies .texto .h3 {
-    font-size: 14px;
   }
   .cards__combo p {
     padding-left: 3%;

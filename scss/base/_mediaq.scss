@@ -23,10 +23,20 @@
         }
 
         .introduccion {
+            @include flex($anchura, flex, column, center, center, wrap, 0%, 2% 0%);
 
             h1,
             h2 {
-                @include mq_texto (1.6rem, 2.2rem);
+                width: $anchura-secciones;
+                text-align: center;
+                margin-right: 0%;
+                margin-top: 4%;
+                margin-bottom: 4%;
+            }
+
+            p {
+                width: $anchura-secciones + 10;
+                padding-bottom: 2%;
             }
         }
 
@@ -39,6 +49,10 @@
                     }
                 }
             }
+        }
+
+        .grid__catring__infnatiles {
+            height: 80vh;
         }
     }
 
@@ -65,40 +79,9 @@
             @include mq_texto (1rem, 1.9rem);
         }
 
-        .introduccion {
-            @include flex($anchura, flex, column, center, center, wrap, 0%, 2% 3%);
-
-            h1,
-            h2 {
-                width: $anchura;
-                text-align: center;
-                margin-right: 0%;
-                padding: 4% 0%;
-            }
-
-            p {
-                width: $anchura-secciones + 12;
-                padding-bottom: 2%;
-            }
-        }
-
-
-
-
-        .grid__catring__infnatiles,
-        .grid__catring__casamientos,
-        .grid__catring__adultos,
-        .grid__carta__pie,
-        .grid__carta__temporada,
-        .grid__carta__budines,
-        .grid__carta__cheese,
-        .grid__carta__brownies {
-            width: 90%;
-            height: 60vh;
-
-            h3 {
-                font-size: 14px;
-            }
+        .grid__catring__infnatiles {
+            @include mq_grid (auto, "texto texto texto"
+                " foto__vertical foto__horizontal foto__horizontal__dos ");
         }
     }
 }
@@ -142,6 +125,10 @@
                 text-shadow: -3px -1px 0px #debdefdf;
                 letter-spacing: 0.4rem;
             }
+        }
+
+        .grid__catring__infnatiles {
+            height: 80vh;
         }
 
         .productos {
@@ -225,17 +212,9 @@
             @include mq_texto (0.2rem, 1.7rem);
         }
 
-
-        .grid__catring__infnatiles,
-        .grid__catring__casamientos,
-        .grid__catring__adultos,
-        .grid__carta__pie,
-        .grid__carta__temporada,
-        .grid__carta__budines,
-        .grid__carta__cheese,
-        .grid__carta__brownies {
-            width: 97%;
-
+        .grid__catring__infnatiles {
+            @include mq_grid (auto, "texto texto texto"
+                " foto__vertical foto__vertical foto__horizontal");
         }
     }
 }
@@ -370,40 +349,6 @@
                 ;
 
                 gap: 5px;
-            }
-
-        }
-
-
-
-        .grid__catring__infnatiles,
-        .grid__catring__casamientos,
-        .grid__catring__adultos,
-        .grid__carta__pie,
-        .grid__carta__temporada,
-        .grid__carta__budines,
-        .grid__carta__cheese,
-        .grid__carta__brownies {
-            margin: 10% auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 2fr;
-
-
-            grid-template-areas:
-                "texto texto"
-                "foto__vertical foto__horizontal"
-            ;
-
-            .texto {
-                h2 {
-                    font-size: 18.5px;
-                    line-height: 30px;
-                }
-
-                h3 {
-                    font-size: 14px;
-                }
             }
         }
     }

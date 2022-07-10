@@ -43,8 +43,14 @@
     padding: $padding;
 }
 
+//mixins media queries//
+
 @mixin mq_texto ($size, $high) {
-        font-size: $size;
-        line-height: $high;
+    font-size: $size;
+    line-height: $high;
 }
 
+@mixin mq_grid ($height, $areas) {
+    height: $height;
+    grid-template-areas: $areas;
+}
