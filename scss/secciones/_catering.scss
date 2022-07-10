@@ -1,12 +1,15 @@
 .main {
     .grid__catring__infnatiles {
-        @include grid($anchura-secciones, 80vh, 3% auto 5% auto, grid, 2fr 3fr, 1fr 2fr, "foto__vertical texto"
-            "foto__vertical  foto__horizontal", 20px);
+        @include grid($anchura-secciones, 95vh, 3% auto 5% auto, grid, repeat(3, 1fr),repeat(3, 2fr), "foto__vertical texto texto"
+            "foto__vertical  foto__horizontal foto__horizontal__dos", 20px);
 
         .foto__horizontal {
-            @include areas(foto__horizontal, url(../fotos_mumi/testimonio_5.jpg));
+            @include areas(foto__horizontal, url(../fotos_mumi/infantil_2.jpg));
         }
 
+        .foto__horizontal__dos {
+            @include areas(foto__horizontal__dos, url(../fotos_mumi/infantil_1.jpg));
+        }
         .foto__vertical {
             @include areas(foto__vertical, url(../fotos_mumi/testimonio_6.jpg));
         }
@@ -19,6 +22,10 @@
             @include areas(foto__horizontal, url(../fotos_mumi//casamiento_2.jpg));
         }
 
+        .foto__horizontal__dos {
+            @include areas(foto__horizontal__dos, url(../fotos_mumi/casamiento_3.jpg));
+        }
+
         .foto__vertical {
             @include areas(foto__vertical, url(../fotos_mumi/casamiento_1.jpg));
         }
@@ -28,11 +35,15 @@
         @extend .grid__catring__infnatiles;
 
         .foto__horizontal {
-            @include areas(foto__horizontal, url(../fotos_mumi/adulto_2.jpg));
+            @include areas(foto__horizontal, url(../fotos_mumi/aultos_3.jpg));
+        }
+
+        .foto__horizontal__dos {
+            @include areas(foto__horizontal__dos, url(../fotos_mumi/adultos_2.jpg));
         }
 
         .foto__vertical {
-            @include areas(foto__vertical, url(../fotos_mumi/adulto_1.jpg));
+            @include areas(foto__vertical, url(../fotos_mumi/adultos_1.jpg));
         }
     }
 

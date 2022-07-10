@@ -9570,6 +9570,27 @@ textarea.form-control-lg {
 .grid__container a:hover {
   transform: scale(1.1);
 }
+.grid__container button {
+  font-family: Oswald;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  padding: 1% 5%;
+  border: none;
+  border-radius: 20px;
+  color: #fbfbfb;
+  background-color: #cea992;
+  transition: 2s;
+}
+.grid__container button:hover:hover {
+  color: #c76b63;
+  background-color: #F3EBEB;
+  transform: scale(0.9);
+}
 .grid__container .main {
   grid-area: main;
   background: #fbfbfb;
@@ -9580,6 +9601,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-size: cover;
   transition: 3s;
+  border-radius: 5px;
 }
 .grid__container .main .imagenes .imagenes:hover,
 .grid__container .main .imagenes__index .imagenes:hover {
@@ -9886,17 +9908,21 @@ main .card {
 
 .main .grid__catring__infnatiles, .main .grid__catring__adultos, .main .grid__catring__casamientos {
   width: 78%;
-  height: 80vh;
+  height: 95vh;
   margin: 3% auto 5% auto;
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 1fr 2fr;
-  grid-template-areas: "foto__vertical texto" "foto__vertical  foto__horizontal";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 2fr);
+  grid-template-areas: "foto__vertical texto texto" "foto__vertical  foto__horizontal foto__horizontal__dos";
   gap: 20px;
 }
 .main .grid__catring__infnatiles .foto__horizontal, .main .grid__catring__adultos .foto__horizontal, .main .grid__catring__casamientos .foto__horizontal {
   grid-area: foto__horizontal;
-  background-image: url(../fotos_mumi/testimonio_5.jpg);
+  background-image: url(../fotos_mumi/infantil_2.jpg);
+}
+.main .grid__catring__infnatiles .foto__horizontal__dos, .main .grid__catring__adultos .foto__horizontal__dos, .main .grid__catring__casamientos .foto__horizontal__dos {
+  grid-area: foto__horizontal__dos;
+  background-image: url(../fotos_mumi/infantil_1.jpg);
 }
 .main .grid__catring__infnatiles .foto__vertical, .main .grid__catring__adultos .foto__vertical, .main .grid__catring__casamientos .foto__vertical {
   grid-area: foto__vertical;
@@ -9906,17 +9932,25 @@ main .card {
   grid-area: foto__horizontal;
   background-image: url(../fotos_mumi//casamiento_2.jpg);
 }
+.main .grid__catring__casamientos .foto__horizontal__dos {
+  grid-area: foto__horizontal__dos;
+  background-image: url(../fotos_mumi/casamiento_3.jpg);
+}
 .main .grid__catring__casamientos .foto__vertical {
   grid-area: foto__vertical;
   background-image: url(../fotos_mumi/casamiento_1.jpg);
 }
 .main .grid__catring__adultos .foto__horizontal {
   grid-area: foto__horizontal;
-  background-image: url(../fotos_mumi/adulto_2.jpg);
+  background-image: url(../fotos_mumi/aultos_3.jpg);
+}
+.main .grid__catring__adultos .foto__horizontal__dos {
+  grid-area: foto__horizontal__dos;
+  background-image: url(../fotos_mumi/adultos_2.jpg);
 }
 .main .grid__catring__adultos .foto__vertical {
   grid-area: foto__vertical;
-  background-image: url(../fotos_mumi/adulto_1.jpg);
+  background-image: url(../fotos_mumi/adultos_1.jpg);
 }
 .main .texto {
   grid-area: texto;

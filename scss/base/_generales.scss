@@ -55,6 +55,24 @@
         }
     }
 
+    button {
+        @include tipografias(Oswald, 1.1rem, 400, 2rem, center, uppercase, none, 0.1rem);
+        padding: 1% 5%;
+        border: none;
+        border-radius: 20px;
+        color: $fondo-secundario;
+        background-color: #cea992;
+        transition: 2s;
+
+        &:hover {
+            &:hover {
+                color: $color-destacado;
+                background-color: $fondo-principal;
+                transform: scale(0.9);
+            }
+        }
+    }
+
     .main {
         grid-area: main;
         background: $fondo-secundario;
@@ -65,6 +83,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             transition: 3s;
+            border-radius: 5px;
 
             .imagenes:hover {
                 transform: scale(1.1);
