@@ -1,7 +1,7 @@
 .main {
     .grid__catring__infnatiles {
         @include grid($anchura-secciones + 10, auto, 6% auto, grid, repeat(3, 1fr),repeat(2, 1fr), 
-        "foto__vertical texto texto" "foto__vertical  foto__horizontal foto__horizontal__dos", 20px);
+        "foto__vertical texto texto" "foto__vertical  foto__horizontal foto__horizontal__dos", 2%);
 
         .foto__horizontal {
             @include areas(foto__horizontal, url(../fotos_mumi/infantil_2.jpg));

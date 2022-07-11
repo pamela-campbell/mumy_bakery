@@ -3,7 +3,7 @@
     .a__la__carta {
         .grid__carta__pie {
             @include grid($anchura-secciones + 10, auto, 6% auto, grid, repeat(2, 1fr), repeat(2, 2fr),
-                "texto texto""foto__vertical  foto__horizontal", 20px);
+                "texto texto""foto__vertical  foto__horizontal", 3%);
 
             .foto__horizontal {
                 @include areas(foto__horizontal, url(../fotos_mumi/prodctos_1.jpg));
@@ -19,6 +19,10 @@
 
             h3 {
                 text-align: left;
+            }
+
+            button {
+                margin-bottom: 5%;
             }
         }
 
@@ -70,53 +74,61 @@
             }
         }
     }
-
 }
 
 /*-------Precios---------*/
-.cards__combo {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.481), rgba(190, 156, 144, 0.52), rgba(255, 255, 255, 0.481));
-    padding-top: 2%;
+.main {
+    .cards__combo {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.481), rgba(190, 156, 144, 0.52), rgba(255, 255, 255, 0.481));
+        padding-top: 2%;
+        border-top: 1px solid $fondo-principal;
 
-    .titulo__combo {
-        text-align: center;
-    }
-
-    .llevame {
-        @include flex($anchura, flex, column, center, center, wrap, 0%, 0% 0% 3% 0%);
-
-        p {
+        .titulo__combo {
+            @extend .grid__h__dos;
             text-align: center;
-            text-transform: uppercase;
-            font-weight: 400;
-            padding: 2% 0%;
-        }
-    }
-
-    .animacion__card {
-        transition: 1s;
-
-        &:hover {
-            transform: scale(1.1);
         }
 
-        .card__color {
-            background-color: transparent;
+        .llevame {
+            @include flex($anchura, flex, column, center, center, wrap, 0%, 0% 0% 3% 0%);
 
-            .card__texto {
-                h3 {
-                    font-size: 1.5rem;
-                }
+            p {
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 400;
+                padding: 2% 4%;
+            }
 
-                ul {
-                    li {
-                        padding: 2% 0%;
+            button {
+                margin-bottom: 5%;
+                padding: 2% 8%;
+            }
+        }
+
+        .animacion__card {
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            .card__color {
+                background-color: transparent;
+
+                .card__texto {
+                    h3 {
+                        font-size: 1.5rem;
                     }
-                }
 
-                button {
-                    background-color: #c0d8ec;
-                    color: $texto-color;
+                    ul {
+                        li {
+                            padding: 2% 0%;
+                        }
+                    }
+
+                    button {
+                        background-color: #eed3b99a;
+                        color: $texto-color;
+                    }
                 }
             }
         }

@@ -15,5 +15,10 @@
     p {
         font-size: 0.7rem;
         margin-bottom: 0;
+        width: $anchura - 75;
+    }
+
+    h4 {
+        width: $anchura - 75;
     }
 }

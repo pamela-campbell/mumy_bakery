@@ -9727,6 +9727,10 @@ textarea.form-control-lg {
 .footer p {
   font-size: 0.7rem;
   margin-bottom: 0;
+  width: 25%;
+}
+.footer h4, .footer .h4 {
+  width: 25%;
 }
 
 /*----HERO----*/
@@ -9917,7 +9921,7 @@ main .card {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "foto__vertical texto texto" "foto__vertical  foto__horizontal foto__horizontal__dos";
-  gap: 20px;
+  gap: 2%;
 }
 .main .grid__catring__infnatiles .foto__horizontal, .main .grid__catring__adultos .foto__horizontal, .main .grid__catring__casamientos .foto__horizontal {
   grid-area: foto__horizontal;
@@ -9958,7 +9962,7 @@ main .card {
 .main .texto {
   grid-area: texto;
 }
-.main .texto .grid__h__dos {
+.main .texto .grid__h__dos, .main .texto .cards__combo .titulo__combo, .main .cards__combo .texto .titulo__combo {
   font-size: 1.5rem;
   text-align: left;
   margin-bottom: 3%;
@@ -9976,7 +9980,7 @@ main .card {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 2fr);
   grid-template-areas: "texto texto" "foto__vertical  foto__horizontal";
-  gap: 20px;
+  gap: 3%;
 }
 .main .a__la__carta .grid__carta__pie .foto__horizontal, .main .a__la__carta .grid__carta__brownies .foto__horizontal, .main .a__la__carta .grid__carta__cheese .foto__horizontal, .main .a__la__carta .grid__carta__budines .foto__horizontal, .main .a__la__carta .grid__carta__temporada .foto__horizontal {
   grid-area: foto__horizontal;
@@ -9991,6 +9995,9 @@ main .card {
 }
 .main .a__la__carta .texto h3, .main .a__la__carta .texto .h3 {
   text-align: left;
+}
+.main .a__la__carta .texto button {
+  margin-bottom: 5%;
 }
 .main .a__la__carta .grid__carta__temporada .foto__horizontal {
   grid-area: foto__horizontal;
@@ -10026,14 +10033,15 @@ main .card {
 }
 
 /*-------Precios---------*/
-.cards__combo {
+.main .cards__combo {
   background-image: linear-gradient(rgba(255, 255, 255, 0.481), rgba(190, 156, 144, 0.52), rgba(255, 255, 255, 0.481));
   padding-top: 2%;
+  border-top: 1px solid #F3EBEB;
 }
-.cards__combo .titulo__combo {
+.main .cards__combo .titulo__combo {
   text-align: center;
 }
-.cards__combo .llevame {
+.main .cards__combo .llevame {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -10043,29 +10051,33 @@ main .card {
   margin: 0%;
   padding: 0% 0% 3% 0%;
 }
-.cards__combo .llevame p {
+.main .cards__combo .llevame p {
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
-  padding: 2% 0%;
+  padding: 2% 4%;
 }
-.cards__combo .animacion__card {
+.main .cards__combo .llevame button {
+  margin-bottom: 5%;
+  padding: 2% 8%;
+}
+.main .cards__combo .animacion__card {
   transition: 1s;
 }
-.cards__combo .animacion__card:hover {
+.main .cards__combo .animacion__card:hover {
   transform: scale(1.1);
 }
-.cards__combo .animacion__card .card__color {
+.main .cards__combo .animacion__card .card__color {
   background-color: transparent;
 }
-.cards__combo .animacion__card .card__color .card__texto h3, .cards__combo .animacion__card .card__color .card__texto .h3 {
+.main .cards__combo .animacion__card .card__color .card__texto h3, .main .cards__combo .animacion__card .card__color .card__texto .h3 {
   font-size: 1.5rem;
 }
-.cards__combo .animacion__card .card__color .card__texto ul li {
+.main .cards__combo .animacion__card .card__color .card__texto ul li {
   padding: 2% 0%;
 }
-.cards__combo .animacion__card .card__color .card__texto button {
-  background-color: #c0d8ec;
+.main .cards__combo .animacion__card .card__color .card__texto button {
+  background-color: rgba(238, 211, 185, 0.6039215686);
   color: #262626;
 }
 
@@ -10223,7 +10235,7 @@ main .card {
   .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
     height: 80vh;
   }
-  .main .grid__catring__infnatiles .texto .grid__h__dos, .main .grid__catring__casamientos .texto .grid__h__dos, .main .grid__catring__adultos .texto .grid__h__dos {
+  .main .texto .grid__h__dos, .main .texto .cards__combo .titulo__combo, .main .cards__combo .texto .titulo__combo {
     font-size: 1.4rem;
     line-height: 2rem;
     font-weight: 400;
@@ -10273,19 +10285,19 @@ main .card {
     margin-bottom: 8%;
   }
   .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
-    width: 100%;
+    width: 78%;
     height: auto;
-    margin: 4% 3%;
+    margin: 4% auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "texto texto" "foto__vertical foto__horizontal";
-    gap: 10px;
+    gap: 2%;
   }
   .main .grid__catring__infnatiles .texto button, .main .grid__catring__casamientos .texto button, .main .grid__catring__adultos .texto button {
     margin: 3% 0%;
   }
-  .main .grid__catring__infnatiles .texto .grid__h__dos, .main .grid__catring__casamientos .texto .grid__h__dos, .main .grid__catring__adultos .texto .grid__h__dos {
+  .main .grid__catring__infnatiles .texto .grid__h__dos, .main .grid__catring__casamientos .texto .grid__h__dos, .main .grid__catring__adultos .texto .grid__h__dos, .main .grid__catring__infnatiles .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__infnatiles .texto .titulo__combo, .main .grid__catring__casamientos .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__casamientos .texto .titulo__combo, .main .grid__catring__adultos .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__adultos .texto .titulo__combo {
     margin-top: 5%;
   }
 }
@@ -10295,6 +10307,19 @@ main .card {
     line-height: 5.8rem;
     letter-spacing: 0.3rem;
     text-shadow: -2px -1px 0px rgba(222, 189, 239, 0.8745098039);
+  }
+  .main .a__la__carta .grid__carta__pie, .main .a__la__carta .grid__carta__temporada, .main .a__la__carta .grid__carta__budines, .main .a__la__carta .grid__carta__cheese, .main .a__la__carta .grid__carta__brownies {
+    height: auto;
+    grid-template-areas: "foto__vertical foto__vertical" "texto texto";
+    margin: 2% auto;
+    column-gap: 0%;
+    row-gap: 3%;
+  }
+  .main .texto .grid__h__dos, .main .texto .cards__combo .titulo__combo, .main .cards__combo .texto .titulo__combo {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    background-color: rgba(238, 211, 185, 0.6039215686);
+    padding-left: 2%;
   }
   .main .footer div h3, .main .footer div .h3 {
     font-size: 0.9rem;
@@ -10369,10 +10394,6 @@ main .card {
     grid-template-areas: "catering__cumpleaño catering__cumpleaño" "desayuno muffin";
     gap: 5px;
   }
-  .cards__combo p {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
 }
 @media (max-width: 420px) {
   .main .hero .titulo__hero {
@@ -10385,7 +10406,7 @@ main .card {
     font-size: 1.6rem;
     line-height: 2.2rem;
   }
-  .main .grid__catring__infnatiles .texto .grid__h__dos, .main .grid__catring__casamientos .texto .grid__h__dos, .main .grid__catring__adultos .texto .grid__h__dos {
+  .main .grid__catring__infnatiles .texto .grid__h__dos, .main .grid__catring__casamientos .texto .grid__h__dos, .main .grid__catring__adultos .texto .grid__h__dos, .main .grid__catring__infnatiles .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__infnatiles .texto .titulo__combo, .main .grid__catring__casamientos .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__casamientos .texto .titulo__combo, .main .grid__catring__adultos .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__adultos .texto .titulo__combo {
     font-size: 1.2rem;
     line-height: 2rem;
   }
@@ -10395,6 +10416,10 @@ main .card {
   }
 }
 @media (max-width: 359px) {
+  .main .texto .grid__h__dos, .main .texto .cards__combo .titulo__combo, .main .cards__combo .texto .titulo__combo {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+  }
   .footer div h3, .footer div .h3 {
     font-size: 0.7rem;
     line-height: 1.6rem;

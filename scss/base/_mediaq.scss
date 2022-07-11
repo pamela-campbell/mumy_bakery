@@ -67,7 +67,7 @@
         h4 {
             width: $anchura;
             text-align: center;
-            
+
         }
     }
 }
@@ -102,7 +102,7 @@
 
         .hero {
             height: 70vh;
-            
+
             .titulo__hero {
                 @include mq_texto (2.5rem, 6rem);
             }
@@ -149,13 +149,12 @@
 
         .grid__catring__infnatiles {
             height: 80vh;
-
-            .texto {
-                .grid__h__dos {
-                    @include mq_texto (1.4rem, 2rem);
-                    font-weight: 400;
-                    margin-top: 3%;
-                }
+        }
+        .texto {
+            .grid__h__dos {
+                @include mq_texto (1.4rem, 2rem);
+                font-weight: 400;
+                margin-top: 3%;
             }
         }
 
@@ -242,8 +241,8 @@
         }
 
         .grid__catring__infnatiles {
-            @include grid($anchura, auto, 4% 3%, grid, repeat(2, 1fr), repeat(2, 1fr),
-                "texto texto""foto__vertical foto__horizontal", 10px);
+            @include grid($anchura-secciones, auto, 4% auto, grid, repeat(2, 1fr), repeat(2, 1fr), "texto texto""foto__vertical foto__horizontal", 2%);
+
 
             .texto {
                 button {
@@ -265,6 +264,23 @@
                 @include mq_texto (2.3rem, 5.8rem);
                 letter-spacing: 0.3rem;
                 text-shadow: -2px -1px 0px #debdefdf;
+            }
+        }
+
+        .a__la__carta {
+            .grid__carta__pie {
+                @include mq_grid (auto, "foto__vertical foto__vertical""texto texto");
+                margin: 2% auto;
+                column-gap: 0%;
+                row-gap: 3%;
+            }
+        }
+
+        .texto {
+            .grid__h__dos {
+                @include mq_texto (1.3rem, 2.3rem);
+                background-color: #eed3b99a;
+                padding-left: 2%;
             }
         }
 
@@ -383,13 +399,6 @@
             }
         }
     }
-
-    .cards__combo {
-        p {
-            padding-left: 3%;
-            padding-right: 3%;
-        }
-    }
 }
 
 @media (max-width: 420px) {
@@ -431,6 +440,15 @@
 }
 
 @media (max-width: 359px) {
+
+    .main {
+        .texto {
+            .grid__h__dos {
+                @include mq_texto (1.1rem, 2.2rem);
+                
+            }
+        }
+    }
 
     .footer {
         div {
