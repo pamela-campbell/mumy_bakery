@@ -101,10 +101,8 @@
         }
 
         .hero {
-            height: 80vh;
+            height: 70vh;
             
-            
-
             .titulo__hero {
                 @include mq_texto (2.5rem, 6rem);
             }

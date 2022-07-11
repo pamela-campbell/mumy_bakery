@@ -9739,7 +9739,7 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  background-position: 40%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: 0s;
@@ -9945,11 +9945,11 @@ main .card {
 }
 .main .grid__catring__adultos .foto__horizontal {
   grid-area: foto__horizontal;
-  background-image: url(../fotos_mumi/aultos_3.jpg);
+  background-image: url(../fotos_mumi/adultos_4.jpg);
 }
 .main .grid__catring__adultos .foto__horizontal__dos {
   grid-area: foto__horizontal__dos;
-  background-image: url(../fotos_mumi/adultos_2.jpg);
+  background-image: url(../fotos_mumi/adultos_3.jpg);
 }
 .main .grid__catring__adultos .foto__vertical {
   grid-area: foto__vertical;
@@ -9967,79 +9967,62 @@ main .card {
   text-align: left;
 }
 
-/*--------GRID---------*/
-.a__la__carta .grid__carta__pie,
-.a__la__carta .grid__carta__temporada,
-.a__la__carta .grid__carta__budines,
-.a__la__carta .grid__carta__cheese,
-.a__la__carta .grid__carta__brownies {
-  width: 80%;
-  margin: 5% auto;
+/*--------GRID-a-la-carta-------*/
+.main .a__la__carta .grid__carta__pie, .main .a__la__carta .grid__carta__brownies, .main .a__la__carta .grid__carta__cheese, .main .a__la__carta .grid__carta__budines, .main .a__la__carta .grid__carta__temporada {
+  width: 68%;
+  height: auto;
+  margin: 6% auto;
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 1fr 2fr;
-  grid-template-areas: "foto__vertical texto" "foto__vertical  foto__horizontal";
-  gap: 5%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 2fr);
+  grid-template-areas: "texto texto" "foto__vertical  foto__horizontal";
+  gap: 20px;
 }
-.a__la__carta .texto {
-  grid-area: texto;
-}
-.a__la__carta .texto h2, .a__la__carta .texto .h2 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
-  text-align: left;
-  margin-bottom: 2%;
-  text-transform: uppercase;
-}
-.a__la__carta .texto h3, .a__la__carta .texto .h3 {
-  text-align: left;
-}
-.a__la__carta .grid__carta__pie .foto__vertical {
-  grid-area: foto__vertical;
-  background-image: url(../fotos_mumi/prodctos_6.jpg);
-}
-.a__la__carta .grid__carta__pie .foto__horizontal {
+.main .a__la__carta .grid__carta__pie .foto__horizontal, .main .a__la__carta .grid__carta__brownies .foto__horizontal, .main .a__la__carta .grid__carta__cheese .foto__horizontal, .main .a__la__carta .grid__carta__budines .foto__horizontal, .main .a__la__carta .grid__carta__temporada .foto__horizontal {
   grid-area: foto__horizontal;
   background-image: url(../fotos_mumi/prodctos_1.jpg);
 }
-.a__la__carta .grid__carta__temporada .foto__vertical {
+.main .a__la__carta .grid__carta__pie .foto__vertical, .main .a__la__carta .grid__carta__brownies .foto__vertical, .main .a__la__carta .grid__carta__cheese .foto__vertical, .main .a__la__carta .grid__carta__budines .foto__vertical, .main .a__la__carta .grid__carta__temporada .foto__vertical {
+  grid-area: foto__vertical;
+  background-image: url(../fotos_mumi/pie_2.jpg);
+}
+.main .a__la__carta .texto {
+  grid-area: texto;
+}
+.main .a__la__carta .texto h3, .main .a__la__carta .texto .h3 {
+  text-align: left;
+}
+.main .a__la__carta .grid__carta__temporada .foto__horizontal {
+  grid-area: foto__horizontal;
+  background-image: url(../fotos_mumi/torta_1.jpg);
+}
+.main .a__la__carta .grid__carta__temporada .foto__vertical {
   grid-area: foto__vertical;
   background-image: url(../fotos_mumi/prodctos_5.jpg);
 }
-.a__la__carta .grid__carta__temporada .foto__horizontal {
+.main .a__la__carta .grid__carta__budines .foto__horizontal {
   grid-area: foto__horizontal;
-  background-image: url(../fotos_mumi/funciona_2.jpg);
-}
-.a__la__carta .grid__carta__budines .foto__vertical {
-  grid-area: foto__vertical;
   background-image: url(../fotos_mumi/prodctos_4.jpg);
 }
-.a__la__carta .grid__carta__budines .foto__horizontal {
-  grid-area: foto__horizontal;
-  background-image: url(../fotos_mumi/budin_2.jpg);
-}
-.a__la__carta .grid__carta__cheese .foto__vertical {
+.main .a__la__carta .grid__carta__budines .foto__vertical {
   grid-area: foto__vertical;
-  background-image: url(../fotos_mumi/prodctos_2.jpg);
+  background-image: url(../fotos_mumi/budin_3.jpg);
 }
-.a__la__carta .grid__carta__cheese .foto__horizontal {
+.main .a__la__carta .grid__carta__cheese .foto__horizontal {
   grid-area: foto__horizontal;
   background-image: url(../fotos_mumi/funciona_3.jpg);
 }
-.a__la__carta .grid__carta__brownies .foto__vertical {
+.main .a__la__carta .grid__carta__cheese .foto__vertical {
   grid-area: foto__vertical;
-  background-image: url(../fotos_mumi/brownies.jpg);
+  background-image: url(../fotos_mumi/prodctos_2.jpg);
 }
-.a__la__carta .grid__carta__brownies .foto__horizontal {
+.main .a__la__carta .grid__carta__brownies .foto__horizontal {
   grid-area: foto__horizontal;
-  background-image: url(../fotos_mumi/testimonio_4.jpg);
+  background-image: url(../fotos_mumi/brownie_2.jpg);
 }
-.a__la__carta .foto__horizontal .foto,
-.a__la__carta .foto__vertical .foto {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.main .a__la__carta .grid__carta__brownies .foto__vertical {
+  grid-area: foto__vertical;
+  background-image: url(../fotos_mumi/testimonio_4.jpg);
 }
 
 /*-------Precios---------*/
@@ -10229,7 +10212,7 @@ main .card {
     padding: 1% 3%;
   }
   .main .hero {
-    height: 80vh;
+    height: 70vh;
   }
   .main .hero .titulo__hero {
     font-size: 2.5rem;

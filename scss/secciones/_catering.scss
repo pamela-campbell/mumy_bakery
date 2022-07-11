@@ -35,11 +35,11 @@
         @extend .grid__catring__infnatiles;
 
         .foto__horizontal {
-            @include areas(foto__horizontal, url(../fotos_mumi/aultos_3.jpg));
+            @include areas(foto__horizontal, url(../fotos_mumi/adultos_4.jpg));
         }
 
         .foto__horizontal__dos {
-            @include areas(foto__horizontal__dos, url(../fotos_mumi/adultos_2.jpg));
+            @include areas(foto__horizontal__dos, url(../fotos_mumi/adultos_3.jpg));
         }
 
         .foto__vertical {

@@ -3,7 +3,7 @@
 
     .hero {
         @include flex($anchura, flex, column, center, center, wrap, 0, 0);
-        @include imagenes(40%, no-repeat, cover, 0s);
+        @include imagenes(center, no-repeat, cover, 0s);
         background: linear-gradient(rgba(152, 120, 120, 0.735), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product.jpg);
         background-attachment: fixed;
         height: calc(100vh - 233px);
