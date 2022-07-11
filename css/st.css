@@ -1,4 +1,4 @@
-/*-------------------------DESKTOP------------------------------*/
+/*-------------------------DESKTOP-
 @media (max-width: 1400px) {
     .main {
         .hero {
@@ -57,7 +57,7 @@
     }
 
     .footer {
-        @include flex($anchura, flex, column-reverse, center, center, wrap, 0, 3% 0%);
+        @include flex($anchura, flex, column-reverse, center, center, wrap, 0, 1% 0%);
 
         div {
             width: $anchura;
@@ -67,7 +67,7 @@
         h4 {
             width: $anchura;
             text-align: center;
-            
+            padding-top: 1%;
         }
     }
 }
@@ -88,11 +88,6 @@
 
 
 @media (max-width:992px) {
-    .header {
-        .logo__menu {
-            margin: 4% 0% 4% 3%;
-        }
-    }
 
     .main {
 
@@ -122,24 +117,13 @@
 }
 
 
-/*-------------------------TABLET------------------------------*/
+/*-------------------------TABLET-------
 @media (max-width: 850px) {
 
-    .grid__container {
-        button {
-            @include mq_texto (1rem, 1.5rem);
-        }
-
-        h1 {
-            @include mq_texto (2rem, 2.3rem);
-        }
-
-        h2 {
-            @include mq_texto (1.5rem, 2rem);
-        }
-    }
-
     .main {
+        button {
+            @include mq_texto (1rem, 1.5rem)
+        }
 
         .hero {
             .titulo__hero {
@@ -150,14 +134,6 @@
 
         .grid__catring__infnatiles {
             height: 80vh;
-
-            .texto {
-                .grid__h__dos {
-                    @include mq_texto (1.4rem, 2rem);
-                    font-weight: 400;
-                    margin-top: 3%;
-                }
-            }
         }
 
         .productos {
@@ -228,38 +204,33 @@
 }
 
 @media (max-width: 700px) {
+
     .header {
         .logo__menu {
-            width: 70%;
+            width: 300px;
         }
     }
 
     .main {
-        .introduccion {
-            h1 {
-                margin-top: 8%;
-                margin-bottom: 8%;
-            }
+
+        h3 {
+            @include mq_texto (0.2rem, 1.7rem);
         }
 
         .grid__catring__infnatiles {
             @include grid($anchura, auto, 4% 3%, grid, repeat(2, 1fr), repeat(2, 1fr),
                 "texto texto""foto__vertical foto__horizontal", 10px);
-
-            .texto {
-                button {
-                    margin: 3% 0%;
-                }
-
-                .grid__h__dos {
-                    margin-top: 5%;
-                }
-            }
         }
     }
 }
 
 @media (max-width: 555px) {
+    .header {
+        .logo__menu {
+            width: 400px;
+        }
+    }
+
     .main {
         .hero {
             .titulo__hero {
@@ -267,6 +238,7 @@
                 letter-spacing: 0.3rem;
                 text-shadow: -2px -1px 0px #debdefdf;
             }
+
         }
 
         .footer {
@@ -279,56 +251,23 @@
     }
 }
 
-/*-------------------------PHONES------------------------------*/
-@media (max-width: 500px) {
 
-    .main {
-        .introduccion {
-            h1 {
-                @include mq_texto (1.8rem, 2.2rem);
+    /*-------------------------PHONES-------------
+    @media (max-width: 500px) {
+
+
+        .header {
+            .logo__menu {
+                width: 200px;
             }
         }
 
-        .grid__catring__infnatiles {
-            @include mq_grid (100vh, "foto__vertical foto__vertical""texto texto");
-            margin-bottom: 8%;
-        }
 
 
-        .grid__container__productos__mobile {
-            width: 100%;
-            height: 60vh;
-            margin: 2% 1%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+        .main {
 
-            grid-template-areas:
-                "tarta tarta"
-                "cheese especiales"
-            ;
 
-            gap: 5px;
-
-            .tarta {
-                grid-area: tarta;
-                background-image: url(../fotos_mumi/prodctos_1.jpg);
-            }
-
-            .cheese {
-                grid-area: cheese;
-                background-image: url(../fotos_mumi/prodctos_2.jpg);
-            }
-
-            .especiales {
-                grid-area: especiales;
-                background-image: url(../fotos_mumi/prodctos_3.jpg);
-            }
-
-        }
-
-        .productos {
-            .grid__container__productos {
+            .grid__container__productos__mobile {
                 width: 100%;
                 height: 60vh;
                 margin: 2% 1%;
@@ -337,112 +276,139 @@
                 grid-template-rows: repeat(2, 1fr);
 
                 grid-template-areas:
-                    "budin budin"
-                    "cuadraditos temporada"
+                    "tarta tarta"
+                    "cheese especiales"
                 ;
+
                 gap: 5px;
 
-                .imagenes__index {
-                    h3 {
-                        display: none;
+                .tarta {
+                    grid-area: tarta;
+                    background-image: url(../fotos_mumi/prodctos_1.jpg);
+                }
+
+                .cheese {
+                    grid-area: cheese;
+                    background-image: url(../fotos_mumi/prodctos_2.jpg);
+                }
+
+                .especiales {
+                    grid-area: especiales;
+                    background-image: url(../fotos_mumi/prodctos_3.jpg);
+                }
+
+            }
+
+            .productos {
+                .grid__container__productos {
+                    width: 100%;
+                    height: 60vh;
+                    margin: 2% 1%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+
+                    grid-template-areas:
+                        "budin budin"
+                        "cuadraditos temporada"
+                    ;
+                    gap: 5px;
+
+                    .imagenes__index {
+                        h3 {
+                            display: none;
+                        }
+                    }
+
+                    .budin {
+                        grid-area: budin;
+                        background-image: url(../fotos_mumi/prodctos_4.jpg);
+                    }
+
+                    .temporada {
+                        grid-area: temporada;
+                        background-image: url(../fotos_mumi/prodctos_5.jpg);
+                    }
+
+                    .cuadraditos {
+                        grid-area: cuadraditos;
+                        background-image: url(../fotos_mumi/testimonio_4.jpg);
                     }
                 }
+            }
 
-                .budin {
-                    grid-area: budin;
-                    background-image: url(../fotos_mumi/prodctos_4.jpg);
-                }
+            .inspirate {
+                .grid__container__inspirate {
+                    width: 100%;
+                    height: 60vh;
+                    margin: 2% 1%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2 1fr);
 
-                .temporada {
-                    grid-area: temporada;
-                    background-image: url(../fotos_mumi/prodctos_5.jpg);
-                }
 
-                .cuadraditos {
-                    grid-area: cuadraditos;
-                    background-image: url(../fotos_mumi/testimonio_4.jpg);
+                    grid-template-areas:
+                        "catering__cumpleaño catering__cumpleaño"
+                        "desayuno muffin"
+                    ;
+
+                    gap: 5px;
                 }
             }
         }
 
-        .inspirate {
-            .grid__container__inspirate {
-                width: 100%;
-                height: 60vh;
-                margin: 2% 1%;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(2 1fr);
-
-
-                grid-template-areas:
-                    "catering__cumpleaño catering__cumpleaño"
-                    "desayuno muffin"
-                ;
-
-                gap: 5px;
+        .cards__combo {
+            p {
+                padding-left: 3%;
+                padding-right: 3%;
             }
         }
     }
 
-    .cards__combo {
-        p {
-            padding-left: 3%;
-            padding-right: 3%;
-        }
-    }
-}
-
-@media (max-width: 420px) {
-
-    .main {
-        .hero {
-            .titulo__hero {
-                width: 98%;
-                font-size: 2rem;
-                line-height: 3rem;
-                letter-spacing: 0.3rem;
+    @media (max-width: 420px) {
+        .header {
+            .logo__menu {
+                width: 200px;
             }
         }
 
         .main {
-            .introduccion {
-                h1 {
-                    @include mq_texto (1.6rem, 2.2rem);
+            .hero {
+                .titulo__hero {
+                    width: 98%;
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    letter-spacing: 0.3rem;
                 }
             }
         }
 
-        .grid__catring__infnatiles {
-            .texto {
-                .grid__h__dos {
-                    @include mq_texto (1.2rem, 2rem);
+        .footer {
+            div {
+                h3 {
+                    @include mq_texto (0.8rem, 1.7rem);
                 }
             }
         }
     }
 
-    .footer {
-        div {
-            h3 {
-                @include mq_texto (0.8rem, 1.7rem);
-            }
-        }
-    }
-}
-
-@media (max-width: 359px) {
-
-    .footer {
-        div {
-            h3 {
-                @include mq_texto (0.7rem, 1.6rem);
-                letter-spacing: 0.07rem;
+    @media (max-width: 359px) {
+        .header {
+            .logo__menu {
+                width: 190px;
             }
         }
 
-        h4 {
-            @include mq_texto (0.7rem, 1.5rem);
+        .footer {
+            div {
+                h3 {
+                    @include mq_texto (0.7rem, 1.6rem);
+                    letter-spacing: 0.07rem;
+                }
+            }
+
+            h4 {
+                @include mq_texto (0.7rem, 1.5rem);
+            }
         }
     }
-}

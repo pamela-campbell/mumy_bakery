@@ -7,10 +7,15 @@
         div {
             .navbar-toggler {
                 border: none;
-                background-color:transparent;
+                background-color: transparent;
             }
 
             div {
+                .logo__menu {
+                    width: 80%;
+                    margin-left: 3%;
+                }
+
                 ul {
                     li {
                         text-align: end;

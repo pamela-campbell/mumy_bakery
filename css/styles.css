@@ -9618,6 +9618,10 @@ textarea.form-control-lg {
   border: none;
   background-color: transparent;
 }
+.header nav div div .logo__menu {
+  width: 80%;
+  margin-left: 3%;
+}
 .header nav div div ul li {
   text-align: end;
 }
@@ -9703,7 +9707,7 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   margin: 0;
   padding: 3%;
-  background-color: #FFFAFA;
+  background-color: #F3EBEB;
   grid-area: footer;
 }
 .footer div {
@@ -9956,9 +9960,8 @@ main .card {
 }
 .main .texto .grid__h__dos {
   font-size: 1.5rem;
-  font-weight: 500;
   text-align: left;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 .main .texto .grid__h__tres {
   text-align: left;
@@ -10197,7 +10200,7 @@ main .card {
     align-items: center;
     flex-wrap: wrap;
     margin: 0;
-    padding: 1% 0%;
+    padding: 3% 0%;
   }
   .footer div {
     width: 100%;
@@ -10206,7 +10209,6 @@ main .card {
   .footer h4, .footer .h4 {
     width: 100%;
     text-align: center;
-    padding-top: 1%;
   }
 }
 @media (max-width: 1110px) {
@@ -10220,6 +10222,12 @@ main .card {
   }
 }
 @media (max-width: 992px) {
+  .header .logo__menu {
+    margin: 4% 0% 4% 3%;
+  }
+  .main button {
+    padding: 1% 3%;
+  }
   .main .hero {
     height: 90vh;
     background-position: 30%;
@@ -10234,12 +10242,30 @@ main .card {
 }
 /*-------------------------TABLET------------------------------*/
 @media (max-width: 850px) {
+  .grid__container button {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .grid__container h1, .grid__container .h1 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+  .grid__container h2, .grid__container .h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
   .main .hero .titulo__hero {
     text-shadow: -3px -1px 0px rgba(222, 189, 239, 0.8745098039);
     letter-spacing: 0.4rem;
   }
   .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
     height: 80vh;
+  }
+  .main .grid__catring__infnatiles .texto .grid__h__dos, .main .grid__catring__casamientos .texto .grid__h__dos, .main .grid__catring__adultos .texto .grid__h__dos {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+    margin-top: 3%;
   }
   .main .productos .grid__container__productos {
     width: 100%;
@@ -10278,36 +10304,51 @@ main .card {
 }
 @media (max-width: 700px) {
   .header .logo__menu {
-    width: 450px;
+    width: 70%;
   }
-  .main h3, .main .h3 {
-    font-size: 0.2rem;
-    line-height: 1.7rem;
+  .main .introduccion h1, .main .introduccion .h1 {
+    margin-top: 8%;
+    margin-bottom: 8%;
   }
   .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
+    width: 100%;
     height: auto;
-    grid-template-areas: "texto texto texto" " foto__vertical foto__vertical foto__horizontal";
+    margin: 4% 3%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "texto texto" "foto__vertical foto__horizontal";
+    gap: 10px;
+  }
+  .main .grid__catring__infnatiles .texto button, .main .grid__catring__casamientos .texto button, .main .grid__catring__adultos .texto button {
+    margin: 3% 0%;
+  }
+  .main .grid__catring__infnatiles .texto .grid__h__dos, .main .grid__catring__casamientos .texto .grid__h__dos, .main .grid__catring__adultos .texto .grid__h__dos {
+    margin-top: 5%;
   }
 }
 @media (max-width: 555px) {
-  .header .logo__menu {
-    width: 400px;
-  }
   .main .hero .titulo__hero {
     font-size: 2.3rem;
     line-height: 5.8rem;
     letter-spacing: 0.3rem;
     text-shadow: -2px -1px 0px rgba(222, 189, 239, 0.8745098039);
   }
-  .footer div h3, .footer div .h3 {
+  .main .footer div h3, .main .footer div .h3 {
     font-size: 0.9rem;
     line-height: 1.8rem;
   }
 }
 /*-------------------------PHONES------------------------------*/
 @media (max-width: 500px) {
-  .header .logo__menu {
-    width: 300px;
+  .main .introduccion h1, .main .introduccion .h1 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
+    height: 100vh;
+    grid-template-areas: "foto__vertical foto__vertical" "texto texto";
+    margin-bottom: 8%;
   }
   .main .grid__container__productos__mobile {
     width: 100%;
@@ -10372,14 +10413,19 @@ main .card {
   }
 }
 @media (max-width: 420px) {
-  .header .logo__menu {
-    width: 275px;
-  }
   .main .hero .titulo__hero {
     width: 98%;
     font-size: 2rem;
     line-height: 3rem;
     letter-spacing: 0.3rem;
+  }
+  .main .main .introduccion h1, .main .main .introduccion .h1 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  .main .grid__catring__infnatiles .texto .grid__h__dos, .main .grid__catring__casamientos .texto .grid__h__dos, .main .grid__catring__adultos .texto .grid__h__dos {
+    font-size: 1.2rem;
+    line-height: 2rem;
   }
   .footer div h3, .footer div .h3 {
     font-size: 0.8rem;
@@ -10387,9 +10433,6 @@ main .card {
   }
 }
 @media (max-width: 359px) {
-  .header .logo__menu {
-    width: 230px;
-  }
   .footer div h3, .footer div .h3 {
     font-size: 0.7rem;
     line-height: 1.6rem;

@@ -1,6 +1,6 @@
 .footer {
     @include flex($anchura, flex, row, space-evenly, flex-end, wrap, 0, 3%);
-    background-color: $fondo-footer;
+    background-color: $fondo-principal;
     grid-area: footer;
 
     div {
