@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #262626;
+    color:$texto-color;
     scroll-behavior: smooth;
 }
 
@@ -46,7 +46,7 @@
     }
 
     a {
-        color: #262626;
+        color:$texto-color;
         text-decoration: none;
         transition: 2s;
 
@@ -65,11 +65,9 @@
         transition: 2s;
 
         &:hover {
-            &:hover {
-                color: $color-destacado;
-                background-color: $fondo-principal;
-                transform: scale(0.9);
-            }
+            color: $color-destacado;
+            background-color: $fondo-principal;
+            transform: scale(0.9);
         }
     }
 

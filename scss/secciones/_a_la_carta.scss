@@ -2,7 +2,7 @@
 .main {
     .a__la__carta {
         .grid__carta__pie {
-            @include grid($anchura-secciones - 10, auto, 6% auto, grid, repeat(2, 1fr), repeat(2, 2fr),
+            @include grid($anchura-secciones + 10, auto, 6% auto, grid, repeat(2, 1fr), repeat(2, 2fr),
                 "texto texto""foto__vertical  foto__horizontal", 20px);
 
             .foto__horizontal {
@@ -33,6 +33,7 @@
                 @include areas(foto__vertical, url(../fotos_mumi/prodctos_5.jpg));
             }
         }
+
         .grid__carta__budines {
             @extend .grid__carta__pie;
 
@@ -44,7 +45,8 @@
                 @include areas(foto__vertical, url(../fotos_mumi/budin_3.jpg));
             }
         }
-        .grid__carta__cheese  {
+
+        .grid__carta__cheese {
             @extend .grid__carta__pie;
 
             .foto__horizontal {
@@ -55,6 +57,7 @@
                 @include areas(foto__vertical, url(../fotos_mumi/prodctos_2.jpg));
             }
         }
+
         .grid__carta__brownies {
             @extend .grid__carta__pie;
 
@@ -77,35 +80,17 @@
 
     .titulo__combo {
         text-align: center;
-        text-transform: uppercase;
-        font-size: 35px;
-        font-weight: 300;
-        padding: 3% 0%;
     }
 
-    p {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 400;
-        padding: 3% 0%;
-    }
+    .llevame {
+        @include flex($anchura, flex, column, center, center, wrap, 0%, 0% 0% 3% 0%);
 
-    a {
         p {
             text-align: center;
             text-transform: uppercase;
-            font-size: 16px;
-            font-weight: 600;
-            padding-bottom: 3%;
-            transition: 1s;
-
-            &:hover {
-                color: #9e6155;
-                padding-bottom: 3%;
-            }
+            font-weight: 400;
+            padding: 2% 0%;
         }
-
     }
 
     .animacion__card {
@@ -116,39 +101,22 @@
         }
 
         .card__color {
-            background-color: #f9f0f0;
+            background-color: transparent;
 
-            .card__carta__titulo {
-                h4 {
-                    font-family: roboto;
-                    letter-spacing: 2px;
-                    color: #c07d6f;
-                }
-            }
-
-            .card__carta {
-                h2 {
+            .card__texto {
+                h3 {
                     font-size: 1.5rem;
-                    color: #a87261;
                 }
 
                 ul {
                     li {
-                        font-family: inter;
-                        font-size: 16px;
                         padding: 2% 0%;
                     }
                 }
 
                 button {
-                    background-color: #dde8f0;
-                    border: none;
-                    color: #262626;
-                    font-size: 1rem;
-
-                    &:hover {
-                        background-color: #cea992;
-                    }
+                    background-color: #c0d8ec;
+                    color: $texto-color;
                 }
             }
         }

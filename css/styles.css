@@ -9586,7 +9586,7 @@ textarea.form-control-lg {
   background-color: #cea992;
   transition: 2s;
 }
-.grid__container button:hover:hover {
+.grid__container button:hover {
   color: #c76b63;
   background-color: #F3EBEB;
   transform: scale(0.9);
@@ -9612,7 +9612,7 @@ textarea.form-control-lg {
   grid-area: header;
 }
 .header nav {
-  background: linear-gradient(rgba(230, 199, 195, 0.621), rgba(249, 247, 247, 0.481));
+  background-image: linear-gradient(rgba(190, 156, 144, 0.52), rgba(255, 255, 255, 0.481));
 }
 .header nav div .navbar-toggler {
   border: none;
@@ -9969,7 +9969,7 @@ main .card {
 
 /*--------GRID-a-la-carta-------*/
 .main .a__la__carta .grid__carta__pie, .main .a__la__carta .grid__carta__brownies, .main .a__la__carta .grid__carta__cheese, .main .a__la__carta .grid__carta__budines, .main .a__la__carta .grid__carta__temporada {
-  width: 68%;
+  width: 88%;
   height: auto;
   margin: 6% auto;
   display: grid;
@@ -10032,29 +10032,22 @@ main .card {
 }
 .cards__combo .titulo__combo {
   text-align: center;
-  text-transform: uppercase;
-  font-size: 35px;
-  font-weight: 300;
-  padding: 3% 0%;
 }
-.cards__combo p {
+.cards__combo .llevame {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0%;
+  padding: 0% 0% 3% 0%;
+}
+.cards__combo .llevame p {
   text-align: center;
   text-transform: uppercase;
-  font-size: 16px;
   font-weight: 400;
-  padding: 3% 0%;
-}
-.cards__combo a p {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 600;
-  padding-bottom: 3%;
-  transition: 1s;
-}
-.cards__combo a p:hover {
-  color: #9e6155;
-  padding-bottom: 3%;
+  padding: 2% 0%;
 }
 .cards__combo .animacion__card {
   transition: 1s;
@@ -10063,30 +10056,17 @@ main .card {
   transform: scale(1.1);
 }
 .cards__combo .animacion__card .card__color {
-  background-color: #f9f0f0;
+  background-color: transparent;
 }
-.cards__combo .animacion__card .card__color .card__carta__titulo h4, .cards__combo .animacion__card .card__color .card__carta__titulo .h4 {
-  font-family: roboto;
-  letter-spacing: 2px;
-  color: #c07d6f;
-}
-.cards__combo .animacion__card .card__color .card__carta h2, .cards__combo .animacion__card .card__color .card__carta .h2 {
+.cards__combo .animacion__card .card__color .card__texto h3, .cards__combo .animacion__card .card__color .card__texto .h3 {
   font-size: 1.5rem;
-  color: #a87261;
 }
-.cards__combo .animacion__card .card__color .card__carta ul li {
-  font-family: inter;
-  font-size: 16px;
+.cards__combo .animacion__card .card__color .card__texto ul li {
   padding: 2% 0%;
 }
-.cards__combo .animacion__card .card__color .card__carta button {
-  background-color: #dde8f0;
-  border: none;
+.cards__combo .animacion__card .card__color .card__texto button {
+  background-color: #c0d8ec;
   color: #262626;
-  font-size: 1rem;
-}
-.cards__combo .animacion__card .card__color .card__carta button:hover {
-  background-color: #cea992;
 }
 
 .carousel-inner .carousel__overlay {
