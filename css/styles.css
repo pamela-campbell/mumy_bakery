@@ -10230,7 +10230,6 @@ main .card {
   }
   .main .hero {
     height: 80vh;
-    background-position: 30%;
   }
   .main .hero .titulo__hero {
     font-size: 2.5rem;
