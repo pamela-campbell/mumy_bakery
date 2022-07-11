@@ -10229,9 +10229,8 @@ main .card {
     padding: 1% 3%;
   }
   .main .hero {
-    height: 90vh;
+    height: 80vh;
     background-position: 30%;
-    background-repeat: no-repeat;
   }
   .main .hero .titulo__hero {
     font-size: 2.5rem;
