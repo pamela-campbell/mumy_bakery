@@ -103,6 +103,7 @@
         .hero {
             height: 90vh;
             background-position: 30%;
+            background-repeat: no-repeat;
 
             .titulo__hero {
                 @include mq_texto (2.5rem, 6rem);
