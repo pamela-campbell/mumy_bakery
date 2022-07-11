@@ -83,6 +83,12 @@
             @include mq_grid (auto, "texto texto texto"
                 " foto__vertical foto__horizontal foto__horizontal__dos ");
         }
+
+        .nosotros {
+            .grid__container__collage {
+                width: $anchura-secciones;
+            }
+        }
     }
 }
 
@@ -150,11 +156,18 @@
         .grid__catring__infnatiles {
             height: 80vh;
         }
+
         .texto {
             .grid__h__dos {
                 @include mq_texto (1.4rem, 2rem);
                 font-weight: 400;
                 margin-top: 3%;
+            }
+        }
+
+        .nosotros {
+            .grid__container__collage {
+                width: $anchura - 8;
             }
         }
 
@@ -254,6 +267,15 @@
                 }
             }
         }
+
+        .nosotros {
+            .grid__container__collage {
+                @include mq_grid (80vh, "masa masa frutitas""horneado mesa mesa""horneado festejo festejo");
+                margin: 2% auto;
+                column-gap: 5px;
+                row-gap: 1.5%;
+            }
+        }
     }
 }
 
@@ -281,6 +303,12 @@
                 @include mq_texto (1.3rem, 2.3rem);
                 background-color: #eed3b99a;
                 padding-left: 2%;
+            }
+        }
+
+        .nosotros {
+            .grid__container__collage {
+                @include grid($anchura - 5, 60vh, 5% auto, grid, repeat(3, 1fr), repeat(2, 1fr), "masa masa frutitas" "tortitas mesa mesa", 2%);
             }
         }
 
@@ -445,7 +473,7 @@
         .texto {
             .grid__h__dos {
                 @include mq_texto (1.1rem, 2.2rem);
-                
+
             }
         }
     }

@@ -10081,12 +10081,43 @@ main .card {
   color: #262626;
 }
 
-.carousel-inner .carousel__overlay {
-  background: rgba(238, 217, 217, 0.52);
+.main .nosotros .grid__container__collage {
+  width: 58%;
+  height: 80vh;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "masa cake frutitas" "horneado mesa mesa" "horneado tortitas festejo";
+  gap: 2%;
 }
-.carousel-inner .carousel__overlay h2, .carousel-inner .carousel__overlay .h2 {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+.main .nosotros .grid__container__collage .masa {
+  grid-area: masa;
+  background-image: url(../fotos_mumi/masa.jpg);
+}
+.main .nosotros .grid__container__collage .mesa {
+  grid-area: mesa;
+  background-image: url(../fotos_mumi/pie_2.jpg);
+}
+.main .nosotros .grid__container__collage .horneado {
+  grid-area: horneado;
+  background-image: url(../fotos_mumi/torta_1.jpg);
+}
+.main .nosotros .grid__container__collage .tortitas {
+  grid-area: tortitas;
+  background-image: url(../fotos_mumi/main_product.jpg);
+}
+.main .nosotros .grid__container__collage .frutitas {
+  grid-area: frutitas;
+  background-image: url(../fotos_mumi/funciona_2.jpg);
+}
+.main .nosotros .grid__container__collage .festejo {
+  grid-area: festejo;
+  background-image: url(../fotos_mumi/budin_3.jpg);
+}
+.main .nosotros .grid__container__collage .cake {
+  grid-area: cake;
+  background-image: url(../fotos_mumi/prodctos_4.jpg);
 }
 
 .main .titulo__form, .main .horarios h2, .main .horarios .h2 {
@@ -10195,6 +10226,9 @@ main .card {
     height: auto;
     grid-template-areas: "texto texto texto" " foto__vertical foto__horizontal foto__horizontal__dos ";
   }
+  .main .nosotros .grid__container__collage {
+    width: 78%;
+  }
 }
 @media (max-width: 992px) {
   .header .logo__menu {
@@ -10240,6 +10274,9 @@ main .card {
     line-height: 2rem;
     font-weight: 400;
     margin-top: 3%;
+  }
+  .main .nosotros .grid__container__collage {
+    width: 92%;
   }
   .main .productos .grid__container__productos {
     width: 100%;
@@ -10300,6 +10337,13 @@ main .card {
   .main .grid__catring__infnatiles .texto .grid__h__dos, .main .grid__catring__casamientos .texto .grid__h__dos, .main .grid__catring__adultos .texto .grid__h__dos, .main .grid__catring__infnatiles .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__infnatiles .texto .titulo__combo, .main .grid__catring__casamientos .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__casamientos .texto .titulo__combo, .main .grid__catring__adultos .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__adultos .texto .titulo__combo {
     margin-top: 5%;
   }
+  .main .nosotros .grid__container__collage {
+    height: 80vh;
+    grid-template-areas: "masa masa frutitas" "horneado mesa mesa" "horneado festejo festejo";
+    margin: 2% auto;
+    column-gap: 5px;
+    row-gap: 1.5%;
+  }
 }
 @media (max-width: 555px) {
   .main .hero .titulo__hero {
@@ -10320,6 +10364,16 @@ main .card {
     line-height: 2.3rem;
     background-color: rgba(238, 211, 185, 0.6039215686);
     padding-left: 2%;
+  }
+  .main .nosotros .grid__container__collage {
+    width: 95%;
+    height: 60vh;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "masa masa frutitas" "tortitas mesa mesa";
+    gap: 2%;
   }
   .main .footer div h3, .main .footer div .h3 {
     font-size: 0.9rem;

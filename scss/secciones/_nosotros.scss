@@ -1,9 +1,35 @@
-.carousel-inner {
-    .carousel__overlay {
-        background: rgba(238, 217, 217, 0.52);
+.main {
+    .nosotros {
+        .grid__container__collage {
+            @include grid($anchura-secciones - 20, 80vh, 5% auto, grid, repeat(3, 1fr), repeat(3, 1fr), "masa cake frutitas" "horneado mesa mesa" "horneado tortitas festejo", 2%);
 
-        h2 {
-            @include mq_texto (1.5rem, 2.5rem);
+            .masa {
+                @include areas(masa, url(../fotos_mumi/masa.jpg));
+            }
+
+            .mesa {
+                @include areas(mesa, url(../fotos_mumi/pie_2.jpg));
+            }
+
+            .horneado {
+                @include areas(horneado, url(../fotos_mumi/torta_1.jpg));
+            }
+
+            .tortitas {
+                @include areas(tortitas, url(../fotos_mumi/main_product.jpg));
+            }
+
+            .frutitas {
+                @include areas(frutitas, url(../fotos_mumi/funciona_2.jpg));
+            }
+
+            .festejo {
+                @include areas(festejo, url(../fotos_mumi/budin_3.jpg));
+            }
+
+            .cake {
+                @include areas(cake, url(../fotos_mumi/prodctos_4.jpg));
+            }
         }
     }
 }
