@@ -222,20 +222,6 @@
                 }
             }
         }
-
-        .click {
-            text-shadow: 4px 4px 2px #decbcb;
-            font-family: roboto;
-            font-size: 60px;
-            font-weight: 600;
-            line-height: 75px;
-        }
-
-        .cards__combo {
-            .titulo__combo {
-                font-size: 27px;
-            }
-        }
     }
 
     .footer {
@@ -291,7 +277,6 @@
         .nosotros {
             .grid__container__collage {
                 @include mq_grid (80vh, "masa masa frutitas""horneado mesa mesa""horneado festejo festejo");
-
             }
         }
     }

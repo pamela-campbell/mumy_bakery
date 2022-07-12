@@ -1,36 +1,4 @@
 main {
-    .click {
-        @include tipografias(roboto, 4rem, 600, 7rem, center, uppercase, none, 0.1rem);
-        margin: 5% 1%;
-        background-image: linear-gradient(to right, #eb6472ed, #6d7caded, #6ac3bc, #819f6eed, #c2b7dded);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        text-shadow: 4px 4px 2px #becfaee7;
-        background-size: 300%;
-        background-position: -200%;
-        animation-name: titulo;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate-reverse;
-
-        @keyframes titulo {
-            from {
-                background-position: 0%;
-
-            }
-
-            to {
-                background-position: 100%;
-            }
-        }
-
-        &:hover {
-            color: #E9E1F0;
-            text-shadow: 4px 4px 2px #becfae;
-        }
-    }
-
     .card {
         border: none;
         background-color: $fondo-secundario;
@@ -41,6 +9,11 @@ main {
     }
 
     .boton__box {
-        @include flex($anchura, flex, column, center, center, wrap, 4% auto, 0%);
+        @include flex($anchura, flex, column, center, center, wrap, 4% auto 8% auto, 0%);
+
+        button {
+            @include tipografias(inter, 1.7rem, 500, 2.5rem, center, uppercase, none, 0.1rem);
+            padding: 3%;
+        }
     }
 }
