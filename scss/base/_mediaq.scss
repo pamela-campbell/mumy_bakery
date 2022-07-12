@@ -96,7 +96,7 @@
 
         .grid__catring__infnatiles {
             @include mq_grid (auto, "texto texto texto"
-                " foto__vertical foto__horizontal foto__horizontal__dos ");
+                " foto__vertical foto__horizontal foto__horizontal__dos");
         }
 
         .nosotros {
@@ -163,7 +163,6 @@
     }
 
     .main {
-
         .hero {
             .titulo__hero {
                 text-shadow: -3px -1px 0px #debdefdf;
@@ -192,7 +191,7 @@
         .productos {
             .grid__container__productos {
                 @include grid($anchura-mq, 100vh, 2% auto, grid, repeat(4, 1fr), repeat(3, 1fr),
-                    "tarta tarta  cheese cheese""budin budin budin pie""temporada temporada especiales especiales"
+                    "tarta tarta cheese cheese""budin budin budin pie""temporada temporada especiales especiales"
                     , 15px);
 
                 .budin {
@@ -215,14 +214,13 @@
 
         .inspirate {
             .grid__container__inspirate {
-                @include mq_grid (70vh, "muffin muffin muffin torta__donut ""desayuno desayuno torta__infantil torta__infantil");
+                @include mq_grid (70vh, "muffin muffin muffin torta__donut""desayuno desayuno torta__infantil torta__infantil");
                 width: $anchura-mq;
 
                 .catering__cumpleaño {
                     display: none;
                 }
             }
-
         }
 
         .click {
@@ -248,6 +246,7 @@
         }
     }
 }
+
 
 @media (max-width: 700px) {
     .header {
@@ -309,8 +308,7 @@
         }
 
         .grid__container__productos__mobile {
-            @include grid($anchura - 5, 60vh, 2% auto, grid, repeat(2, 1fr), repeat(2, 1fr), "tarta tarta"
-                "temporada cuadraditos", 5px);
+            @include grid($anchura - 5, 60vh, 2% auto, grid, repeat(2, 1fr), repeat(2, 1fr), "tarta tarta""temporada cuadraditos", 5px);
 
             .tarta {
                 grid-area: tarta;

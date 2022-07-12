@@ -3,7 +3,7 @@
 
     .hero {
         @include flex($anchura, flex, column, center, center, wrap, 0, 0);
-        @include imagenes(50% 50%, no-repeat, contain, 0s);
+        @include imagenes(top, no-repeat, contain, 0s);
         background: linear-gradient(rgba(152, 120, 120, 0.735), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product_1.jpg);
         background-attachment: fixed;
         height: calc(100vh - 233px);
@@ -94,19 +94,7 @@
         padding-bottom: 3%;
 
         .introduccion {
-            padding-bottom: 3%;
-        }
-
-        .cards__servicio {
-            @extend .fondo__servicio__index;
-
-            h3 {
-                text-align: left;
-            }
-        }
-
-        .card {
-            border: none;
+            padding-bottom: 2%;
         }
     }
 }

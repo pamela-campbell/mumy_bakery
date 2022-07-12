@@ -9668,6 +9668,9 @@ textarea.form-control-lg {
   transition-duration: 0.5s;
   transition-timing-function: linear;
 }
+.header nav div div ul li a:hover {
+  transform: none;
+}
 
 .main .introduccion {
   width: 100%;
@@ -9743,7 +9746,7 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  background-position: 50% 50%;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
   transition: 0s;
@@ -9829,18 +9832,12 @@ textarea.form-control-lg {
 }
 
 /*---servicio---*/
-.main .fondo__servicio__index, .main .fondo__servicio__index .cards__servicio {
+.main .fondo__servicio__index {
   background-color: #F3EBEB;
   padding-bottom: 3%;
 }
 .main .fondo__servicio__index .introduccion {
-  padding-bottom: 3%;
-}
-.main .fondo__servicio__index .cards__servicio h3, .main .fondo__servicio__index .cards__servicio .h3 {
-  text-align: left;
-}
-.main .fondo__servicio__index .card {
-  border: none;
+  padding-bottom: 2%;
 }
 
 /*---inspirate---*/
@@ -9879,32 +9876,55 @@ textarea.form-control-lg {
 }
 
 main .click {
-  text-shadow: 4px 4px 2px #decbcb;
   font-family: roboto;
-  font-size: 75px;
+  font-size: 4rem;
   font-weight: 600;
-  line-height: 105px;
-  text-transform: uppercase;
+  line-height: 7rem;
   text-align: center;
-  background: linear-gradient(rgba(152, 120, 120, 0.52), rgba(255, 255, 255, 0.481)), url(../fotos_mumi/banner.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  margin: 5% 1%;
+  background-image: linear-gradient(to right, rgba(235, 100, 114, 0.9294117647), rgba(109, 124, 173, 0.9294117647), #6ac3bc, rgba(129, 159, 110, 0.9294117647), rgba(194, 183, 221, 0.9294117647));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 4px 4px 2px rgba(190, 207, 174, 0.9058823529);
+  background-size: 300%;
+  background-position: -200%;
+  animation-name: titulo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes titulo {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+main .click:hover {
+  color: #E9E1F0;
+  text-shadow: 4px 4px 2px #becfae;
+}
+main .card {
+  border: none;
+  background-color: #fbfbfb;
+}
+main .card p {
+  font-size: 0.9rem;
+}
+main .boton__box {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 30vh;
-  margin: 0%;
-}
-main .click:hover {
-  color: #E9E1F0;
-  text-shadow: 4px 4px 2px #decbcb;
-}
-main .card {
-  border: none;
+  flex-wrap: wrap;
+  margin: 4% auto;
+  padding: 0%;
 }
 
 .main .grid__catring__infnatiles, .main .grid__catring__adultos, .main .grid__catring__casamientos {
@@ -10229,7 +10249,7 @@ main .card {
   }
   .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
     height: auto;
-    grid-template-areas: "texto texto texto" " foto__vertical foto__horizontal foto__horizontal__dos ";
+    grid-template-areas: "texto texto texto" " foto__vertical foto__horizontal foto__horizontal__dos";
   }
   .main .nosotros .grid__container__collage {
     width: 78%;
@@ -10293,7 +10313,7 @@ main .card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "tarta tarta  cheese cheese" "budin budin budin pie" "temporada temporada especiales especiales";
+    grid-template-areas: "tarta tarta cheese cheese" "budin budin budin pie" "temporada temporada especiales especiales";
     gap: 15px;
   }
   .main .productos .grid__container__productos .budin {
@@ -10311,7 +10331,7 @@ main .card {
   }
   .main .inspirate .grid__container__inspirate {
     height: 70vh;
-    grid-template-areas: "muffin muffin muffin torta__donut " "desayuno desayuno torta__infantil torta__infantil";
+    grid-template-areas: "muffin muffin muffin torta__donut" "desayuno desayuno torta__infantil torta__infantil";
     width: 90%;
   }
   .main .inspirate .grid__container__inspirate .catering__cumpleaño {
