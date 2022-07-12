@@ -11,7 +11,7 @@
 
     .titulo__hero {
         @include tipografias(Oswald, 3.5rem, 600, 7rem, center, uppercase, none, 0.6rem);
-        color:$color-destacado;
+        color: $color-destacado;
         text-shadow: -5px -1px 0px #debdefdf;
         width: $anchura;
 
@@ -29,7 +29,7 @@
         }
 
         .grid__container__productos {
-            @include grid($anchura-secciones, 100vh, 0% auto 5% auto, grid, repeat(4, 1fr), repeat(4, 1fr), "tarta cheese cheese pie"
+            @include grid($anchura-secciones, 100vh, 2% auto, grid, repeat(4, 1fr), repeat(4, 1fr), "tarta cheese cheese pie"
                 "tarta frutas budin porciones"
                 "temporada temporada budin especiales"
                 "temporada temporada cuadraditos especiales", 20px);
@@ -71,11 +71,8 @@
             }
 
             .imagenes__index {
-                @include imagenes(center, no-repeat, cover, 3s);
-
                 &:hover {
                     transform: scale(0.9);
-
                 }
 
                 h3 {
@@ -122,27 +119,26 @@
         }
 
         .grid__container__inspirate {
-            @include grid($anchura-secciones, 60vh, 0% auto 5% auto, grid, repeat(4, 1fr), repeat(2, 1fr), "torta__donut muffin muffin desayuno"
-                "torta__donut torta__infantil catering__cumpleaño desayuno", 20px);
+            @include grid($anchura-secciones, 60vh, 2% auto, grid, repeat(4, 1fr), repeat(2, 1fr), "torta__donut muffin muffin desayuno""torta__donut torta__infantil catering__cumpleaño desayuno", 20px);
 
             .torta__donut {
-                @include areas(torta__donut, url(../fotos_mumi/testimonio_2.jpg));
+                @include areas(torta__donut, url(../fotos_mumi/torta_1.jpg));
             }
 
             .muffin {
-                @include areas(muffin, url(../fotos_mumi/testimonio_3.jpg));
+                @include areas(muffin, url(../fotos_mumi/casamiento_3.jpg));
             }
 
             .desayuno {
-                @include areas(desayuno, url(../fotos_mumi/testimonio_1.jpg));
+                @include areas(desayuno, url(../fotos_mumi/adultos_1.jpg));
             }
 
             .torta__infantil {
-                @include areas(torta__infantil, url(../fotos_mumi/testimonio_6.jpg));
+                @include areas(torta__infantil, url(../fotos_mumi/infantil_1.jpg));
             }
 
             .catering__cumpleaño {
-                @include areas(catering__cumpleaño, url(../fotos_mumi/testimonio_5.jpg));
+                @include areas(catering__cumpleaño, url(../fotos_mumi/adultos_4.jpg));
             }
         }
     }

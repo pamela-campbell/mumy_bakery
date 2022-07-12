@@ -27,7 +27,7 @@
 
             h1,
             h2 {
-                width: $anchura-secciones;
+                width: $anchura-mq;
                 text-align: center;
                 margin-right: 0%;
                 margin-top: 4%;
@@ -35,19 +35,28 @@
             }
 
             p {
-                width: $anchura-secciones + 10;
+                width: $anchura-mq;
                 padding-bottom: 2%;
             }
         }
 
         .productos {
             .grid__container__productos {
+                width: $anchura-mq;
+
                 .imagenes__index {
                     h3 {
                         @include mq_texto (0.9rem, 2rem);
                         width: $anchura-secciones;
                     }
                 }
+            }
+        }
+
+        .inspirate {
+            .grid__container__inspirate {
+                width: $anchura-mq;
+                gap: 10px;
             }
         }
 
@@ -69,6 +78,11 @@
             text-align: center;
 
         }
+
+        p {
+            width: $anchura;
+            text-align: center;
+        }
     }
 }
 
@@ -78,6 +92,7 @@
         p {
             @include mq_texto (1rem, 1.9rem);
         }
+
 
         .grid__catring__infnatiles {
             @include mq_grid (auto, "texto texto texto"
@@ -101,7 +116,6 @@
     }
 
     .main {
-
         button {
             padding: 1% 3%;
         }
@@ -114,9 +128,13 @@
             }
         }
 
+        .productos {
+            .grid__container__productos {
+                height: 80vh;
+            }
+        }
 
         .cards__combo {
-
             a {
                 p {
                     padding-bottom: 10%;
@@ -173,43 +191,36 @@
 
         .productos {
             .grid__container__productos {
-                width: 100%;
-                height: 90vh;
-                margin: 2% 1%;
+                @include grid($anchura-mq, 100vh, 2% auto, grid, repeat(4, 1fr), repeat(3, 1fr),
+                    "tarta tarta  cheese cheese""budin budin budin pie""temporada temporada especiales especiales"
+                    , 15px);
 
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(4, 1fr);
+                .budin {
+                    @include areas(budin, url(../fotos_mumi/budin_3.jpg));
+                }
 
-                grid-template-areas:
-                    "tarta cheese cheese"
-                    "tarta pie budin"
-                    "temporada temporada budin"
-                    "temporada temporada especiales";
+                .frutas {
+                    display: none;
+                }
 
-                gap: 10px;
+                .porciones {
+                    display: none;
+                }
+
+                .cuadraditos {
+                    display: none;
+                }
             }
-
         }
 
         .inspirate {
             .grid__container__inspirate {
-                width: 100%;
-                height: 90vh;
-                margin: 2%;
+                @include mq_grid (70vh, "muffin muffin muffin torta__donut ""desayuno desayuno torta__infantil torta__infantil");
+                width: $anchura-mq;
 
-
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-
-
-                grid-template-areas:
-                    "desayuno catering__cumpleaño catering__cumpleaño"
-                    "desayuno torta__infantil muffin"
-                ;
-
-                gap: 10px;
+                .catering__cumpleaño {
+                    display: none;
+                }
             }
 
         }
@@ -253,6 +264,16 @@
             }
         }
 
+        .inspirate {
+            .grid__container__inspirate {
+                @include mq_grid (70vh, "muffin muffin muffin muffin""desayuno desayuno torta__infantil torta__infantil");
+
+                .torta__donut {
+                    display: none;
+                }
+            }
+        }
+
         .grid__catring__infnatiles {
             @include grid($anchura-secciones, auto, 4% auto, grid, repeat(2, 1fr), repeat(2, 1fr), "texto texto""foto__vertical foto__horizontal", 2%);
 
@@ -271,9 +292,7 @@
         .nosotros {
             .grid__container__collage {
                 @include mq_grid (80vh, "masa masa frutitas""horneado mesa mesa""horneado festejo festejo");
-                margin: 2% auto;
-                column-gap: 5px;
-                row-gap: 1.5%;
+
             }
         }
     }
@@ -289,38 +308,99 @@
             }
         }
 
-        .a__la__carta {
-            .grid__carta__pie {
-                @include mq_grid (auto, "foto__vertical foto__vertical""texto texto");
-                margin: 2% auto;
-                column-gap: 0%;
-                row-gap: 3%;
+        .grid__container__productos__mobile {
+            @include grid($anchura - 5, 60vh, 2% auto, grid, repeat(2, 1fr), repeat(2, 1fr), "tarta tarta"
+                "temporada cuadraditos", 5px);
+
+            .tarta {
+                grid-area: tarta;
+                background-image: url(../fotos_mumi/pie_2.jpg);
             }
+
+            .cheese {
+                grid-area: temporada;
+                background-image: url(../fotos_mumi/prodctos_5.jpg);
+            }
+
+            .especiales {
+                grid-area: cuadraditos;
+                background-image: url(../fotos_mumi/testimonio_4.jpg);
+            }
+
         }
 
-        .texto {
-            .grid__h__dos {
-                @include mq_texto (1.3rem, 2.3rem);
-                background-color: #eed3b99a;
-                padding-left: 2%;
-            }
-        }
+        .productos {
+            .grid__container__productos {
+                @include grid($anchura - 5, 60vh, 2% auto, grid, repeat(2, 1fr), repeat(2, 1fr), "cheese cheese"
+                    "especiales budin", 5px);
 
-        .nosotros {
-            .grid__container__collage {
-                @include grid($anchura - 5, 60vh, 5% auto, grid, repeat(3, 1fr), repeat(2, 1fr), "masa masa frutitas" "tortitas mesa mesa", 2%);
-            }
-        }
-
-        .footer {
-            div {
-                h3 {
-                    @include mq_texto (0.9rem, 1.8rem);
+                .imagenes__index {
+                    h3 {
+                        display: none;
+                    }
                 }
+
+                .cheese {
+                    grid-area: cheese;
+                    background-image: url(../fotos_mumi/torta_1.jpg);
+                }
+
+                .tarta {
+                    display: none;
+                }
+
+                .temporada {
+                    display: none;
+                }
+
+                .pie {
+                    display: none;
+                }
+            }
+        }
+
+        .inspirate {
+            .grid__container__inspirate {
+                width: $anchura - 5;
+                height: 60vh;
+                margin: 2% auto;
+                gap: 5px;
+            }
+        }
+    }
+
+    .a__la__carta {
+        .grid__carta__pie {
+            @include mq_grid (auto, "foto__vertical foto__vertical""texto texto");
+            margin: 2% auto;
+            column-gap: 0%;
+            row-gap: 3%;
+        }
+    }
+
+    .texto {
+        .grid__h__dos {
+            @include mq_texto (1.3rem, 2.3rem);
+            background-color: #eed3b99a;
+            padding-left: 2%;
+        }
+    }
+
+    .nosotros {
+        .grid__container__collage {
+            @include grid($anchura - 5, 60vh, 5% auto, grid, repeat(3, 1fr), repeat(2, 1fr), "masa masa frutitas""tortitas mesa mesa", 2%);
+        }
+    }
+
+    .footer {
+        div {
+            h3 {
+                @include mq_texto (0.9rem, 1.8rem);
             }
         }
     }
 }
+
 
 /*-------------------------PHONES------------------------------*/
 @media (max-width: 500px) {
@@ -335,96 +415,6 @@
         .grid__catring__infnatiles {
             @include mq_grid (100vh, "foto__vertical foto__vertical""texto texto");
             margin-bottom: 8%;
-        }
-
-
-        .grid__container__productos__mobile {
-            width: 100%;
-            height: 60vh;
-            margin: 2% 1%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-
-            grid-template-areas:
-                "tarta tarta"
-                "cheese especiales"
-            ;
-
-            gap: 5px;
-
-            .tarta {
-                grid-area: tarta;
-                background-image: url(../fotos_mumi/prodctos_1.jpg);
-            }
-
-            .cheese {
-                grid-area: cheese;
-                background-image: url(../fotos_mumi/prodctos_2.jpg);
-            }
-
-            .especiales {
-                grid-area: especiales;
-                background-image: url(../fotos_mumi/prodctos_3.jpg);
-            }
-
-        }
-
-        .productos {
-            .grid__container__productos {
-                width: 100%;
-                height: 60vh;
-                margin: 2% 1%;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-
-                grid-template-areas:
-                    "budin budin"
-                    "cuadraditos temporada"
-                ;
-                gap: 5px;
-
-                .imagenes__index {
-                    h3 {
-                        display: none;
-                    }
-                }
-
-                .budin {
-                    grid-area: budin;
-                    background-image: url(../fotos_mumi/prodctos_4.jpg);
-                }
-
-                .temporada {
-                    grid-area: temporada;
-                    background-image: url(../fotos_mumi/prodctos_5.jpg);
-                }
-
-                .cuadraditos {
-                    grid-area: cuadraditos;
-                    background-image: url(../fotos_mumi/testimonio_4.jpg);
-                }
-            }
-        }
-
-        .inspirate {
-            .grid__container__inspirate {
-                width: 100%;
-                height: 60vh;
-                margin: 2% 1%;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(2 1fr);
-
-
-                grid-template-areas:
-                    "catering__cumpleaño catering__cumpleaño"
-                    "desayuno muffin"
-                ;
-
-                gap: 5px;
-            }
         }
     }
 }
@@ -441,11 +431,25 @@
             }
         }
 
-        .main {
-            .introduccion {
-                h1 {
-                    @include mq_texto (1.6rem, 2.2rem);
-                }
+        .introduccion {
+            h1 {
+                @include mq_texto (1.6rem, 2.2rem);
+            }
+        }
+
+        .productos {
+            .grid__container__productos {
+                height: 50vh;
+            }
+        }
+
+        .grid__container__productos__mobile {
+            height: 50vh;
+        }
+
+        .inspirate {
+            .grid__container__inspirate {
+                height: 50vh;
             }
         }
 
