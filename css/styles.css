@@ -9902,6 +9902,7 @@ main .boton__box button {
   text-decoration: none;
   letter-spacing: 0.1rem;
   padding: 3%;
+  margin: 4%;
 }
 
 .main .grid__catring__infnatiles, .main .grid__catring__adultos, .main .grid__catring__casamientos {
@@ -10362,6 +10363,12 @@ main .boton__box button {
     letter-spacing: 0.3rem;
     text-shadow: -2px -1px 0px rgba(222, 189, 239, 0.8745098039);
   }
+  .main .introduccion h1, .main .introduccion .h1,
+.main .introduccion h2,
+.main .introduccion .h2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
   .main .grid__container__productos__mobile {
     width: 95%;
     height: 60vh;
@@ -10423,10 +10430,12 @@ main .boton__box button {
     column-gap: 0%;
     row-gap: 3%;
   }
+  .a__la__carta .foto__horizontal {
+    display: none;
+  }
   .texto .grid__h__dos, .texto .main .cards__combo .titulo__combo, .main .cards__combo .texto .titulo__combo {
     font-size: 1.3rem;
     line-height: 2.3rem;
-    background-color: rgba(238, 211, 185, 0.6039215686);
     padding-left: 2%;
   }
   .nosotros .grid__container__collage {
@@ -10454,6 +10463,10 @@ main .boton__box button {
     height: 100vh;
     grid-template-areas: "foto__vertical foto__vertical" "texto texto";
     margin-bottom: 8%;
+  }
+  .main .boton__box button {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
   }
 }
 @media (max-width: 420px) {

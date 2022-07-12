@@ -292,6 +292,15 @@
             }
         }
 
+        .introduccion {
+
+            h1,
+            h2 {
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
+        }
+
         .grid__container__productos__mobile {
             @include grid($anchura - 5, 60vh, 2% auto, grid, repeat(2, 1fr), repeat(2, 1fr), "tarta tarta""temporada cuadraditos", 5px);
 
@@ -359,12 +368,14 @@
             column-gap: 0%;
             row-gap: 3%;
         }
+        .foto__horizontal{
+            display: none;
+        }
     }
 
     .texto {
         .grid__h__dos {
             @include mq_texto (1.3rem, 2.3rem);
-            background-color: #eed3b99a;
             padding-left: 2%;
         }
     }
@@ -398,6 +409,12 @@
         .grid__catring__infnatiles {
             @include mq_grid (100vh, "foto__vertical foto__vertical""texto texto");
             margin-bottom: 8%;
+        }
+
+        .boton__box {
+            button {
+                @include mq_texto (1.3rem, 2.2rem);
+            }
         }
     }
 }

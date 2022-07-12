@@ -14,6 +14,7 @@ main {
         button {
             @include tipografias(inter, 1.7rem, 500, 2.5rem, center, uppercase, none, 0.1rem);
             padding: 3%;
+            margin: 4%;
         }
     }
 }
