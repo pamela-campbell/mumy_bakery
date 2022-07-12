@@ -437,21 +437,6 @@
             }
         }
 
-        .productos {
-            .grid__container__productos {
-                height: 50vh;
-            }
-        }
-
-        .grid__container__productos__mobile {
-            height: 50vh;
-        }
-
-        .inspirate {
-            .grid__container__inspirate {
-                height: 50vh;
-            }
-        }
 
         .grid__catring__infnatiles {
             .texto {
@@ -477,7 +462,6 @@
         .texto {
             .grid__h__dos {
                 @include mq_texto (1.1rem, 2.2rem);
-
             }
         }
     }

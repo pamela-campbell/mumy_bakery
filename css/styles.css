@@ -9743,11 +9743,11 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  background-position: center;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   transition: 0s;
-  background: linear-gradient(rgba(152, 120, 120, 0.735), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product.jpg);
+  background: linear-gradient(rgba(152, 120, 120, 0.735), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product_1.jpg);
   background-attachment: fixed;
   height: calc(100vh - 233px);
 }
@@ -10479,15 +10479,6 @@ main .card {
   .main .introduccion h1, .main .introduccion .h1 {
     font-size: 1.6rem;
     line-height: 2.2rem;
-  }
-  .main .productos .grid__container__productos {
-    height: 50vh;
-  }
-  .main .grid__container__productos__mobile {
-    height: 50vh;
-  }
-  .main .inspirate .grid__container__inspirate {
-    height: 50vh;
   }
   .main .grid__catring__infnatiles .texto .grid__h__dos, .main .grid__catring__casamientos .texto .grid__h__dos, .main .grid__catring__adultos .texto .grid__h__dos, .main .grid__catring__infnatiles .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__infnatiles .texto .titulo__combo, .main .grid__catring__casamientos .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__casamientos .texto .titulo__combo, .main .grid__catring__adultos .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__adultos .texto .titulo__combo {
     font-size: 1.2rem;
