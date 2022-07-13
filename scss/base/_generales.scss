@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color:$texto-color;
+    color: $texto-color;
     scroll-behavior: smooth;
 }
 
@@ -46,7 +46,7 @@
     }
 
     a {
-        color:$texto-color;
+        color: $texto-color;
         text-decoration: none;
         transition: 2s;
 
@@ -75,8 +75,7 @@
         grid-area: main;
         background: $fondo-secundario;
 
-        .imagenes,
-        .imagenes__index {
+        .imagenes {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;

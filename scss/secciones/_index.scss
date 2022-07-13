@@ -2,8 +2,10 @@
 .main {
     .hero {
         @include flex($anchura, flex, column, center, center, wrap, 0, 0);
-        @include imagenes(center, no-repeat, cover, 0s);
         background-image: url(../fotos_mumi/hero_fondo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         background-attachment: fixed;
         height: calc(100vh - 215px);
     }
@@ -11,7 +13,7 @@
     .titulo__hero {
         @include tipografias(Oswald, 3.7rem, 700, 7rem, center, uppercase, none, 0.6rem);
         color: $color-destacado;
-        text-shadow:-3px 1px 5px $sombra;
+        text-shadow: -3px 1px 5px $sombra;
         width: $anchura_mq;
 
         .grid__container__productos__mobile {
@@ -69,7 +71,7 @@
                 @include areas(cuadraditos, url(../fotos_mumi/testimonio_4.jpg));
             }
 
-            .imagenes__index {
+            .imagenes{
                 &:hover {
                     transform: scale(0.9);
                 }

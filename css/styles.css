@@ -9595,16 +9595,14 @@ textarea.form-control-lg {
   grid-area: main;
   background: #fbfbfb;
 }
-.grid__container .main .imagenes,
-.grid__container .main .imagenes__index {
+.grid__container .main .imagenes {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: 3s;
   border-radius: 5px;
 }
-.grid__container .main .imagenes .imagenes:hover,
-.grid__container .main .imagenes__index .imagenes:hover {
+.grid__container .main .imagenes .imagenes:hover {
   transform: scale(1.1);
 }
 
@@ -9746,11 +9744,10 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  background-image: url(../fotos_mumi/hero_fondo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: 0s;
-  background-image: url(../fotos_mumi/hero_fondo.jpg);
   background-attachment: fixed;
   height: calc(100vh - 215px);
 }
@@ -9821,10 +9818,10 @@ textarea.form-control-lg {
   grid-area: cuadraditos;
   background-image: url(../fotos_mumi/testimonio_4.jpg);
 }
-.main .productos .grid__container__productos .imagenes__index:hover {
+.main .productos .grid__container__productos .imagenes:hover {
   transform: scale(0.9);
 }
-.main .productos .grid__container__productos .imagenes__index h3, .main .productos .grid__container__productos .imagenes__index .h3 {
+.main .productos .grid__container__productos .imagenes h3, .main .productos .grid__container__productos .imagenes .h3 {
   width: 60%;
   text-align: left;
   background-color: rgba(222, 203, 203, 0.6588235294);
@@ -10170,7 +10167,7 @@ main .boton__box button {
   .main .productos .grid__container__productos {
     width: 90%;
   }
-  .main .productos .grid__container__productos .imagenes__index h3, .main .productos .grid__container__productos .imagenes__index .h3 {
+  .main .productos .grid__container__productos .imagenes h3, .main .productos .grid__container__productos .imagenes .h3 {
     font-size: 0.9rem;
     line-height: 2rem;
     width: 78%;
@@ -10394,7 +10391,7 @@ main .boton__box button {
     grid-template-areas: "cheese cheese" "especiales budin";
     gap: 5px;
   }
-  .main .productos .grid__container__productos .imagenes__index h3, .main .productos .grid__container__productos .imagenes__index .h3 {
+  .main .productos .grid__container__productos .imagenes h3, .main .productos .grid__container__productos .imagenes .h3 {
     display: none;
   }
   .main .productos .grid__container__productos .cheese {

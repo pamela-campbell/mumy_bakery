@@ -32,7 +32,7 @@
             .grid__container__productos {
                 width: $anchura-mq;
 
-                .imagenes__index {
+                .imagenes {
                     h3 {
                         @include mq_texto (0.9rem, 2rem);
                         width: $anchura-secciones;
@@ -320,7 +320,7 @@
                 @include grid($anchura - 5, 60vh, 2% auto, grid, repeat(2, 1fr), repeat(2, 1fr), "cheese cheese"
                     "especiales budin", 5px);
 
-                .imagenes__index {
+                .imagenes{
                     h3 {
                         display: none;
                     }

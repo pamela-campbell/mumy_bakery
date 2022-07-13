@@ -25,13 +25,6 @@
     background-image: $background;
 }
 
-@mixin imagenes($positions, $repeats, $sizes, $transitions) {
-    background-position: $positions;
-    background-repeat: $repeats;
-    background-size: $sizes;
-    transition: $transitions;
-}
-
 @mixin flex ($anchura, $display, $direction, $justify, $align, $wrap, $margin, $padding) {
     width: $anchura;
     display: $display;
