@@ -147,6 +147,9 @@
 
     .main {
         .hero {
+            background-attachment: none;
+            height: 90vh;
+
             .titulo__hero {
                 letter-spacing: 0.4rem;
             }
@@ -277,7 +280,6 @@
 
             .titulo__hero {
                 @include mq_texto (2.8rem, 5.2rem);
-                width: $anchura-mq;
             }
         }
 

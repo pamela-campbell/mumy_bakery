@@ -9747,12 +9747,12 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   transition: 0s;
   background-image: url(../fotos_mumi/hero_fondo.jpg);
   background-attachment: fixed;
-  height: calc(100vh - 233px);
+  height: calc(100vh - 215px);
 }
 .main .titulo__hero {
   font-family: Oswald;
@@ -9765,7 +9765,7 @@ textarea.form-control-lg {
   letter-spacing: 0.6rem;
   color: #e3edd1;
   text-shadow: -3px 1px 5px rgba(119, 210, 224, 0.93);
-  width: 100%;
+  width: 90%;
 }
 .main .titulo__hero .grid__container__productos__mobile {
   display: none;
@@ -10250,6 +10250,10 @@ main .boton__box button {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+  .main .hero {
+    background-attachment: none;
+    height: 90vh;
+  }
   .main .hero .titulo__hero {
     letter-spacing: 0.4rem;
   }
@@ -10349,7 +10353,6 @@ main .boton__box button {
   .main .hero .titulo__hero {
     font-size: 2.8rem;
     line-height: 5.2rem;
-    width: 90%;
   }
   .main .introduccion h1, .main .introduccion .h1 {
     margin-top: 10%;
