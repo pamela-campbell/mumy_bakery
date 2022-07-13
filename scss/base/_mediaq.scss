@@ -1,12 +1,6 @@
 /*-------------------------DESKTOP------------------------------*/
 @media (max-width: 1400px) {
     .main {
-        .hero {
-            .titulo__hero {
-                @include mq_texto (3rem, 6.5rem);
-            }
-        }
-
         .horarios {
             margin-top: 5%;
         }
@@ -15,12 +9,6 @@
 
 @media (max-width: 1262px) {
     .main {
-        .hero {
-            .titulo__hero {
-                @include mq_texto (2.9rem, 6.4rem);
-                text-shadow: -4px -1px 0px #debdefdf;
-            }
-        }
 
         .introduccion {
             @include flex($anchura, flex, column, center, center, wrap, 0%, 2% 0%);
@@ -116,10 +104,10 @@
         }
 
         .hero {
-            height: 70vh;
+            height: 85vh;
 
             .titulo__hero {
-                @include mq_texto (2.6rem, 6rem);
+                @include mq_texto (3.3rem, 7rem);
             }
         }
 
@@ -160,7 +148,6 @@
     .main {
         .hero {
             .titulo__hero {
-                text-shadow: -3px -1px 0px #debdefdf;
                 letter-spacing: 0.4rem;
             }
         }
@@ -233,6 +220,13 @@
     }
 
     .main {
+        .hero {
+            .titulo__hero {
+                @include mq_texto (3rem, 6rem);
+                width: $anchura-mq;
+            }
+        }
+
         .introduccion {
             h1 {
                 margin-top: 8%;
@@ -279,16 +273,20 @@
 @media (max-width: 555px) {
     .main {
         .hero {
+            background-image: url(../fotos_mumi/fondo_mq.jpg);
+
             .titulo__hero {
-                @include mq_texto (2.4rem, 6rem);
-                letter-spacing: 0.3rem;
-                text-shadow: -2px -1px 0px #debdefdf;
+                @include mq_texto (2.8rem, 5.2rem);
+                width: $anchura-mq;
             }
         }
 
         .introduccion {
+            h1 {
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
 
-            h1,
             h2 {
                 margin-top: 10%;
                 margin-bottom: 10%;

@@ -1,18 +1,17 @@
 /*----HERO----*/
 .main {
-
     .hero {
         @include flex($anchura, flex, column, center, center, wrap, 0, 0);
-        @include imagenes(top, no-repeat, contain, 0s);
-        background: linear-gradient(rgba(152, 120, 120, 0.735), rgba(255, 255, 255, 0.584)), url(../fotos_mumi/main_product_1.jpg);
+        @include imagenes(center, repeat, cover, 0s);
+        background-image: url(../fotos_mumi/hero_fondo.jpg);
         background-attachment: fixed;
         height: calc(100vh - 233px);
     }
 
     .titulo__hero {
-        @include tipografias(Oswald, 3.5rem, 600, 7rem, center, uppercase, none, 0.6rem);
+        @include tipografias(Oswald, 3.7rem, 700, 7rem, center, uppercase, none, 0.6rem);
         color: $color-destacado;
-        text-shadow: -5px -1px 0px #debdefdf;
+        text-shadow:-3px 1px 5px $sombra;
         width: $anchura;
 
         .grid__container__productos__mobile {
