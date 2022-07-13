@@ -47,6 +47,12 @@
                 gap: 10px;
             }
         }
+
+        .nosotros {
+            .grid__container__collage {
+                width: $anchura-mq;
+            }
+        }
     }
 
     .footer {
@@ -81,12 +87,6 @@
             @include mq_grid (auto, "texto texto texto"
                 " foto__vertical foto__horizontal foto__horizontal__dos");
         }
-
-        .nosotros {
-            .grid__container__collage {
-                width: $anchura-secciones;
-            }
-        }
     }
 }
 
@@ -94,7 +94,7 @@
 @media (max-width:992px) {
     .header {
         .logo__menu {
-            margin: 4% 0% 4% 2%;
+            margin: 4% 0% 4% 0%;
         }
     }
 
@@ -261,13 +261,21 @@
             }
 
             .foto__horizontal__dos {
-                display: none
+                display: none;
             }
         }
 
         .nosotros {
             .grid__container__collage {
                 @include mq_grid (80vh, "masa masa frutitas""horneado mesa mesa""horneado festejo festejo");
+
+                .tortitas {
+                    display: none;
+                }
+
+                .cake {
+                    display: none;
+                }
             }
         }
     }
@@ -320,7 +328,7 @@
                 @include grid($anchura - 5, 60vh, 2% auto, grid, repeat(2, 1fr), repeat(2, 1fr), "cheese cheese"
                     "especiales budin", 5px);
 
-                .imagenes{
+                .imagenes {
                     h3 {
                         display: none;
                     }
@@ -353,36 +361,44 @@
                 gap: 5px;
             }
         }
+
+        .a__la__carta {
+            .grid__carta__pie {
+                @include grid($anchura-secciones + 10, auto, 6% auto, grid, repeat(2, 1fr), repeat(2, 1fr),
+                    "foto__vertical foto__vertical""texto texto", 3%);
+            }
+
+            .foto__horizontal {
+                display: none;
+            }
+        }
+
+        .texto {
+            .grid__h__dos {
+                @include mq_texto (1.3rem, 2.3rem);
+            }
+
+            .grid__h__tres {
+                @include mq_texto (1rem, 2.3rem);
+
+            }
+        }
+
+        .nosotros {
+            .grid__container__collage {
+                @include mq_grid (100vh, "masa masa masa" "frutitas frutitas frutitas" "horneado horneado horneado");
+            }
+
+            .tortitas {
+                display: none
+            }
+
+            .festejo {
+                display: none
+            }
+        }
     }
 
-
-    .a__la__carta {
-        .grid__carta__pie {
-            @include grid($anchura-secciones + 10, auto, 6% auto, grid, repeat(2, 1fr), repeat(2, 1fr),
-                "foto__vertical foto__vertical""texto texto", 3%);
-        }
-
-        .foto__horizontal {
-            display: none;
-        }
-    }
-
-    .texto {
-        .grid__h__dos {
-            @include mq_texto (1.3rem, 2.3rem);
-        }
-
-        .grid__h__tres {
-            @include mq_texto (1rem, 2.3rem);
-
-        }
-    }
-
-    .nosotros {
-        .grid__container__collage {
-            @include grid($anchura - 5, 60vh, 5% auto, grid, repeat(3, 1fr), repeat(2, 1fr), "masa masa frutitas""tortitas mesa mesa", 2%);
-        }
-    }
 
     .footer {
         div {

@@ -1,7 +1,7 @@
 .main {
     .nosotros {
         .grid__container__collage {
-            @include grid($anchura-secciones - 20, 80vh, 5% auto, grid, repeat(3, 1fr), repeat(3, 1fr), "masa cake frutitas" "horneado mesa mesa" "horneado tortitas festejo", 2%);
+            @include grid($anchura-secciones, 90vh, 5% auto, grid, repeat(3, 1fr), repeat(3, 1fr), "masa cake frutitas" "horneado mesa mesa" "horneado tortitas festejo", 2%);
 
             .masa {
                 @include areas(masa, url(../fotos_mumi/masa.jpg));
@@ -16,7 +16,7 @@
             }
 
             .tortitas {
-                @include areas(tortitas, url(../fotos_mumi/main_product.jpg));
+                @include areas(tortitas, url(../fotos_mumi/adultos_4.jpg));
             }
 
             .frutitas {

@@ -9618,7 +9618,6 @@ textarea.form-control-lg {
 }
 .header nav div div .logo__menu {
   width: 80%;
-  margin-left: 3%;
 }
 .header nav div div ul li {
   text-align: end;
@@ -9703,7 +9702,7 @@ textarea.form-control-lg {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
   margin: 0;
@@ -9732,6 +9731,7 @@ textarea.form-control-lg {
 }
 .footer h4, .footer .h4 {
   width: 25%;
+  text-align: end;
 }
 
 /*----HERO----*/
@@ -10065,8 +10065,8 @@ main .boton__box button {
 }
 
 .main .nosotros .grid__container__collage {
-  width: 58%;
-  height: 80vh;
+  width: 78%;
+  height: 90vh;
   margin: 5% auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -10088,7 +10088,7 @@ main .boton__box button {
 }
 .main .nosotros .grid__container__collage .tortitas {
   grid-area: tortitas;
-  background-image: url(../fotos_mumi/main_product.jpg);
+  background-image: url(../fotos_mumi/adultos_4.jpg);
 }
 .main .nosotros .grid__container__collage .frutitas {
   grid-area: frutitas;
@@ -10176,6 +10176,9 @@ main .boton__box button {
     width: 90%;
     gap: 10px;
   }
+  .main .nosotros .grid__container__collage {
+    width: 90%;
+  }
   .footer {
     width: 100%;
     display: flex;
@@ -10208,13 +10211,10 @@ main .boton__box button {
     height: auto;
     grid-template-areas: "texto texto texto" " foto__vertical foto__horizontal foto__horizontal__dos";
   }
-  .main .nosotros .grid__container__collage {
-    width: 78%;
-  }
 }
 @media (max-width: 992px) {
   .header .logo__menu {
-    margin: 4% 0% 4% 2%;
+    margin: 4% 0% 4% 0%;
   }
   .main button {
     padding: 1% 3%;
@@ -10342,6 +10342,12 @@ main .boton__box button {
     height: 80vh;
     grid-template-areas: "masa masa frutitas" "horneado mesa mesa" "horneado festejo festejo";
   }
+  .main .nosotros .grid__container__collage .tortitas {
+    display: none;
+  }
+  .main .nosotros .grid__container__collage .cake {
+    display: none;
+  }
 }
 @media (max-width: 555px) {
   .main .hero {
@@ -10413,7 +10419,7 @@ main .boton__box button {
     margin: 2% auto;
     gap: 5px;
   }
-  .a__la__carta .grid__carta__pie, .main .a__la__carta .grid__carta__temporada, .main .a__la__carta .grid__carta__budines, .main .a__la__carta .grid__carta__cheese, .main .a__la__carta .grid__carta__brownies {
+  .main .a__la__carta .grid__carta__pie, .main .a__la__carta .grid__carta__temporada, .main .a__la__carta .grid__carta__budines, .main .a__la__carta .grid__carta__cheese, .main .a__la__carta .grid__carta__brownies {
     width: 88%;
     height: auto;
     margin: 6% auto;
@@ -10423,26 +10429,26 @@ main .boton__box button {
     grid-template-areas: "foto__vertical foto__vertical" "texto texto";
     gap: 3%;
   }
-  .a__la__carta .foto__horizontal {
+  .main .a__la__carta .foto__horizontal {
     display: none;
   }
-  .texto .grid__h__dos, .texto .main .cards__combo .titulo__combo, .main .cards__combo .texto .titulo__combo {
+  .main .texto .grid__h__dos, .main .texto .cards__combo .titulo__combo, .main .cards__combo .texto .titulo__combo {
     font-size: 1.3rem;
     line-height: 2.3rem;
   }
-  .texto .grid__h__tres {
+  .main .texto .grid__h__tres {
     font-size: 1rem;
     line-height: 2.3rem;
   }
-  .nosotros .grid__container__collage {
-    width: 95%;
-    height: 60vh;
-    margin: 5% auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "masa masa frutitas" "tortitas mesa mesa";
-    gap: 2%;
+  .main .nosotros .grid__container__collage {
+    height: 100vh;
+    grid-template-areas: "masa masa masa" "frutitas frutitas frutitas" "horneado horneado horneado";
+  }
+  .main .nosotros .tortitas {
+    display: none;
+  }
+  .main .nosotros .festejo {
+    display: none;
   }
   .footer div h3, .footer div .h3 {
     font-size: 0.9rem;
