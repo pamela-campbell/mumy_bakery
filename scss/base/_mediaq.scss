@@ -59,10 +59,6 @@
                 gap: 10px;
             }
         }
-
-        .grid__catring__infnatiles {
-            height: 80vh;
-        }
     }
 
     .footer {
@@ -93,7 +89,6 @@
             @include mq_texto (1rem, 1.9rem);
         }
 
-
         .grid__catring__infnatiles {
             @include mq_grid (auto, "texto texto texto"
                 " foto__vertical foto__horizontal foto__horizontal__dos");
@@ -111,7 +106,7 @@
 @media (max-width:992px) {
     .header {
         .logo__menu {
-            margin: 4% 0% 4% 3%;
+            margin: 4% 0% 4% 2%;
         }
     }
 
@@ -168,10 +163,6 @@
                 text-shadow: -3px -1px 0px #debdefdf;
                 letter-spacing: 0.4rem;
             }
-        }
-
-        .grid__catring__infnatiles {
-            height: 80vh;
         }
 
         .texto {
@@ -260,8 +251,7 @@
         }
 
         .grid__catring__infnatiles {
-            @include grid($anchura-secciones, auto, 4% auto, grid, repeat(2, 1fr), repeat(2, 1fr), "texto texto""foto__vertical foto__horizontal", 2%);
-
+            @include grid($anchura-mq, auto, 4% auto, grid, repeat(2, 1fr), repeat(2, 1fr), "texto texto""foto__vertical foto__horizontal", 2%);
 
             .texto {
                 button {
@@ -271,6 +261,10 @@
                 .grid__h__dos {
                     margin-top: 5%;
                 }
+            }
+
+            .foto__horizontal__dos {
+                display: none
             }
         }
 
@@ -360,14 +354,15 @@
             }
         }
     }
-   
-    
+
+
     .a__la__carta {
         .grid__carta__pie {
             @include grid($anchura-secciones + 10, auto, 6% auto, grid, repeat(2, 1fr), repeat(2, 1fr),
-            "foto__vertical foto__vertical" "texto texto", 3%);
+                "foto__vertical foto__vertical""texto texto", 3%);
         }
-        .foto__horizontal{
+
+        .foto__horizontal {
             display: none;
         }
     }
@@ -406,8 +401,12 @@
         }
 
         .grid__catring__infnatiles {
-            @include mq_grid (100vh, "foto__vertical foto__vertical""texto texto");
+            @include mq_grid (auto, "foto__vertical foto__vertical""texto texto");
             margin-bottom: 8%;
+
+            .foto__horizontal {
+                display: none
+            }
         }
 
         .boton__box {

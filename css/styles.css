@@ -9972,7 +9972,7 @@ main .boton__box button {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 2fr);
   grid-template-areas: "texto texto" "foto__vertical foto__horizontal";
-  gap: 3%;
+  gap: 2%;
 }
 .main .a__la__carta .grid__carta__pie .foto__horizontal, .main .a__la__carta .grid__carta__brownies .foto__horizontal, .main .a__la__carta .grid__carta__cheese .foto__horizontal, .main .a__la__carta .grid__carta__budines .foto__horizontal, .main .a__la__carta .grid__carta__temporada .foto__horizontal {
   grid-area: foto__horizontal;
@@ -10194,9 +10194,6 @@ main .boton__box button {
     width: 90%;
     gap: 10px;
   }
-  .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
-    height: 80vh;
-  }
   .footer {
     width: 100%;
     display: flex;
@@ -10235,7 +10232,7 @@ main .boton__box button {
 }
 @media (max-width: 992px) {
   .header .logo__menu {
-    margin: 4% 0% 4% 3%;
+    margin: 4% 0% 4% 2%;
   }
   .main button {
     padding: 1% 3%;
@@ -10271,9 +10268,6 @@ main .boton__box button {
   .main .hero .titulo__hero {
     text-shadow: -3px -1px 0px rgba(222, 189, 239, 0.8745098039);
     letter-spacing: 0.4rem;
-  }
-  .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
-    height: 80vh;
   }
   .main .texto .grid__h__dos, .main .texto .cards__combo .titulo__combo, .main .cards__combo .texto .titulo__combo {
     font-size: 1.4rem;
@@ -10336,7 +10330,7 @@ main .boton__box button {
     display: none;
   }
   .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
-    width: 78%;
+    width: 90%;
     height: auto;
     margin: 4% auto;
     display: grid;
@@ -10350,6 +10344,9 @@ main .boton__box button {
   }
   .main .grid__catring__infnatiles .texto .grid__h__dos, .main .grid__catring__casamientos .texto .grid__h__dos, .main .grid__catring__adultos .texto .grid__h__dos, .main .grid__catring__infnatiles .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__infnatiles .texto .titulo__combo, .main .grid__catring__casamientos .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__casamientos .texto .titulo__combo, .main .grid__catring__adultos .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__adultos .texto .titulo__combo {
     margin-top: 5%;
+  }
+  .main .grid__catring__infnatiles .foto__horizontal__dos, .main .grid__catring__casamientos .foto__horizontal__dos, .main .grid__catring__adultos .foto__horizontal__dos {
+    display: none;
   }
   .main .nosotros .grid__container__collage {
     height: 80vh;
@@ -10463,9 +10460,12 @@ main .boton__box button {
     line-height: 2.2rem;
   }
   .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
-    height: 100vh;
+    height: auto;
     grid-template-areas: "foto__vertical foto__vertical" "texto texto";
     margin-bottom: 8%;
+  }
+  .main .grid__catring__infnatiles .foto__horizontal, .main .grid__catring__casamientos .foto__horizontal, .main .grid__catring__adultos .foto__horizontal {
+    display: none;
   }
   .main .boton__box button {
     font-size: 1.3rem;
