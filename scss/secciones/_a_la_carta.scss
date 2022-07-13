@@ -13,19 +13,7 @@
                 @include areas(foto__vertical, url(../fotos_mumi/prodctos_1.jpg));
             }
         }
-
-        .texto {
-            grid-area: texto;
-
-            h3 {
-                text-align: left;
-            }
-
-            button {
-                margin-bottom: 5%;
-            }
-        }
-
+        
         .grid__carta__temporada {
             @extend .grid__carta__pie;
 

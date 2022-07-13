@@ -1,7 +1,7 @@
 .main {
     .grid__catring__infnatiles {
-        @include grid($anchura-secciones + 10, auto, 6% auto, grid, repeat(3, 1fr),repeat(2, 1fr), 
-        "foto__vertical texto texto" "foto__vertical  foto__horizontal foto__horizontal__dos", 2%);
+        @include grid($anchura-secciones + 10, auto, 6% auto, grid, repeat(3, 1fr), repeat(2, 1fr),
+            "foto__vertical texto texto""foto__vertical  foto__horizontal foto__horizontal__dos", 2%);
 
         .foto__horizontal {
             @include areas(foto__horizontal, url(../fotos_mumi/infantil_2.jpg));
@@ -10,6 +10,7 @@
         .foto__horizontal__dos {
             @include areas(foto__horizontal__dos, url(../fotos_mumi/infantil_1.jpg));
         }
+
         .foto__vertical {
             @include areas(foto__vertical, url(../fotos_mumi/testimonio_6.jpg));
         }
@@ -58,6 +59,10 @@
 
         .grid__h__tres {
             text-align: left;
+        }
+
+        button {
+            margin-bottom: 5%;
         }
     }
 }

@@ -9587,7 +9587,7 @@ textarea.form-control-lg {
   transition: 2s;
 }
 .grid__container button:hover {
-  color: #c76b63;
+  color: #ca6258;
   background-color: #F3EBEB;
   transform: scale(0.9);
 }
@@ -9763,7 +9763,7 @@ textarea.form-control-lg {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.6rem;
-  color: #c76b63;
+  color: #ca6258;
   text-shadow: -5px -1px 0px rgba(222, 189, 239, 0.8745098039);
   width: 100%;
 }
@@ -9962,6 +9962,9 @@ main .boton__box button {
 .main .texto .grid__h__tres {
   text-align: left;
 }
+.main .texto button {
+  margin-bottom: 5%;
+}
 
 /*--------GRID-a-la-carta-------*/
 .main .a__la__carta .grid__carta__pie, .main .a__la__carta .grid__carta__brownies, .main .a__la__carta .grid__carta__cheese, .main .a__la__carta .grid__carta__budines, .main .a__la__carta .grid__carta__temporada {
@@ -9981,15 +9984,6 @@ main .boton__box button {
 .main .a__la__carta .grid__carta__pie .foto__vertical, .main .a__la__carta .grid__carta__brownies .foto__vertical, .main .a__la__carta .grid__carta__cheese .foto__vertical, .main .a__la__carta .grid__carta__budines .foto__vertical, .main .a__la__carta .grid__carta__temporada .foto__vertical {
   grid-area: foto__vertical;
   background-image: url(../fotos_mumi/prodctos_1.jpg);
-}
-.main .a__la__carta .texto {
-  grid-area: texto;
-}
-.main .a__la__carta .texto h3, .main .a__la__carta .texto .h3 {
-  text-align: left;
-}
-.main .a__la__carta .texto button {
-  margin-bottom: 5%;
 }
 .main .a__la__carta .grid__carta__temporada .foto__horizontal {
   grid-area: foto__horizontal;
@@ -10241,7 +10235,7 @@ main .boton__box button {
     height: 70vh;
   }
   .main .hero .titulo__hero {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     line-height: 6rem;
   }
   .main .productos .grid__container__productos {
@@ -10355,8 +10349,8 @@ main .boton__box button {
 }
 @media (max-width: 555px) {
   .main .hero .titulo__hero {
-    font-size: 2.3rem;
-    line-height: 5.8rem;
+    font-size: 2.4rem;
+    line-height: 6rem;
     letter-spacing: 0.3rem;
     text-shadow: -2px -1px 0px rgba(222, 189, 239, 0.8745098039);
   }
@@ -10436,7 +10430,10 @@ main .boton__box button {
   .texto .grid__h__dos, .texto .main .cards__combo .titulo__combo, .main .cards__combo .texto .titulo__combo {
     font-size: 1.3rem;
     line-height: 2.3rem;
-    padding-left: 2%;
+  }
+  .texto .grid__h__tres {
+    font-size: 1rem;
+    line-height: 2.3rem;
   }
   .nosotros .grid__container__collage {
     width: 95%;
@@ -10459,6 +10456,10 @@ main .boton__box button {
     font-size: 1.8rem;
     line-height: 2.2rem;
   }
+  .main .introduccion h2, .main .introduccion .h2 {
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+  }
   .main .grid__catring__infnatiles, .main .grid__catring__casamientos, .main .grid__catring__adultos {
     height: auto;
     grid-template-areas: "foto__vertical foto__vertical" "texto texto";
@@ -10474,24 +10475,30 @@ main .boton__box button {
 }
 @media (max-width: 420px) {
   .main .hero .titulo__hero {
-    width: 98%;
-    font-size: 2rem;
-    line-height: 3rem;
-    letter-spacing: 0.3rem;
+    font-size: 2.2rem;
+    line-height: 5rem;
   }
   .main .introduccion h1, .main .introduccion .h1 {
     font-size: 1.6rem;
     line-height: 2.2rem;
   }
-  .main .grid__catring__infnatiles .texto .grid__h__dos, .main .grid__catring__casamientos .texto .grid__h__dos, .main .grid__catring__adultos .texto .grid__h__dos, .main .grid__catring__infnatiles .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__infnatiles .texto .titulo__combo, .main .grid__catring__casamientos .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__casamientos .texto .titulo__combo, .main .grid__catring__adultos .texto .cards__combo .titulo__combo, .main .cards__combo .grid__catring__adultos .texto .titulo__combo {
-    font-size: 1.2rem;
+  .main .introduccion h2, .main .introduccion .h2 {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+  }
+  .texto .grid__h__dos, .texto .main .cards__combo .titulo__combo, .main .cards__combo .texto .titulo__combo {
+    font-size: 1.25rem;
     line-height: 2rem;
   }
-  .footer div h3, .footer div .h3 {
-    font-size: 0.8rem;
-    line-height: 1.7rem;
+  .texto .grid__h__tres {
+    font-weight: 400;
   }
 }
+.footer div h3, .footer div .h3 {
+  font-size: 0.8rem;
+  line-height: 1.7rem;
+}
+
 @media (max-width: 359px) {
   .main .texto .grid__h__dos, .main .texto .cards__combo .titulo__combo, .main .cards__combo .texto .titulo__combo {
     font-size: 1.1rem;

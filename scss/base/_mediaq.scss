@@ -119,7 +119,7 @@
             height: 70vh;
 
             .titulo__hero {
-                @include mq_texto (2.5rem, 6rem);
+                @include mq_texto (2.6rem, 6rem);
             }
         }
 
@@ -280,7 +280,7 @@
     .main {
         .hero {
             .titulo__hero {
-                @include mq_texto (2.3rem, 5.8rem);
+                @include mq_texto (2.4rem, 6rem);
                 letter-spacing: 0.3rem;
                 text-shadow: -2px -1px 0px #debdefdf;
             }
@@ -370,7 +370,11 @@
     .texto {
         .grid__h__dos {
             @include mq_texto (1.3rem, 2.3rem);
-            padding-left: 2%;
+        }
+
+        .grid__h__tres {
+            @include mq_texto (1rem, 2.3rem);
+
         }
     }
 
@@ -398,6 +402,10 @@
             h1 {
                 @include mq_texto (1.8rem, 2.2rem);
             }
+
+            h2 {
+                @include mq_texto (1.4rem, 2.3rem);
+            }
         }
 
         .grid__catring__infnatiles {
@@ -422,10 +430,7 @@
     .main {
         .hero {
             .titulo__hero {
-                width: 98%;
-                font-size: 2rem;
-                line-height: 3rem;
-                letter-spacing: 0.3rem;
+                @include mq_texto (2.2rem, 5rem);
             }
         }
 
@@ -433,29 +438,34 @@
             h1 {
                 @include mq_texto (1.6rem, 2.2rem);
             }
-        }
 
-
-        .grid__catring__infnatiles {
-            .texto {
-                .grid__h__dos {
-                    @include mq_texto (1.2rem, 2rem);
-                }
+            h2 {
+                @include mq_texto (1.3rem, 2.3rem);
             }
         }
     }
 
-    .footer {
-        div {
-            h3 {
-                @include mq_texto (0.8rem, 1.7rem);
-            }
+    .texto {
+        .grid__h__dos {
+            @include mq_texto (1.25rem, 2rem);
+        }
+
+        .grid__h__tres {
+            font-weight: 400;
         }
     }
 }
 
-@media (max-width: 359px) {
+.footer {
+    div {
+        h3 {
+            @include mq_texto (0.8rem, 1.7rem);
+        }
+    }
+}
 
+
+@media (max-width: 359px) {
     .main {
         .texto {
             .grid__h__dos {
