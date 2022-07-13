@@ -3,14 +3,14 @@
     .a__la__carta {
         .grid__carta__pie {
             @include grid($anchura-secciones + 10, auto, 6% auto, grid, repeat(2, 1fr), repeat(2, 2fr),
-                "texto texto""foto__vertical  foto__horizontal", 3%);
+                "texto texto""foto__vertical foto__horizontal", 3%);
 
             .foto__horizontal {
-                @include areas(foto__horizontal, url(../fotos_mumi/prodctos_1.jpg));
+                @include areas(foto__horizontal, url(../fotos_mumi/pie_2.jpg));
             }
 
             .foto__vertical {
-                @include areas(foto__vertical, url(../fotos_mumi/pie_2.jpg));
+                @include areas(foto__vertical, url(../fotos_mumi/prodctos_1.jpg));
             }
         }
 

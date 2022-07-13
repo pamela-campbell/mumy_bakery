@@ -9971,16 +9971,16 @@ main .boton__box button {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 2fr);
-  grid-template-areas: "texto texto" "foto__vertical  foto__horizontal";
+  grid-template-areas: "texto texto" "foto__vertical foto__horizontal";
   gap: 3%;
 }
 .main .a__la__carta .grid__carta__pie .foto__horizontal, .main .a__la__carta .grid__carta__brownies .foto__horizontal, .main .a__la__carta .grid__carta__cheese .foto__horizontal, .main .a__la__carta .grid__carta__budines .foto__horizontal, .main .a__la__carta .grid__carta__temporada .foto__horizontal {
   grid-area: foto__horizontal;
-  background-image: url(../fotos_mumi/prodctos_1.jpg);
+  background-image: url(../fotos_mumi/pie_2.jpg);
 }
 .main .a__la__carta .grid__carta__pie .foto__vertical, .main .a__la__carta .grid__carta__brownies .foto__vertical, .main .a__la__carta .grid__carta__cheese .foto__vertical, .main .a__la__carta .grid__carta__budines .foto__vertical, .main .a__la__carta .grid__carta__temporada .foto__vertical {
   grid-area: foto__vertical;
-  background-image: url(../fotos_mumi/pie_2.jpg);
+  background-image: url(../fotos_mumi/prodctos_1.jpg);
 }
 .main .a__la__carta .texto {
   grid-area: texto;
@@ -10204,7 +10204,7 @@ main .boton__box button {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0;
+    margin: 0%;
     padding: 3% 0%;
   }
   .footer div {
@@ -10424,11 +10424,14 @@ main .boton__box button {
     gap: 5px;
   }
   .a__la__carta .grid__carta__pie, .main .a__la__carta .grid__carta__temporada, .main .a__la__carta .grid__carta__budines, .main .a__la__carta .grid__carta__cheese, .main .a__la__carta .grid__carta__brownies {
+    width: 88%;
     height: auto;
+    margin: 6% auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "foto__vertical foto__vertical" "texto texto";
-    margin: 2% auto;
-    column-gap: 0%;
-    row-gap: 3%;
+    gap: 3%;
   }
   .a__la__carta .foto__horizontal {
     display: none;

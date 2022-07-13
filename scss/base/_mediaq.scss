@@ -66,7 +66,7 @@
     }
 
     .footer {
-        @include flex($anchura, flex, column-reverse, center, center, wrap, 0, 3% 0%);
+        @include flex($anchura, flex, column-reverse, center, center, wrap, 0%, 3% 0%);
 
         div {
             width: $anchura;
@@ -360,13 +360,12 @@
             }
         }
     }
-
+   
+    
     .a__la__carta {
         .grid__carta__pie {
-            @include mq_grid (auto, "foto__vertical foto__vertical""texto texto");
-            margin: 2% auto;
-            column-gap: 0%;
-            row-gap: 3%;
+            @include grid($anchura-secciones + 10, auto, 6% auto, grid, repeat(2, 1fr), repeat(2, 1fr),
+            "foto__vertical foto__vertical" "texto texto", 3%);
         }
         .foto__horizontal{
             display: none;
