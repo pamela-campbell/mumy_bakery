@@ -9587,7 +9587,7 @@ textarea.form-control-lg {
   transition: 2s;
 }
 .grid__container button:hover {
-  color: #e3edd1;
+  color: #9e6155;
   background-color: #F3EBEB;
   transform: scale(0.9);
 }
@@ -9690,11 +9690,12 @@ textarea.form-control-lg {
   width: 60%;
 }
 .main .introduccion p a {
+  padding: 3px;
+  background-color: rgba(222, 203, 203, 0.6588235294);
   text-decoration: none;
   transition: 0.5s;
 }
 .main .introduccion p a:hover {
-  border-bottom: rgba(222, 203, 203, 0.6588235294) 4px solid;
   color: #9e6155;
 }
 
@@ -9828,7 +9829,7 @@ textarea.form-control-lg {
   padding: 2%;
 }
 
-/*---servicio---*/
+/*---box--mumi---*/
 .main .fondo__servicio__index {
   background-color: #F3EBEB;
   padding-bottom: 3%;
@@ -10301,7 +10302,7 @@ main .boton__box button {
 }
 @media (max-width: 700px) {
   .header .logo__menu {
-    width: 70%;
+    width: 60%;
   }
   .main .hero .titulo__hero {
     font-size: 3rem;

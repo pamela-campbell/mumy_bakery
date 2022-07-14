@@ -12,8 +12,8 @@
 
     .titulo__hero {
         @include tipografias(Oswald, 3.7rem, 700, 7rem, center, uppercase, none, 0.6rem);
-        color: $color-destacado;
-        text-shadow: -3px 1px 5px $sombra;
+        color: #e3edd1;
+        text-shadow: -3px 1px 5px rgba(119, 210, 224, 0.93);
         width: $anchura_mq;
 
         .grid__container__productos__mobile {
@@ -79,7 +79,7 @@
                 h3 {
                     width: $anchura - 40;
                     text-align: left;
-                    background-color: #decbcba8;
+                    background-color:$fondo-transparent;
                     padding: 2%;
                 }
             }
@@ -88,7 +88,7 @@
 }
 
 
-/*---servicio---*/
+/*---box--mumi---*/
 .main {
     .fondo__servicio__index {
         background-color: $fondo-principal;

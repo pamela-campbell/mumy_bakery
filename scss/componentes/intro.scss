@@ -13,13 +13,13 @@
             width: $anchura - 40;
 
             a {
+                padding: 3px;
+                background-color: $fondo-transparent;
                 text-decoration: none;
                 transition: 0.5s;
 
                 &:hover {
-                    border-bottom: #decbcba8 4px solid;
-                    color: #9e6155;
-
+                    color:$color-destacado;
                 }
             }
         }
